@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ThingDefs>
+    <ThingDef ParentName="BaseBullet">
+        <defName>Bullet_AK47_AR</defName>
+        <label>AK47 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>7</damageAmountBase>
+            <speed>70</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>Gun_AK47_AR</defName>
+        <label>AK 47</label>
+        <description>A general-purpose military weapon for field or urban combat. It fires a three-round burst. Good range, low power, high rate of fire.</description>
+        <graphicData>
+            <texPath>Things/AR/AK47</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>10500</WorkToMake>
+            <MarketValue>525</MarketValue>
+            <AccuracyTouch>0.70</AccuracyTouch>
+            <AccuracyShort>0.87</AccuracyShort>
+            <AccuracyMedium>0.77</AccuracyMedium>
+            <AccuracyLong>0.64</AccuracyLong>
+            <RangedWeapon_Cooldown>0.69</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>90</Steel>
+            <WoodLog>10</WoodLog>
+            <Components>4</Components>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_AK47_AR</projectileDef>
+                <warmupTicks>90</warmupTicks>
+                <range>31</range>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+                <soundCast>ShotAssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>
