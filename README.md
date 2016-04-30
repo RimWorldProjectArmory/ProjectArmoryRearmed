@@ -1,4 +1,3 @@
-
 <p align="center">
     <img src="https://github.com/RimWorldProjectArmory/ProjectArmory/blob/master/extras/assets/logo/logo.png?raw=true" width="480">
 </p>
