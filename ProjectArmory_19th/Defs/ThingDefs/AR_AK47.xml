@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<!-- Weapon Data
+<!-- WeaponData
     AK 47
      WeaponSourse:      https://en.wikipedia.org/wiki/AK-47
      Barrel Length:     415mm
      Muzzle Velocity:   715m/s
      
     7.62x39mm
-     CartridgeSource:    https://en.wikipedia.org/wiki/7.62%C3%9739mm
-     Energy              2 108 J
+     CartridgeSource:   https://en.wikipedia.org/wiki/7.62%C3%9739mm
+     Energy:            2 108 J
 -->
 
 
