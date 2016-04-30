@@ -7,14 +7,12 @@ This mod adds new weapons to the RimWorld Universe from different games, movies 
 ## Weapon calculation formulas:
 
 ### Forumla for weapon damage calculation:
-Assault Rifles:
 ``` c++
 damageAmountBase = ( ( [Energy] * 2 ) + ( [BarrelLeangth] + [MuzzleVelocity] - 600 ) / 1000 ) + [Adjustment Value]
 ```
-
 | Weapon Class    | Adjustment Value    |
 |-----------------|---------------------|
-| Assault Rifles  | 2,6                 |
+| Assault Rifles  | `2,6`               |
 
 ### Forumla for weapon range calculation:
 ``` c++
@@ -22,13 +20,13 @@ range = ( ( [Velocity] / 20) + ( [Barrel Length] / 20 ) / 4 ) + [Adjustment Valu
 ```
 | Weapon Class    | Adjustment Value    |
 |-----------------|---------------------|
-| Assault Rifles  | 16.2                |
-| HMG             | 10.0                |
-| LMG             | 9.9                 |
-| P               | 20.4                |
-| R               | 21.6                |
-| S               | 1.7                 |
+| Assault Rifles  | `16.2`              |
+| HMG             | `10.0`              |
+| LMG             | `9.9`               |
+| P               | `20.4`              |
+| R               | `21.6`              |
+| S               | `1.7`               |
 | HSMG            |   	                |
-| SMG             | 16.7                |
-| Sniper Rifles   | 28.5                |
+| SMG             | `16.7`              |
+| Sniper Rifles   | `28.5`              |
 
