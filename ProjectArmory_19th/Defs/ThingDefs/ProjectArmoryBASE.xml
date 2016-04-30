@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ThingDefs>
 
-    <ThingDef Name="BaseGun" Abstract="True">
+    <ThingDef Name="PA_BaseGun" Abstract="True">
         <category>Item</category>
         <thingClass>ThingWithComps</thingClass>
         <equipmentType>Primary</equipmentType>
@@ -47,7 +47,7 @@
         </smeltProducts>
     </ThingDef>
 
-    <ThingDef Name="BaseMakeableGun" ParentName="BaseGun" Abstract="True">
+    <ThingDef Name="PA_BaseMakeableGun" ParentName="PA_BaseGun" Abstract="True">
         <recipeMaker>
             <workSpeedStat>SmithingSpeed</workSpeedStat>
             <workSkill>Crafting</workSkill>
@@ -61,19 +61,19 @@
     </ThingDef>
 
 
-    <ThingDef Name="BaseHumanGun" ParentName="BaseGun" Abstract="True">
+    <ThingDef Name="PA_BaseHumanGun" ParentName="PA_BaseGun" Abstract="True">
         <weaponTags>
             <li>Gun</li>
         </weaponTags>
     </ThingDef>
 
-    <ThingDef Name="BaseHumanMakeableGun" ParentName="BaseMakeableGun" Abstract="True">
+    <ThingDef Name="PA_BaseHumanMakeableGun" ParentName="PA_BaseMakeableGun" Abstract="True">
         <weaponTags>
             <li>Gun</li>
         </weaponTags>
     </ThingDef>
     
-    <ThingDef Name="BaseBullet" Abstract="True">
+    <ThingDef Name="PA_BaseBullet" Abstract="True">
         <category>Projectile</category>
         <tickerType>Normal</tickerType>
         <altitudeLayer>Projectile</altitudeLayer>

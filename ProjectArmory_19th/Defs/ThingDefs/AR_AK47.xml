@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
+<!-- Weapon Data
+    AK 47
+     WeaponSourse:      https://en.wikipedia.org/wiki/AK-47
+     Barrel Length:     415mm
+     Muzzle Velocity:   715m/s
+     
+    7.62x39mm
+     CartridgeSource:    https://en.wikipedia.org/wiki/7.62%C3%9739mm
+     Energy              2 108 J
+-->
+
+
 <ThingDefs>
-    <ThingDef ParentName="BaseBullet">
+    <ThingDef ParentName="PA_BaseBullet">
         <defName>Bullet_AK47_AR</defName>
         <label>AK47 bullet</label>
         <graphicData>
@@ -10,12 +22,12 @@
         </graphicData>
         <projectile>
             <damageDef>Bullet</damageDef>
-            <damageAmountBase>7</damageAmountBase>
+            <damageAmountBase>7.3</damageAmountBase>
             <speed>70</speed>
         </projectile>
     </ThingDef>
 
-    <ThingDef ParentName="BaseHumanMakeableGun">
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
         <defName>Gun_AK47_AR</defName>
         <label>AK 47</label>
         <description>A general-purpose military weapon for field or urban combat. It fires a three-round burst. Good range, low power, high rate of fire.</description>
