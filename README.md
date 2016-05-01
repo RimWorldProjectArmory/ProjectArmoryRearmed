@@ -8,7 +8,7 @@ This mod adds new weapons to the RimWorld Universe from different games, movies 
 
 | Weapon Class    | Formula                         |
 |-----------------|---------------------------------|
-|Assault Rifles   | Muzzle Energy/254.57            |
+|Assault Rifles   | `Muzzle Energy/254.57 `           |
 |Pistols          | Muzzle Energy/46.66             |
 |Shotguns         |(Muzzle Energy/180.87)/1.5+10    |
 |PDW(def. in wiki)| Muzzle Energy/105               |
