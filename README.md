@@ -54,7 +54,7 @@ For practice try calculating the damage of MadeUp weapon given the parameters, a
 
 ### Forumla for weapon range calculation:
 ``` c++
-range = ( ( [Muzzle Velocity] / 20) + ( [Barrel Length] / 20 ) / 4 ) + [Adjustment Value]
+range = ( ( ( [Muzzle Velocity] / 20) + ( [Barrel Length] / 20 ) ) / 4 ) + [Adjustment Value]
 ```
 
 | Weapon Class      | Adjustment Value  |Base Weapon      | Note              |
