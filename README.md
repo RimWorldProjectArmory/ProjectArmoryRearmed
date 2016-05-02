@@ -38,16 +38,17 @@ Here are some exsample values for Assault Rifles:
 
 |                       | M16       | AK47    |  G36    |MadeUp   |
 |-----------------------|-----------|---------|---------|---------|
-| Tested Barrel Length  | `508`     | `415`   | `508`   | `389`   |
+| Tested Barrel Length  | `508`     | `415`   | `508`   | `500`   |
 | Tested Velocity       | `940`     | `730`   | `940`   | `835`   |
 | Tested Energy         | `1767`    | `2108`  | `1767`  | `2500`  |
-| Barrel Length         | `508`     | `415`   | `480`   | `192`   |
+| Barrel Length         | `508`     | `415`   | `480`   | `402`   |
 | Muzzle Velocity       | `948`     | `715`   | `920`   | `765`   |
-| Muzzle Energy         | `1782`    | `2064`  | `1634`  | `2019`  |
 |                       |           |         |         |         |
-| `damageAmountBase`    | `7`       | `8.1`   |  `6.4`  |         |
+| Muzzle Energy         | `1782`    | `2064`  | `1634`  | `1841`  |
+|                       |           |         |         |         |
+| `damageAmountBase`    | `7.0`     | `8.1`   |  `6.4`  | `7.2`   |
 
-Damage for a assult rifle whould be: `[AssultRifle damageAmountBase] = [Muzzle Energy] / 254.57`
+Damage for a assult rifle whould be: `[damageAmountBase] = [Muzzle Energy] / 254.57`
 
 For practice try calculating the damage of MadeUp weapon given the parameters, and then If you're up to the task, try calculating the damage(and finding the info about the weapon) of IMI Galil. 
 
