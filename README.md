@@ -5,17 +5,16 @@ This mod adds new weapons to the RimWorld Universe from different games, movies 
 
 ## Weapon calculation formulas:
 
-
-| Weapon Class    | Formula                         |
-|-----------------|---------------------------------|
-|Assault Rifles   | `Muzzle Energy/254.57 `           |
-|Pistols          | Muzzle Energy/46.66             |
-|Shotguns         |(Muzzle Energy/180.87)/1.5+10    |
-|PDW(def. in wiki)| Muzzle Energy/105               |
-|SMG              |(Muzzle Energy/42)/2+5           |
-|Rifles           | Muzzle Energy/222.97            |
-|SR               | Muzzle Energy/90.525            |
-|HSR(above 9000 J)| Muzzle Energy/90.525/10+40      |
+| Weapon Class      | Formula                                     |Base Weapon      | Note            |
+|-------------------|---------------------------------------------|-----------------|-----------------|
+|Assault Rifles     | `[Muzzle Energy] / 254.57`                  |                 |                 |
+|Pistols            | `[Muzzle Energy] / 46.66`                   |                 |                 |
+|Shotguns           | `( [Muzzle Energy] / 180.87 ) / 1.5 + 10`   |                 |                 |
+|PDW                | `[Muzzle Energy] / 105`                     |                 | def. in wiki    |
+|SMG                | `( [Muzzle Energy] / 42 ) / 2 + 5`          |                 |                 |
+|Rifles             | `[Muzzle Energy] / 222.97`                  |                 |                 |
+|Sniper Rifle       | `[Muzzle Energy] / 90.525`                  |                 |                 |
+|Sniper Rifle AT    | `[Muzzle Energy] / 90.525 / 10 + 40`        |                 | above 9000 J    |
 
 To calculate the damage of a weapon you will have to use wiki, and these parameters which are best illustrated in the table below. But before that, here are some definitions:
 
@@ -32,6 +31,10 @@ Muzzle Velocity - Is the parameter which is given on the right side on wiki page
 Muzzle Energy - Is the parameter which you will have to calculate using this formula: 
 
 Muzzle Energy= Barrel length/Tested Barrel length * (Tested Energy/Tested Velocity * Muzzle Velocity)
+
+``` c++
+Muzzle Energy = Barrel length/Tested Barrel length * (Tested Energy/Tested Velocity * Muzzle Velocity)
+```
 
 Here is the table for some assault rifles:
 
@@ -53,16 +56,19 @@ For practice try calculating the damage of MadeUp weapon given the parameters, a
 ``` c++
 range = ( ( [Velocity] / 20) + ( [Barrel Length] / 20 ) / 4 ) + [Adjustment Value]
 ```
-| Weapon Class    | Adjustment Value    |
-|-----------------|---------------------|
-| Assault Rifles  | `16.2`              |
-| HMG             | `10.0`              |
-| LMG             | `9.9`               |
-| P               | `20.4`              |
-| R               | `21.6`              |
-| S               | `1.7`               |
-| HSMG            |   	                |
-| SMG             | `16.7`              |
-| Sniper Rifles   | `28.5`              |
+
+| Weapon Class      | Adjustment Value  |Base Weapon      | Note              |
+|-------------------|-------------------|-----------------|-------------------|
+|Assault Rifles     | `16.2`            |                 |                   |
+|Pistols            | `20.4`            |                 |                   |
+|Shotguns           |  `1.7`            |                 |                   |
+|PDW                | ``                |                 |                   |
+|SMG                | `16.7`            |                 |                   |
+|Rifles             | `21.6`            |                 |                   |
+|Sniper Rifle       | `28.5`            |                 |                   |
+|Sniper Rifle AT    | `28.5`            |                 |                   |
+|Lite Mashine Gun   | `9.9`             |                 |                   |
+|Heavy Mashine Gun  | `10.0`            |                 |                   |
+
 
 <p align="center"><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Project Armory</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/RimWorldProjectArmory" property="cc:attributionName" rel="cc:attributionURL">Project Armory Development Team</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://rimworldgame.com/" rel="dct:source">http://rimworldgame.com/</a>.</p>
