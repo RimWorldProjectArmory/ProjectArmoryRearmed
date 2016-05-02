@@ -30,25 +30,24 @@ Muzzle Velocity - Is the parameter which is given on the right side on wiki page
 
 Muzzle Energy - Is the parameter which you will have to calculate using this formula: 
 
-Muzzle Energy= Barrel length/Tested Barrel length * (Tested Energy/Tested Velocity * Muzzle Velocity)
-
 ``` c++
-Muzzle Energy = Barrel length/Tested Barrel length * (Tested Energy/Tested Velocity * Muzzle Velocity)
+[Muzzle Energy] = [Barrel length] / [Tested Barrel Length] * ( [Tested Energy] / [Tested Velocity] * [Muzzle Velocity] )
 ```
 
-Here is the table for some assault rifles:
+Here are some exsample values for Assault Rifles:
 
-|    |  M16 | AK47 |  G36 |MadeUp| Galil|
-|----|------|------|------|------|------|
-| Tested Barrel Length| 508  | 415  | 508  | 389  |      |
-| Tested Velocity | 940  | 730  | 940  | 835  |      |
-| Tested Energy | 1767 | 2108 | 1767 | 2500 |      |
-| Barrel Length | 508  | 415  | 480  | 192  |      |
-| Muzzle Velocity | 948  | 715  | 920  | 765  |      |
-| Muzzle Energy | 1782 | 2064 | 1634 | ???  |      |
-|Damage |  7   |  8.1 |  6.4 | ???  |      |
+|                       | M16       | AK47    |  G36    |MadeUp   |
+|-----------------------|-----------|---------|---------|---------|
+| Tested Barrel Length  | `508`     | `415`   | `508`   | `389`   |
+| Tested Velocity       | `940`     | `730`   | `940`   | `835`   |
+| Tested Energy         | `1767`    | `2108`  | `1767`  | `2500`  |
+| Barrel Length         | `508`     | `415`   | `480`   | `192`   |
+| Muzzle Velocity       | `948`     | `715`   | `920`   | `765`   |
+| Muzzle Energy         | `1782`    | `2064`  | `1634`  | `2019`  |
+|                       |           |         |         |         |
+| `damageAmountBase`    | `7`       | `8.1`   |  `6.4`  |         |
 
-Damage for AR =Muzzle Energy/254.57
+Damage for a assult rifle whould be: [AssultRifle] = [Muzzle Energy] / 254.57
 
 For practice try calculating the damage of MadeUp weapon given the parameters, and then If you're up to the task, try calculating the damage(and finding the info about the weapon) of IMI Galil. 
 
