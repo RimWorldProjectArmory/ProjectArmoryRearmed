@@ -15,8 +15,8 @@ This mod adds new weapons to the RimWorld Universe from different games, movies 
 |Rifles                 | `[Muzzle Energy] / 222.97`                  |                 |                 |
 |Sniper Rifle           | `[Muzzle Energy] / 90.525`                  |                 |                 |
 |Anti-Materiel Rifle    | `[Muzzle Energy] / 90.525 / 10 + 40`        |                 | above 9000 J    |
-|Lite Mashine Gun       |                                             |                 |                 |
-|Heavy Mashine Gun      |                                             |                 |                 |
+|Light Mashine Guns     |                                             |                 |                 |
+|Heavy Mashine Guns     |                                             |                 |                 |
 
 To calculate the damage of a weapon you will have to use wiki, and these parameters which are best illustrated in the table below. But before that, here are some definitions:
 
@@ -69,8 +69,8 @@ range = ( ( [Muzzle Velocity] / 20) + ( [Barrel Length] / 20 ) ) / 4 + [Adjustme
 |Rifles                 |                                             |                 |                 |
 |Sniper Rifle           |                                             |                 |                 |
 |Anti-Materiel Rifle    |                                             |                 |                 |
-|Lite Mashine Gun       |                                             |                 |                 |
-|Heavy Mashine Gun      |                                             |                 |                 |
+|Light Mashine Guns     |                                             |                 |                 |
+|Heavy Mashine Guns     |                                             |                 |                 |
 
 <!--| Weapon Class      | Adjustment Value  |Base Weapon      | Note              |
 |-------------------|-------------------|-----------------|-------------------|
