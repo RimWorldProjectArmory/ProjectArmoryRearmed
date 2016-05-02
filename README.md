@@ -47,7 +47,7 @@ Here are some exsample values for Assault Rifles:
 |                       |           |         |         |         |
 | `damageAmountBase`    | `7`       | `8.1`   |  `6.4`  |         |
 
-Damage for a assult rifle whould be: [AssultRifle] = [Muzzle Energy] / 254.57
+Damage for a assult rifle whould be: `[AssultRifle damageAmountBase] = [Muzzle Energy] / 254.57`
 
 For practice try calculating the damage of MadeUp weapon given the parameters, and then If you're up to the task, try calculating the damage(and finding the info about the weapon) of IMI Galil. 
 
