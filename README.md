@@ -33,7 +33,7 @@ To calculate the damage of a weapon you will have to use wiki, and these paramet
 <b>Muzzle Energy</b> - Is the parameter which you will have to calculate using this formula: 
 
 ``` c++
-[Muzzle Energy] = [Barrel length] / [Tested Barrel Length] * ( [Tested Energy] / [Tested Velocity] * [Muzzle Velocity] )
+[Muzzle Energy] = `[Barrel length]` / [Tested Barrel Length] * ( [Tested Energy] / [Tested Velocity] * [Muzzle Velocity] )
 ```
 
 Here are some exsample values for Assault Rifles:
