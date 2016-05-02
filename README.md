@@ -22,7 +22,7 @@ To calculate the damage of a weapon you will have to use wiki, and these paramet
 
 Tested Barrel Length - Is the parameter which is stated on wiki page of the caliber you're looking at, below the small table of test info on bullets, written in cursive like so: Test barrel length: Tests 1,2&3: 150mm(5.91in) / Tests 4&5: 118mm(4.65in). Barrel is measured in mm in our calculations, if length in mm is not stated, convert it to mm from inches(and round to closest mm value). If tested barrel length is not stated at all, use the test values which correspond the closest with the muzzle velocity of the weapon you are setting the damage for, and set the tested barrel length to the same value as the actual barrel length.
 
-Tested Energy - Is the parameter which is written in that table. You are free to choose whatever type of projectile or bullet you want from that table, but it has to correspond to the chosen velocity. Energy is measured in Joules. 
+''Tested Energy'' - Is the parameter which is written in that table. You are free to choose whatever type of projectile or bullet you want from that table, but it has to correspond to the chosen velocity. Energy is measured in Joules. 
 
 Tested Velocity - Is the parameter which is written in that table. It is highly recommended that the velocity choosen from the table has to be slower than muzzle velocity if the tested barrel is shorter than your weapon's barrel. If the tested barrel is longer than your weapon's barrel, pick the velocity which is faster than your weapon's muzzle velocity.
 
