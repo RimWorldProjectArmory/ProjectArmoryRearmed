@@ -20,17 +20,17 @@ This mod adds new weapons to the RimWorld Universe from different games, movies 
 
 To calculate the damage of a weapon you will have to use wiki, and these parameters which are best illustrated in the table below. But before that, here are some definitions:
 
-Tested Barrel Length - Is the parameter which is stated on wiki page of the caliber you're looking at, below the small table of test info on bullets, written in cursive like so: Test barrel length: Tests 1,2&3: 150mm(5.91in) / Tests 4&5: 118mm(4.65in). Barrel is measured in mm in our calculations, if length in mm is not stated, convert it to mm from inches(and round to closest mm value). If tested barrel length is not stated at all, use the test values which correspond the closest with the muzzle velocity of the weapon you are setting the damage for, and set the tested barrel length to the same value as the actual barrel length.
+<b>Tested Barrel Length</b> - Is the parameter which is stated on wiki page of the caliber you're looking at, below the small table of test info on bullets, written in cursive like so: Test barrel length: Tests 1,2&3: 150mm(5.91in) / Tests 4&5: 118mm(4.65in). Barrel is measured in mm in our calculations, if length in mm is not stated, convert it to mm from inches(and round to closest mm value). If tested barrel length is not stated at all, use the test values which correspond the closest with the muzzle velocity of the weapon you are setting the damage for, and set the tested barrel length to the same value as the actual barrel length.
 
-''Tested Energy'' - Is the parameter which is written in that table. You are free to choose whatever type of projectile or bullet you want from that table, but it has to correspond to the chosen velocity. Energy is measured in Joules. 
+<b>Tested Energy</b> - Is the parameter which is written in that table. You are free to choose whatever type of projectile or bullet you want from that table, but it has to correspond to the chosen velocity. Energy is measured in Joules. 
 
-Tested Velocity - Is the parameter which is written in that table. It is highly recommended that the velocity choosen from the table has to be slower than muzzle velocity if the tested barrel is shorter than your weapon's barrel. If the tested barrel is longer than your weapon's barrel, pick the velocity which is faster than your weapon's muzzle velocity.
+<b>Tested Velocity</b> - Is the parameter which is written in that table. It is highly recommended that the velocity choosen from the table has to be slower than muzzle velocity if the tested barrel is shorter than your weapon's barrel. If the tested barrel is longer than your weapon's barrel, pick the velocity which is faster than your weapon's muzzle velocity.
 
-Barrel Length - Is the parameter which is given on the right side on wiki page for your chosen weapon. If it is not stated, try using inderect sources to find the barrel length of the given weapon. 
+<b>Barrel Length</b> - Is the parameter which is given on the right side on wiki page for your chosen weapon. If it is not stated, try using inderect sources to find the barrel length of the given weapon. 
 
-Muzzle Velocity - Is the parameter which is given on the right side on wiki page for your chosen weapon. If it is not stated, use cartridge test parameters. 
+<b>Muzzle Velocity</b> - Is the parameter which is given on the right side on wiki page for your chosen weapon. If it is not stated, use cartridge test parameters. 
 
-Muzzle Energy - Is the parameter which you will have to calculate using this formula: 
+<b>Muzzle Energy</b> - Is the parameter which you will have to calculate using this formula: 
 
 ``` c++
 [Muzzle Energy] = [Barrel length] / [Tested Barrel Length] * ( [Tested Energy] / [Tested Velocity] * [Muzzle Velocity] )
