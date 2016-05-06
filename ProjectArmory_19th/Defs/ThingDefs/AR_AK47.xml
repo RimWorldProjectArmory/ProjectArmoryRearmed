@@ -2,13 +2,13 @@
 
 <!-- WeaponData
     AK 47
-     WeaponSourse:          https://en.wikipedia.org/wiki/AK-47
+     Sourse:                https://en.wikipedia.org/wiki/AK-47
      Cyclic rate of fire:      600 rds/min
      Barrel Length:            415 mm
      Muzzle Velocity:          715 m/s
      
     7.62x39mm
-     CartridgeSource:       https://en.wikipedia.org/wiki/7.62%C3%9739mm
+     Sourse:                https://en.wikipedia.org/wiki/7.62%C3%9739mm
      Projectile Mass:          7.9 g  
      Tested Barrel Length:     415 mm
      Tested Energy:          2 108 J
