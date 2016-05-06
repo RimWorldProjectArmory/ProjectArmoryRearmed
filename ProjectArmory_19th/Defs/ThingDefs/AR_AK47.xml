@@ -3,17 +3,19 @@
 <!-- WeaponData
     AK 47
      WeaponSourse:          https://en.wikipedia.org/wiki/AK-47
+     Cyclic rate of fire:      600 rds/min
      Barrel Length:            415 mm
      Muzzle Velocity:          715 m/s
      
     7.62x39mm
      CartridgeSource:       https://en.wikipedia.org/wiki/7.62%C3%9739mm
+     Projectile Mass:          7.9 g  
      Tested Barrel Length:     415 mm
      Tested Energy:          2 108 J
      Tested Velocity:          730 m/s
     
     Gun_AK47_AR
-     Muzzle Energy           2 064
+     Muzzle Energy:          2 064
 -->
 
 
@@ -34,7 +36,7 @@
 
     <ThingDef ParentName="PA_BaseHumanMakeableGun">
         <defName>Gun_AK47_AR</defName>
-        <label>AK 47</label>
+        <label>AK-47</label>
         <description>A general-purpose military weapon for field or urban combat. It fires a three-round burst. Good range, low power, high rate of fire.</description>
         <graphicData>
             <texPath>Things/AR/AK47</texPath>
@@ -53,7 +55,7 @@
         <costList>
             <Steel>90</Steel>
             <WoodLog>10</WoodLog>
-            <Components>4</Components>
+            <Components>3</Components>
         </costList>
         <verbs>
             <li>
@@ -61,7 +63,7 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <projectileDef>Bullet_AK47_AR</projectileDef>
                 <warmupTicks>90</warmupTicks>
-                <range>31</range>
+                <range>35.9</range>
                 <burstShotCount>3</burstShotCount>
                 <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
                 <soundCast>ShotAssaultRifle</soundCast>
