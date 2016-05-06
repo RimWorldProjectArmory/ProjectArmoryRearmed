@@ -2,7 +2,7 @@
     <img src="https://github.com/RimWorldProjectArmory/ProjectArmory/blob/master/extras/assets/logo/logo.png?raw=true" width="480">
 </p>
 This mod adds new weapons to the RimWorld Universe from different games, movies and real world periods from the Victorian era to modern day. We try to match the function and the graphic to be ad close to the vanilla weapons as possible and make them as balanced as possible with a unique twist.
-
+<!--
 ### Forumla for weapon range calculation:
 ``` c++
 range = ( ( [Muzzle Velocity] / 20) + ( [Barrel Length] / 20 ) ) / 4 + [Adjustment Value]
@@ -21,7 +21,7 @@ range = ( ( [Muzzle Velocity] / 20) + ( [Barrel Length] / 20 ) ) / 4 + [Adjustme
 |Light Mashine Guns     |                                             |                 |                 |
 |Heavy Mashine Guns     |                                             |                 |                 |
 
-<!--| Weapon Class      | Adjustment Value  |Base Weapon      | Note              |
+| Weapon Class      | Adjustment Value  |Base Weapon      | Note              |
 |-------------------|-------------------|-----------------|-------------------|
 |Assault Rifles     | `16.2`            |                 |                   |
 |Pistols            | `20.4`            |                 |                   |
