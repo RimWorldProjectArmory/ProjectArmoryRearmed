@@ -1,4 +1,4 @@
-?# PROJECT ARMORY CONTRIBUTOR LIST
+# PROJECT ARMORY CONTRIBUTOR LIST
 # If you contributed, but are not listed here, contact me:
 # andreas.brostrom.ce@gmail.com
 #
