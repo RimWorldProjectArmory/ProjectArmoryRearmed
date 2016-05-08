@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    
+    <!-- ============================================================== -->
+    <Gun_Pistol.label>Colt M1911</Gun_Pistol.label>
+    <Gun_Pistol.description>ncient pattern automatic pistol. Weak and short range, but quick.</Gun_Pistol.description>
+    
+    <Gun_PumpShotgun.label>Remington Model 870</Gun_PumpShotgun.label>
+    <Gun_PumpShotgun.description>Ancient design. Deadly, but short range.</Gun_PumpShotgun.description>
+    
+    <Gun_SurvivalRifle.label>Lee-Enfield</Gun_SurvivalRifle.label>
+    <Gun_SurvivalRifle.description>Ancient bolt-action rifle. Good range, Good power, low rate of fire.</Gun_SurvivalRifle.description>
+
+    <Gun_AssaultRifle.label>M16</Gun_AssaultRifle.label>
+    <Gun_AssaultRifle.description>A general-purpose military weapon for field or urban combat. It fires a three-round burst. Good range, low power, high rate of fire.</Gun_AssaultRifle.description>
+    
+    <Gun_SniperRifle.label>M24A3</Gun_SniperRifle.label>
+    <Gun_SniperRifle.description>Ancient pattern military sniper rifle. Bolt action. Long range, great accuracy and power</Gun_SniperRifle.description>
+    
+    <Gun_PDW.label>H&amp;K MP7</Gun_PDW.label>
+    <Gun_PDW.description>A personal defense weapon is a micro-submachine gun. Short range, low power, high rate of fire. Very quick to aim and fire.</Gun_PDW.description>
+	
+	<Gun_HeavySMG.label>Intratec Tec 9</Gun_HeavySMG.label>
+	<Gun_HeavySMG.description>A compact, wide-caliber slug-thrower. Very short range, but it packs a punch and handles quite well.</Gun_HeavySMG.description>
+    
+    <Gun_LMG.label>DMG</Gun_LMG.label>
+    <Gun_LMG.description>A light machine gun.</Gun_LMG.description>
+
+    <Gun_Minigun.label>M134 Minigun</Gun_Minigun.label>
+    <Gun_Minigun.description>A multi-barrel machine gun with an extremely high rate of fire. Mechanoid-built.</Gun_Minigun.description>
+    
+</LanguageData>
