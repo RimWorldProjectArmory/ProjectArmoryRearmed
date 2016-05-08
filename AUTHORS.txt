@@ -7,5 +7,6 @@
 
 # CORE TEAM
 Brostrom.A | Evul <andreas.brostrom.ce@gmail.com>
+Vernian.J | Plymouth <Wake-3@ya.ru>
 
 # CONTRIBUTORS
