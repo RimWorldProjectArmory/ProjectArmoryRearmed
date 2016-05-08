@@ -39,7 +39,7 @@
         <label>FN P90 TR</label>
         <description>A personal defense weapon is a micro-submachine gun. Short range, low power, high rate of fire. Very quick to aim and fire.</description>
         <graphicData>
-            <texPath>Things/SMG/FNP90TR</texPath>
+            <texPath>Things/PDW/FNP90TR</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>InteractSMG</soundInteract>
