@@ -61,7 +61,7 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <projectileDef>Bullet_AK47_AR</projectileDef>
+                <projectileDef>Bullet_AR_AK47_PA</projectileDef>
                 <warmupTicks>90</warmupTicks>
                 <range>36.0</range>
                 <burstShotCount>3</burstShotCount>

@@ -60,7 +60,7 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <projectileDef>Bullet_FNP90TR_PDW</projectileDef>
+                <projectileDef>Bullet_PDW_FNP90TR_PA</projectileDef>
                 <warmupTicks>45</warmupTicks>
                 <range>22.7</range>
                 <burstShotCount>3</burstShotCount>
