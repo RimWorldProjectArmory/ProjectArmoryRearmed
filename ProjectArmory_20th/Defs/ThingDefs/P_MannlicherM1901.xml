@@ -27,7 +27,7 @@
         <defName>Bullet_P_MannlicherM1901_PA</defName>
         <label>MannlicherM1901 bullet</label>
         <graphicData>
-            <texPath>Things/Projectile/Bullet_Pistol</texPath>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile>
