@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    Gewehr 43
+     Source:                https://en.wikipedia.org/wiki/Gewehr_43
+     Cyclic rate of fire:      AS FAST AS YOU CAN HIDE IN THE TRENCHES
+     Barrel Length:            550 mm
+     Muzzle Velocity:          760 m/s
+     Weapon's Weight:		   4400 g
+	 recoil:				    2.21 m/s
+	 
+    7.92x57mm Mauser
+     Source:                https://en.wikipedia.org/wiki/7.92×57mm_Mauser
+     Projectile Mass:          12.8 g  
+     Tested Barrel Length:     600 mm
+     Tested Energy:          4 096 J
+     Tested Velocity:          800 m/s
+      
+	 
+    Gun_R_Gewehr43_PA
+     Muzzle Energy:          3 567 pa/J
+-->
+
+
+<ThingDefs>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_R_Gewehr43_PA</defName>
+        <label>Gewehr43 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>16</damageAmountBase>
+            <speed>71</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_R_Gewehr43_PA</defName>
+        <label>Gewehr 43</label>
+        <description>Good quality midworld military rifle.</description>
+        <graphicData>
+            <texPath>Things/R/Gewehr43</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>12040</WorkToMake>
+            <MarketValue>600</MarketValue>
+            <AccuracyTouch>0.72</AccuracyTouch>
+            <AccuracyShort>0.93</AccuracyShort>
+            <AccuracyMedium>0.89</AccuracyMedium>
+            <AccuracyLong>0.87</AccuracyLong>
+            <RangedWeapon_Cooldown>0.71</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>99</Steel>
+            <WoodLog>15</WoodLog>
+            <Components>4</Components>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_R_Gewehr43_PA</projectileDef>
+                <warmupTicks>165</warmupTicks>
+                <range>40</range>
+                <soundCast>ShotSurvivalRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>
