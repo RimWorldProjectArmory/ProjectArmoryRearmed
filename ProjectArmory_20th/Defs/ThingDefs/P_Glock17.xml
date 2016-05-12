@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    Glock 17
+     Source:                https://en.wikipedia.org/wiki/Glock_17
+     Cyclic rate of fire:      DEPENDS ON HOW MUCH TRIBALS SHOULD BE EXECUTED
+     Barrel Length:            114 mm
+     Muzzle Velocity:          375 m/s
+     Weapon's Weight:		   625 g
+	 recoil:				    4.8 m/s
+	 
+    9x19mm Parabellum
+     Source:                https://en.wikipedia.org/wiki/9×19mm_Parabellum
+     Projectile Mass:          8.04 g  
+     Tested Barrel Length:     118 mm
+     Tested Energy:            518 J
+     Tested Velocity:          360 m/s
+      
+	 
+    Gun_P_Glock17_PA
+     Muzzle Energy:           521 pa/J
+-->
+
+
+<ThingDefs>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_P_Glock17_PA</defName>
+        <label>Glock17 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Pistol</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>10</damageAmountBase>
+            <speed>64</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_P_Glock17_PA</defName>
+        <label>Glock 17</label>
+        <description>Very popular sidearm, sufficiently powerful and accurate, much more durable than the widely-spread Colt model 1911, but unfortunately, 1.5 times more expensive due to use of innovative materials. More difficult to manufacture as well, even though it is indeed material-efficient. Not a very widespread weapon on rimworlds, but certainly widespread in midworlds' armies.</description>
+        <graphicData>
+            <texPath>Things/P/Glock17</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractPistol</soundInteract>
+        <statBases>
+            <WorkToMake>9675</WorkToMake>
+            <MarketValue>320</MarketValue>
+            <AccuracyTouch>0.90</AccuracyTouch>
+            <AccuracyShort>0.70</AccuracyShort>
+            <AccuracyMedium>0.49</AccuracyMedium>
+            <AccuracyLong>0.31</AccuracyLong>
+            <RangedWeapon_Cooldown>0.94</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>17</Steel>
+            <Components>1</Components>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_P_Glock17_PA</projectileDef>
+                <warmupTicks>30</warmupTicks>
+                <range>21</range>
+                <soundCast>ShotPistol</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

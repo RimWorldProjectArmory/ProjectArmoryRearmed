@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    Desert Eagle
+     Source:                https://en.wikipedia.org/wiki/Dreyse_M1907
+     Cyclic rate of fire:      DEPENDS ON HOW MUCH YOU WANT TO ANNIHILATE
+     Barrel Length:            92 mm
+     Muzzle Velocity:          365 m/s
+     Weapon's Weight:		   710 g
+	 recoil:				    2.06 m/s
+	 
+    .32 ACP
+     Source:                https://en.wikipedia.org/wiki/.32_ACP
+     Projectile Mass:          4 g  
+     Tested Barrel Length:     102 mm
+     Tested Energy:            218 J
+     Tested Velocity:          335 m/s
+      
+	 
+    Gun_P_DreyseM1907_PA
+     Muzzle Energy:           214 pa/J
+-->
+
+
+<ThingDefs>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_P_DreyseM1907_PA</defName>
+        <label>DreyseM1907 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Pistol</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>7</damageAmountBase>
+            <speed>63</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_P_DreyseM1907_PA</defName>
+        <label>Dreyse Model 1907</label>
+        <description>Gooden ol' firearm, one of the first factory-manufactured semi-automatic pistols. Accurate, somewhat underpowered, cheap to produce.</description>
+        <graphicData>
+            <texPath>Things/P/DreyseM1907</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractPistol</soundInteract>
+        <statBases>
+            <WorkToMake>5785</WorkToMake>
+            <MarketValue>195</MarketValue>
+            <AccuracyTouch>0.99</AccuracyTouch>
+            <AccuracyShort>0.95</AccuracyShort>
+            <AccuracyMedium>0.70</AccuracyMedium>
+            <AccuracyLong>0.45</AccuracyLong>
+            <RangedWeapon_Cooldown>0.40</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>19</Steel>
+            <Components>1</Components>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_P_DreyseM1907_PA</projectileDef>
+                <warmupTicks>34</warmupTicks>
+                <range>18</range>
+                <soundCast>ShotPistol</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

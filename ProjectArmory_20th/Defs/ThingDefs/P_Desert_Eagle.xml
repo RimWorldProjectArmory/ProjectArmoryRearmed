@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    Desert Eagle
+     Source:                https://en.wikipedia.org/wiki/Desert_Eagle
+     Cyclic rate of fire:      DEPENDS ON HOW MUCH YOU HATE YOUR WRIST
+     Barrel Length:            152 mm
+     Muzzle Velocity:          470 m/s
+     Weapon's Weight:		   1999 g
+	 recoil:				    4.46 m/s
+	 
+    .32 Long Colt
+     Source:                https://en.wikipedia.org/wiki/.32_Long_Colt
+     Projectile Mass:          19 g  
+     Tested Barrel Length:     152 mm
+     Tested Energy:            2200 J
+     Tested Velocity:          470 m/s
+      
+	 
+    Gun_AR_Desert_Eagle_PA
+     Muzzle Energy:           2200 pa/J
+-->
+
+
+<ThingDefs>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_P_Desert_Eagle_PA</defName>
+        <label>Desert_Eagle bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Pistol</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>28</damageAmountBase>
+            <speed>71</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_P_Desert_Eagle_PA</defName>
+        <label>Desert Eagle Mk.IX</label>
+        <description>Expensive, destructive, especially to your wrists. One of the most powerful handguns available to midworlds. Original place of development is unknown.</description>
+        <graphicData>
+            <texPath>Things/P/Desert_Eagle</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractPistol</soundInteract>
+        <statBases>
+            <WorkToMake>10055</WorkToMake>
+            <MarketValue>660</MarketValue>
+            <AccuracyTouch>0.98</AccuracyTouch>
+            <AccuracyShort>0.77</AccuracyShort>
+            <AccuracyMedium>0.54</AccuracyMedium>
+            <AccuracyLong>0.35</AccuracyLong>
+            <RangedWeapon_Cooldown>0.87</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>54</Steel>
+            <Components>4</Components>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_P_Desert_Eagle_PA</projectileDef>
+                <warmupTicks>96</warmupTicks>
+                <range>25</range>
+                <soundCast>ShotPistol</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>
