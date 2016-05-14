@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    M3GreaseGun
+     Source:                https://en.wikipedia.org/wiki/M3_Grease_Gun
+     Cyclic rate of fire:      450 rds/min
+     Barrel Length:            203 mm
+     Muzzle Velocity:          280 m/s
+     Weapon's Weight:		   2700 g
+	 recoil:				    1.59 m/s
+	 
+    .45 ACP
+     Source:                https://en.wikipedia.org/wiki/.45_ACP
+     Projectile Mass:          15 g  
+     Tested Barrel Length:     127 mm
+     Tested Energy:            702 J
+     Tested Velocity:          270 m/s
+      
+	 
+    Gun_SMG_M3GreaseGun_PA
+     Muzzle Energy:            1340 pa/J
+-->
+
+
+<ThingDefs>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_SMG_M3GreaseGun_PA</defName>
+        <label>M3GreaseGun bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>16</damageAmountBase>
+            <speed>44</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_SMG_M3GreaseGun_PA</defName>
+        <label>M3 Grease gun</label>
+        <description>Rugged and effective submachine gun developed by a full-time pirate kingpin and part-time rimworld gunsmith which name we'd rather not name, this submachine gun is fairly simple, cheap and effective, with decent stopping power. It has never made it's way on full production line because of the nature of it's inventor, so it is moslty found in arms of pirates and shady mercenaries.</description>
+		<graphicData>
+            <texPath>Things/SMG/M3GreaseGun</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>8060</WorkToMake>
+            <MarketValue>460</MarketValue>
+            <AccuracyTouch>0.95</AccuracyTouch>
+            <AccuracyShort>0.68</AccuracyShort>
+            <AccuracyMedium>0.37</AccuracyMedium>
+            <AccuracyLong>0.22</AccuracyLong>
+            <RangedWeapon_Cooldown>0.96</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>145</Steel>
+            <Components>4</Components>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_SMG_M3GreaseGun_PA</projectileDef>
+                <warmupTicks>120</warmupTicks>
+                <range>21</range>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+                <soundCast>ShotHeavySMG</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

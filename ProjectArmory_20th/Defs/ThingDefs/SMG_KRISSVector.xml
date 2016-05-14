@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    KRISSVector
+     Source:                https://en.wikipedia.org/wiki/KRISS_Vector
+     Cyclic rate of fire:      1200 rds/min
+     Barrel Length:            170 mm
+     Muzzle Velocity:          330 m/s
+     Weapon's Weight:		   2700 g
+	 recoil:				    1.59 m/s
+	 
+    .45 ACP
+     Source:                https://en.wikipedia.org/wiki/.45_ACP
+     Projectile Mass:          13 g  
+     Tested Barrel Length:     127 mm
+     Tested Energy:            702 J
+     Tested Velocity:          330 m/s
+      
+	 
+    Gun_SMG_KRISSVector_PA
+     Muzzle Energy:            1340 pa/J
+-->
+
+
+<ThingDefs>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_SMG_KRISSVector_PA</defName>
+        <label>KRISSVector bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>16</damageAmountBase>
+            <speed>48</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_SMG_KRISSVector_PA</defName>
+        <label>KRISS Vector</label>
+        <description>An innovative submachine gun with effective recoil dampening system.</description>
+		<graphicData>
+            <texPath>Things/SMG/KRISSVector</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>11690</WorkToMake>
+            <MarketValue>670</MarketValue>
+            <AccuracyTouch>0.91</AccuracyTouch>
+            <AccuracyShort>0.66</AccuracyShort>
+            <AccuracyMedium>0.36</AccuracyMedium>
+            <AccuracyLong>0.21</AccuracyLong>
+            <RangedWeapon_Cooldown>1.09</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>106</Steel>
+            <Components>3</Components>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_SMG_KRISSVector_PA</projectileDef>
+                <warmupTicks>104</warmupTicks>
+                <range>22</range>
+                <burstShotCount>7</burstShotCount>
+                <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+                <soundCast>ShotHeavySMG</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

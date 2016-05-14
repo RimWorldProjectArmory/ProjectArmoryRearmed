@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    BergmannMP-18
+     Source:                https://en.wikipedia.org/wiki/MP_18
+     Cyclic rate of fire:      500 rds/min
+     Barrel Length:            200 mm
+     Muzzle Velocity:          380 m/s
+     Weapon's Weight:		 4 180 g
+	 recoil:				    0.73 m/s
+	 
+    9x19mm Parabellum
+     Source:                https://en.wikipedia.org/wiki/9×19mm_Parabellum
+     Projectile Mass:          8.04 g 
+     Tested Barrel Length:     200 mm
+     Tested Energy:            518 J
+     Tested Velocity:          360 m/s
+      
+	 
+    Gun_SMG_BergmannMP-18_PA
+     Muzzle Energy:            729 pa/J
+-->
+
+
+<ThingDefs>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_SMG_BergmannMP-18_PA</defName>
+        <label>BergmannMP-18 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>13</damageAmountBase>
+            <speed>51</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_SMG_BergmannMP-18_PA</defName>
+        <label>Bergmann MP-18</label>
+        <description>Another ancient design which is produced by desperate rimworlds for it's simplicity. Not a cheapest SMG, though, for a reason stated before- it is produced in considerable numbers, but is mostly handmade, so if you happen to have two of them- their parts are mostly not interchangeable.</description>
+		<graphicData>
+            <texPath>Things/SMG/BergmannMP-18</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>6580</WorkToMake>
+            <MarketValue>375</MarketValue>
+            <AccuracyTouch>0.99</AccuracyTouch>
+            <AccuracyShort>0.87</AccuracyShort>
+            <AccuracyMedium>0.49</AccuracyMedium>
+            <AccuracyLong>0.29</AccuracyLong>
+            <RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>164</Steel>
+            <Components>5</Components>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_SMG_BergmannMP-18_PA</projectileDef>
+                <warmupTicks>128</warmupTicks>
+                <range>21</range>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>14</ticksBetweenBurstShots>
+                <soundCast>ShotHeavySMG</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>
