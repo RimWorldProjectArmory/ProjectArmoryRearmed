@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    HotchkissM1909
+     Source:                https://en.wikipedia.org/wiki/Hotchkiss_M1909_Benét–Mercié_machine_gun
+     Cyclic rate of fire:      500 rds/min
+     Barrel Length:            640 mm
+     Muzzle Velocity:          761 m/s
+     Weapon's Weight:		12 000 g
+	 recoil:				    0.7 m/s
+	 
+    .303 British
+     Source:                https://en.wikipedia.org/wiki/.303_British
+     Projectile Mass:          11 g 
+     Tested Barrel Length:     610 mm
+     Tested Energy:          3 265 J
+     Tested Velocity:          761 m/s
+      
+	 
+    Gun_LMG_HotchkissM1909_PA
+     Muzzle Energy:            3426 pa/J
+-->
+
+
+<ThingDefs>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_LMG_HotchkissM1909_PA</defName>
+        <label>HotchkissM1909 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>9</damageAmountBase>
+            <speed>36</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_LMG_HotchkissM1909_PA</defName>
+        <label>Hotchkiss M1909</label>
+        <description>Veteran among the light machine gun designs as well as many military campaigns, although somewhat outdated, this is a preferred weapon of civilized rimworld colonies. </description>
+		<graphicData>
+            <texPath>Things/LMG/HotchkissM1909</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>18880</WorkToMake>
+            <MarketValue>680</MarketValue>
+            <AccuracyTouch>0.49</AccuracyTouch>
+            <AccuracyShort>0.63</AccuracyShort>
+            <AccuracyMedium>0.40</AccuracyMedium>
+            <AccuracyLong>0.22</AccuracyLong>
+            <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>157</Steel>
+            <Components>4</Components>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_LMG_HotchkissM1909_PA</projectileDef>
+                <warmupTicks>125</warmupTicks>
+                <range>25</range>
+                <burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+                <soundCast>ShotHeavyLMG</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    M1918BAR
+     Source:               https://en.wikipedia.org/wiki/M1918_Browning_Automatic_Rifle
+     Cyclic rate of fire:      600 rds/min
+     Barrel Length:            610 mm
+     Muzzle Velocity:          860 m/s
+     Weapon's Weight:		 7 250 g
+	 recoil:				    1.3 m/s
+	 
+    .30-06 Springfield
+     Source:                https://en.wikipedia.org/wiki/.30-06_Springfield
+     Projectile Mass:          11 g 
+     Tested Barrel Length:     610 mm
+     Tested Energy:          3 894 J
+     Tested Velocity:          850 m/s
+      
+	 
+    Gun_LMG_M1918BAR_PA
+     Muzzle Energy:            3940 pa/J
+-->
+
+
+<ThingDefs>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_LMG_M1918BAR_PA</defName>
+        <label>M1918BAR bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>11</damageAmountBase>
+            <speed>41</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_LMG_M1918BAR_PA</defName>
+        <label>M1918 Browning Automatic Rifle</label>
+        <description>One of the oldest designs of Automatic Rifles, this representative fills the role exactly of what it's name states- an Automatic Rifle. It is not an Assault rifle, nor an effective light machine gun, but it is capable of fulfilling the role which it has been given- suppresing. Due to it's low capacity magazine, and severe recoil, it was not a very popular or successful design, only employed in primitive midworld and rimworld armies which lack technology or resources to produce better and more suited weapons.  </description>
+		<graphicData>
+            <texPath>Things/LMG/M1918BAR</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>20440</WorkToMake>
+            <MarketValue>735</MarketValue>
+            <AccuracyTouch>0.46</AccuracyTouch>
+            <AccuracyShort>0.59</AccuracyShort>
+            <AccuracyMedium>0.38</AccuracyMedium>
+            <AccuracyLong>0.20</AccuracyLong>
+            <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>95</Steel>
+            <Components>3</Components>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_LMG_M1918BAR_PA</projectileDef>
+                <warmupTicks>75</warmupTicks>
+                <range>28</range>
+                <burstShotCount>7</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <soundCast>ShotHeavyLMG</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

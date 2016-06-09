@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    EnfieldM1914Scoped
+     Source:                https://en.wikipedia.org/wiki/Lee–Enfield
+     Cyclic rate of fire:      one dead kaiser forever
+     Barrel Length:            660 mm
+     Muzzle Velocity:          726 m/s
+     Weapon's Weight:		 4 250 g
+	 recoil:				    1.88 m/s
+	 
+    .303 British
+     Source:                https://en.wikipedia.org/wiki/.303 British
+     Projectile Mass:          11 g 
+     Tested Barrel Length:     610 mm
+     Tested Energy:          3 265 J
+     Tested Velocity:          761 m/s
+      
+	 
+    Gun_SR_EnfieldM1914Scoped_PA
+     Muzzle Energy:            3370 pa/J
+-->
+
+
+<ThingDefs>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_SR_EnfieldM1914Scoped_PA</defName>
+        <label>EnfieldM1914Scoped bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>44</damageAmountBase>
+            <speed>84</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_SR_EnfieldM1914Scoped_PA</defName>
+        <label>Lee-Enfield M1914 Scoped</label>
+        <description>Good ol' bolt-action hunting rifle with a scope. Can you hunt animals with it? You sure can! Can you hunt humans? you sure can! Good, simple and effective long-range weapon.</description>
+		<graphicData>
+            <texPath>Things/SR/EnfieldM1914Scoped</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>9150</WorkToMake>
+            <MarketValue>595</MarketValue>
+            <AccuracyTouch>0.5</AccuracyTouch>
+            <AccuracyShort>0.84</AccuracyShort>
+            <AccuracyMedium>0.84</AccuracyMedium>
+            <AccuracyLong>0.86</AccuracyLong>
+            <RangedWeapon_Cooldown>2.08</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>104</Steel>
+            <Components>6</Components>
+			<WoodLog>20</WoodLog>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_SR_EnfieldM1914Scoped_PA</projectileDef>
+                <warmupTicks>47</warmupTicks>
+                <range>39</range>
+                <soundCast>ShotSniperRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    MauserM1918T-gewehr
+     Source:                https://en.wikipedia.org/wiki/Mauser_1918_T-Gewehr
+     Cyclic rate of fire:      as fast as you can break your shoulder
+     Barrel Length:            990 mm
+     Muzzle Velocity:          785 m/s
+     Weapon's Weight:		15 868 g
+	 recoil:				    2.19 m/s
+	 
+    13.2mm TuF
+     Source:                https://en.wikipedia.org/wiki/13.2mm_TuF
+     Projectile Mass:          51.5 g 
+     Tested Barrel Length:     990 mm
+     Tested Energy:         15 868 J
+     Tested Velocity:          785 m/s
+      
+	 
+    Gun_SR_MauserM1918T-gewehr_PA
+     Muzzle Energy:           15 868 pa/J
+-->
+
+
+<ThingDefs>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_SR_MauserM1918T-gewehr_PA</defName>
+        <label>MauserM1918T-gewehr bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>58</damageAmountBase>
+            <speed>91</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_SR_MauserM1918T-gewehr_PA</defName>
+        <label>Mauser M1918 T-gewehr</label>
+        <description>World's first anti-tank rifle design. it is known for it's brutal simplicity, and it was and still popular on rimworld of  </description>
+		<graphicData>
+            <texPath>Things/SR/MauserM1918T-gewehr</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>9470</WorkToMake>
+            <MarketValue>1850</MarketValue>
+            <AccuracyTouch>0.48</AccuracyTouch>
+            <AccuracyShort>0.82</AccuracyShort>
+            <AccuracyMedium>0.82</AccuracyMedium>
+            <AccuracyLong>0.84</AccuracyLong>
+            <RangedWeapon_Cooldown>2.42</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>450</Steel>
+            <Components>17</Components>
+			<WoodLog>20</WoodLog>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_SR_MauserM1918T-gewehr_PA</projectileDef>
+                <warmupTicks>204</warmupTicks>
+                <range>55</range>
+                <soundCast>ShotSniperRifle</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

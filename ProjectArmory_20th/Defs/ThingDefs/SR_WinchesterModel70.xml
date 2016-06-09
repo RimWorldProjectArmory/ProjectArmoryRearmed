@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    WinchesterModel70
+     Source:                https://en.wikipedia.org/wiki/Winchester_Model_70
+     Cyclic rate of fire:      as fast as you can yank the bolt and kill the deer.
+     Barrel Length:            610 mm
+     Muzzle Velocity:        1 070 m/s
+     Weapon's Weight:		 7 910 g
+	 recoil:				    1.08 m/s
+	 
+    9x39mm
+     Source:                https://en.wikipedia.org/wiki/.225_Winchester
+     Projectile Mass:          6 g 
+     Tested Barrel Length:     610 mm
+     Tested Energy:          3 708 J
+     Tested Velocity:        1 070 m/s
+      
+	 
+    Gun_SR_WinchesterModel70_PA
+     Muzzle Energy:            3 708 pa/J
+-->
+
+
+<ThingDefs>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_SR_WinchesterModel70_PA</defName>
+        <label>WinchesterModel70 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>44</damageAmountBase>
+            <speed>124</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_SR_WinchesterModel70_PA</defName>
+        <label>Winchester Model 70</label>
+        <description>Old, highly accurate bolt-action sporting rifle. Very flexible and variable rifle, is actively developed for civilian sector both on rimworlds and midworlds. This weapon has seen action in certain intermediate conflicts throughout the galaxy, being praised as one of the best minimalistic sniper platforms.  </description>
+		<graphicData>
+            <texPath>Things/SR/WinchesterModel70</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>10900</WorkToMake>
+            <MarketValue>710</MarketValue>
+            <AccuracyTouch>0.65</AccuracyTouch>
+            <AccuracyShort>0.95</AccuracyShort>
+            <AccuracyMedium>0.95</AccuracyMedium>
+            <AccuracyLong>0.97</AccuracyLong>
+            <RangedWeapon_Cooldown>1.96</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>90</Steel>
+            <Components>5</Components>
+			<WoodLog>20</WoodLog>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_SR_WinchesterModel70_PA</projectileDef>
+                <warmupTicks>39</warmupTicks>
+                <range>40</range>
+                <soundCast>ShotSniperRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

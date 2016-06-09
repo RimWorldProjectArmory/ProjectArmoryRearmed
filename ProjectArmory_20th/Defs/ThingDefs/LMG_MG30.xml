@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    MG30
+     Source:                https://en.wikipedia.org/wiki/MG30
+     Cyclic rate of fire:      750 rds/min
+     Barrel Length:            720 mm
+     Muzzle Velocity:          808 m/s
+     Weapon's Weight:		12 000 g
+	 recoil:				    0.9 m/s
+	 
+    7x57mm Mauser
+     Source:                https://en.wikipedia.org/wiki/7×57mm_Mauser
+     Projectile Mass:          11 g 
+     Tested Barrel Length:     610 mm
+     Tested Energy:          2 737 J
+     Tested Velocity:          701 m/s
+      
+	 
+    Gun_LMG_MG30_PA
+     Muzzle Energy:            3724 pa/J
+-->
+
+
+<ThingDefs>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_LMG_MG30_PA</defName>
+        <label>MG30 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>10</damageAmountBase>
+            <speed>38</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_LMG_MG30_PA</defName>
+        <label>MG30 Light Machine Gun</label>
+        <description>Earlier period light machine gun design, all around good multi-purpose light machine gun with typical problems of early light machine guns- 30 round box magazine, excess weight and limited heat capacity.   </description>
+		<graphicData>
+            <texPath>Things/LMG/MG30</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>22170</WorkToMake>
+            <MarketValue>800</MarketValue>
+            <AccuracyTouch>0.48</AccuracyTouch>
+            <AccuracyShort>0.62</AccuracyShort>
+            <AccuracyMedium>0.39</AccuracyMedium>
+            <AccuracyLong>0.21</AccuracyLong>
+            <RangedWeapon_Cooldown>1.58</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>157</Steel>
+            <Components>4</Components>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_LMG_MG30_PA</projectileDef>
+                <warmupTicks>125</warmupTicks>
+                <range>29</range>
+                <burstShotCount>8</burstShotCount>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <soundCast>ShotHeavyLMG</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>
