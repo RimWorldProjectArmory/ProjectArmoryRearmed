@@ -32,7 +32,7 @@
         </graphicData>
         <projectile>
             <damageDef>Bullet</damageDef>
-            <damageAmountBase>25</damageAmountBase>
+            <damageAmountBase>7</damageAmountBase>
             <speed>62</speed>
         </projectile>
     </ThingDef>
