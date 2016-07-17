@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    Mannlicher M1901
+     Source:                    https://en.wikipedia.org/wiki/Mannlicher_M1901
+     Cyclic Rate of Fire:       N/A
+     Barrel Length:             80 mm
+     Muzzle Velocity:           326 m/s
+     Weapon's Weight:           640 g
+     Recoil:                    3.18 m/s
+
+    7.63 Mannlicher
+     Source:                    https://en.wikipedia.org/wiki/9×19mm_Parabellum
+     Projectile Mass:           6 g  
+     Tested Barrel Length:      80 mm
+     Tested Energy:             308 J
+     Tested Velocity:           340 m/s
+
+    Gun_P_MannlicherM1901_PA
+     Muzzle Energy:             321 pa/J
+-->
+
+
+<ThingDefs>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_P_MannlicherM1901_PA</defName>
+        <label>MannlicherM1901 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>8</damageAmountBase>
+            <speed>61</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_P_MannlicherM1901_PA</defName>
+        <label>Mannlicher M1901</label>
+        <description>Minimalistic and quite ingenious firearm from a rimworld of Theresta, invented and refined by a now-famous gunsmith. Truly a gentleman's weapon.</description>
+        <graphicData>
+            <texPath>Things/P/MannlicherM1901</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractPistol</soundInteract>
+        <statBases>
+            <WorkToMake>5460</WorkToMake>
+            <MarketValue>180</MarketValue>
+            <AccuracyTouch>0.99</AccuracyTouch>
+            <AccuracyShort>0.78</AccuracyShort>
+            <AccuracyMedium>0.55</AccuracyMedium>
+            <AccuracyLong>0.35</AccuracyLong>
+            <RangedWeapon_Cooldown>0.61</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>17</Steel>
+            <Component>1</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_P_MannlicherM1901_PA</projectileDef>
+                <warmupTicks>30</warmupTicks>
+                <range>19</range>
+                <soundCast>ShotPistol</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

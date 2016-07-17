@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    HoKMP5A2
+     Source:                    https://en.wikipedia.org/wiki/Heckler_&_Koch_MP5
+     Cyclic Rate of Fire:       800 rds/min
+     Barrel Length:             225 mm
+     Muzzle Velocity:           400 m/s
+     Weapon's Weight:           2500 g
+     Recoil:                    1.19 m/s
+
+    9x19 Parabellum
+     Source:                    https://en.wikipedia.org/wiki/9×19mm_Parabellum
+     Projectile Mass:           8.04 g  
+     Tested Barrel Length:      150 mm
+     Tested Energy:             518 J
+     Tested Velocity:           360 m/s
+
+    Gun_SMG_HoKMP5A3_PA
+     Muzzle Energy:             863 pa/J
+-->
+
+
+<ThingDefs>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_SMG_HoKMP5A3_PA</defName>
+        <label>HoKMP5A3 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>5</damageAmountBase>
+            <speed>53</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_SMG_HoKMP5A3_PA</defName>
+        <label>Heckler and Koch MP5A3</label>
+        <description>A variant of vastly popular chemically propelled submachine gun.</description>
+        <graphicData>
+            <texPath>Things/SMG/HoKMP5A3</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>9420</WorkToMake>
+            <MarketValue>540</MarketValue>
+            <AccuracyTouch>0.99</AccuracyTouch>
+            <AccuracyShort>0.78</AccuracyShort>
+            <AccuracyMedium>0.43</AccuracyMedium>
+            <AccuracyLong>0.25</AccuracyLong>
+            <RangedWeapon_Cooldown>0.93</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>122</Steel>
+            <Component>4</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_SMG_HoKMP5A3_PA</projectileDef>
+                <warmupTicks>110</warmupTicks>
+                <range>21</range>
+                <burstShotCount>5</burstShotCount>
+                <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+                <soundCast>ShotHeavySMG</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

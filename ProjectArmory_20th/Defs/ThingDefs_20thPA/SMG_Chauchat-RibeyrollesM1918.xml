@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    Chauchat-RibeyrollesM1918 M1918 SMG
+     Source:                    https://en.wikipedia.org/wiki/Chauchat-RibeyrollesM1918_1918_submachine_gun
+     Cyclic Rate of Fire:       400 rds/min
+     Barrel Length:             400 mm
+     Muzzle Velocity:           540/s
+     Weapon's Weight:           4000 g
+     Recoil:                    1.73 m/s
+
+    8mm Lebel
+     Source:                    https://en.wikipedia.org/wiki/8mm_Lebel
+     Projectile Mass:           12.8 g  
+     Tested Barrel Length:      510 mm
+     Tested Energy:             3 364 J
+     Tested Velocity:           730 m/s
+
+    Gun_SMG_Chauchat-RibeyrollesM1918_PA
+     Muzzle Energy:             1 659 pa/J
+-->
+
+
+<ThingDefs>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_SMG_Chauchat-RibeyrollesM1918_PA</defName>
+        <label>Chauchat-RibeyrollesM1918 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>7</damageAmountBase>
+            <speed>62</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_SMG_Chauchat-RibeyrollesM1918_PA</defName>
+        <label>Chauchat-Ribeyrolles M1918</label>
+        <description>Light Machine Gun crudely converted into Submachine gun. Created in dire need of cleaning the trenches up from enemy forces. Poor accuracy, strong recoil, and wasted power of cartridge are things to be expected.</description>
+        <graphicData>
+            <texPath>Things/SMG/Chauchat-RibeyrollesM1918</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>6697</WorkToMake>
+            <MarketValue>380</MarketValue>
+            <AccuracyTouch>0.99</AccuracyTouch>
+            <AccuracyShort>0.72</AccuracyShort>
+            <AccuracyMedium>0.40</AccuracyMedium>
+            <AccuracyLong>0.23</AccuracyLong>
+            <RangedWeapon_Cooldown>1.13</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>157</Steel>
+            <WoodLog>10</WoodLog>
+            <Component>5</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_SMG_Chauchat-RibeyrollesM1918_PA</projectileDef>
+                <warmupTicks>125</warmupTicks>
+                <range>33</range>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>16</ticksBetweenBurstShots>
+                <soundCast>ShotHeavySMG</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

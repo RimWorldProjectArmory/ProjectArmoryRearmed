@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    FG 42
+     Source:                    https://en.wikipedia.org/wiki/FG42
+     Cyclic Rate of Fire:       N/A
+     Barrel Length:             500 mm
+     Muzzle Velocity:           740 m/s
+     Weapon's Weight:           4950 g
+     Recoil:                    1.89 m/s
+
+    7.92x57mm Mauser
+     Source:                    https://en.wikipedia.org/wiki/7.92×57mm_Mauser
+     Projectile Mass:           12.7 g  
+     Tested Barrel Length:      600 mm
+     Tested Energy:             4 064 J
+     Tested Velocity:           800 m/s
+
+    Gun_R_FG42_PA
+     Muzzle Energy:             3 132 pa/J
+-->
+
+
+<ThingDefs>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_R_FG42_PA</defName>
+        <label>FG42 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>14</damageAmountBase>
+            <speed>70</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_R_FG42_PA</defName>
+        <label>FG 42</label>
+        <description>An old midworld paratrooper semi-automatic rifle. Someone would say it belongs in a museum, but some companies still make those, and some people are still buying. Great accuracy, great range.</description>
+        <graphicData>
+            <texPath>Things/R/FG42</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>11960</WorkToMake>
+            <MarketValue>600</MarketValue>
+            <AccuracyTouch>0.77</AccuracyTouch>
+            <AccuracyShort>0.99</AccuracyShort>
+            <AccuracyMedium>0.95</AccuracyMedium>
+            <AccuracyLong>0.93</AccuracyLong>
+            <RangedWeapon_Cooldown>0.61</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>111</Steel>
+            <WoodLog>15</WoodLog>
+            <Component>5</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_R_FG42_PA</projectileDef>
+                <warmupTicks>186</warmupTicks>
+                <range>40</range>
+                <soundCast>ShotSurvivalRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

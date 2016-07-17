@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    Lewis M1914
+     Source:                    https://en.wikipedia.org/wiki/Lewis_gun
+     Cyclic Rate of Fire:       550 rds/min
+     Barrel Length:             670 mm
+     Muzzle Velocity:           740 m/s
+     Weapon's Weight:           13 000 g
+     Recoil:                    0.8 m/s
+
+    .303 British
+     Source:                    https://en.wikipedia.org/wiki/.303_British
+     Projectile Mass:           11 g 
+     Tested Barrel Length:      610 mm
+     Tested Energy:             3 265 J
+     Tested Velocity:           761 m/s
+
+    Gun_LMG_LewisM1914_PA
+     Muzzle Energy:             4042 pa/J
+-->
+
+
+<ThingDefs>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_LMG_LewisM1914_PA</defName>
+        <label>LewisM1914 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>12</damageAmountBase>
+            <speed>35</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_LMG_LewisM1914_PA</defName>
+        <label>Lewis M1914 Automatic Rifle</label>
+        <description>Very popular early light machine gun design, offers moderate reliability, and formidable firepower. </description>
+        <graphicData>
+            <texPath>Things/LMG/LewisM1914</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>19225</WorkToMake>
+            <MarketValue>692</MarketValue>
+            <AccuracyTouch>0.48</AccuracyTouch>
+            <AccuracyShort>0.62</AccuracyShort>
+            <AccuracyMedium>0.39</AccuracyMedium>
+            <AccuracyLong>0.21</AccuracyLong>
+            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>170</Steel>
+            <Component>5</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_LMG_LewisM1914_PA</projectileDef>
+                <warmupTicks>135</warmupTicks>
+                <range>28</range>
+                <burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+                <soundCast>ShotMinigun</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

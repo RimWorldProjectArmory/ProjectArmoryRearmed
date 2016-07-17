@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    WaltherWA2000
+     Source:                    https://en.wikipedia.org/wiki/WA_2000
+     Cyclic Rate of Fire:       N/A
+     Barrel Length:             650 mm
+     Muzzle Velocity:           860 m/s
+     Weapon's Weight:           7 910 g
+     Recoil:                    1.08 m/s
+
+    9x39mm
+     Source:                    https://en.wikipedia.org/wiki/7.62×51mm_NATO
+     Projectile Mass:           10 g 
+     Tested Barrel Length:      610 mm
+     Tested Energy:             3604 J
+     Tested Velocity:           860 m/s
+
+    Gun_SR_WaltherWA2000_PA
+     Muzzle Energy:             3 840 pa/J
+-->
+
+
+<ThingDefs>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_SR_WaltherWA2000_PA</defName>
+        <label>WaltherWA2000 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>44</damageAmountBase>
+            <speed>100</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_SR_WaltherWA2000_PA</defName>
+        <label>Walther WA-2000</label>
+        <description>Extremely accurate, light recoil and heavy pricetag sniper rifle, mainly bought and used by very wealthy marksmen or extremely high profile dealers of certain death. It is very effective in hands of a professional, but unfortunately is not robust enough for military use, and all in all, is too expensive to make for regular use in any military organization. </description>
+        <graphicData>
+            <texPath>Things/SR/WaltherWA2000</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>14601</WorkToMake>
+            <MarketValue>1940</MarketValue>
+            <AccuracyTouch>0.65</AccuracyTouch>
+            <AccuracyShort>0.98</AccuracyShort>
+            <AccuracyMedium>0.98</AccuracyMedium>
+            <AccuracyLong>0.99</AccuracyLong>
+            <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>195</Steel>
+            <Component>12</Component>
+            <WoodLog>20</WoodLog>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_SR_WaltherWA2000_PA</projectileDef>
+                <warmupTicks>87</warmupTicks>
+                <range>40</range>
+                <soundCast>ShotSniperRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>
