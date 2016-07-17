@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    FAMAS_G2
+     Source:                    https://en.wikipedia.org/wiki/FAMAS_G2
+     Cyclic Rate of Fire:       1050 rds/min
+     Barrel Length:             488 mm
+     Muzzle Velocity:           925 m/s
+     Weapon's Weight:           3800 g
+     Recoil:                    1 m/s
+
+    5.56x45mm NATO
+     Source:                    https://en.wikipedia.org/wiki/5.56×45mm_NATO
+     Projectile Mass:           4.1 g  
+     Tested Barrel Length:      508 mm
+     Tested Energy:             1796 J
+     Tested Velocity:           936 m/s
+
+    Gun_AR_FAMAS_G2_PA
+     Muzzle Energy:             1705 pa/J
+-->
+
+
+<ThingDefs>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_AR_FAMAS_G2_PA</defName>
+        <label>FAMAS_G2 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>7</damageAmountBase>
+            <speed>69</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_AR_FAMAS_G2_PA</defName>
+        <label>FAMAS_G2</label>
+        <description>Bullpup-styled assault rifle designed and manufactured on factory world of Lagille.</description>
+        <graphicData>
+            <texPath>Things/AR/FAMAS_G2</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>11500</WorkToMake>
+            <MarketValue>710</MarketValue>
+            <AccuracyTouch>0.69</AccuracyTouch>
+            <AccuracyShort>0.86</AccuracyShort>
+            <AccuracyMedium>0.76</AccuracyMedium>
+            <AccuracyLong>0.63</AccuracyLong>
+            <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>117</Steel>
+            <Component>5</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_AR_FAMAS_G2_PA</projectileDef>
+                <warmupTicks>86</warmupTicks>
+                <range>31</range>
+                <burstShotCount>5</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <soundCast>ShotAssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

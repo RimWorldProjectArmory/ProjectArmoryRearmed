@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    M50Reising
+     Source:                    https://en.wikipedia.org/wiki/M50_Reising
+     Cyclic Rate of Fire:       550 rds/min
+     Barrel Length:             279 mm
+     Muzzle Velocity:           280 m/s
+     Weapon's Weight:           3100 g
+     Recoil:                    1.35 m/s
+
+    .45 ACP
+     Source:                    https://en.wikipedia.org/wiki/.45_ACP
+     Projectile Mass:           15 g  
+     Tested Barrel Length:      279 mm
+     Tested Energy:             561 J
+     Tested Velocity:           270 m/s
+
+    Gun_SMG_M50Reising_PA
+     Muzzle Energy:             1278 pa/J
+-->
+
+
+<ThingDefs>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_SMG_M50Reising_PA</defName>
+        <label>M50Reising bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>6</damageAmountBase>
+            <speed>44</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_SMG_M50Reising_PA</defName>
+        <label>M50 Reising</label>
+        <description>In the face of expensive manufacture process involved with almost every formidable military-grade SMG, midworld of Khalea called their best gunsmiths to work on a reliable replacement of quite expensive Thompson Submachine Gun, they came up with M50 Reising. It is somewhat cheaper than thompson, retains most of the power, but has lower accuracy. Needless to say price reduction wasn't satisfactory enough so the project was ultimately scrapped, but the submachine gun was semi-successful on commercial interstellar market, for it has proved to be more durable under harsh conditions than it's main competitors.</description>
+        <graphicData>
+            <texPath>Things/SMG/M50Reising</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>7945</WorkToMake>
+            <MarketValue>300</MarketValue>
+            <AccuracyTouch>0.91</AccuracyTouch>
+            <AccuracyShort>0.65</AccuracyShort>
+            <AccuracyMedium>0.35</AccuracyMedium>
+            <AccuracyLong>0.21</AccuracyLong>
+            <RangedWeapon_Cooldown>1.02</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>122</Steel>
+            <Component>4</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_SMG_M50Reising_PA</projectileDef>
+                <warmupTicks>110</warmupTicks>
+                <range>21</range>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>13</ticksBetweenBurstShots>
+                <soundCast>ShotHeavySMG</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

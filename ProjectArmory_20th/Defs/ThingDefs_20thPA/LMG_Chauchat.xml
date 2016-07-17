@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    Chauchat
+     Source:                    https://en.wikipedia.org/wiki/Chauchat
+     Cyclic Rate of Fire:       240 rds/min
+     Barrel Length:             470 mm
+     Muzzle Velocity:           630 m/s
+     Weapon's Weight:           9 350 g
+     Recoil:                    0.89 m/s
+
+    8mm Lebel
+     Source:                    https://en.wikipedia.org/wiki/8mm_Lebel
+     Projectile Mass:           12.8 g 
+     Tested Barrel Length:      470 mm
+     Tested Energy:             3 364 J
+     Tested Velocity:           730 m/s
+
+    Gun_LMG_Chauchat_PA
+     Muzzle Energy:             2903 pa/J
+-->
+
+
+<ThingDefs>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_LMG_Chauchat_PA</defName>
+        <label>Chauchat bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>8</damageAmountBase>
+            <speed>30</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_LMG_Chauchat_PA</defName>
+        <label>Chauchat</label>
+        <description>Early and not-so-successful design of a machinegun with relatively low rate of fire and not too reliable magazine action, it still is used here and there. Mostly because it's one of the cheapest light machineguns you can find on the market. Quality greatly varies. </description>
+        <graphicData>
+            <texPath>Things/LMG/Chauchat</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>19920</WorkToMake>
+            <MarketValue>720</MarketValue>
+            <AccuracyTouch>0.47</AccuracyTouch>
+            <AccuracyShort>0.60</AccuracyShort>
+            <AccuracyMedium>0.38</AccuracyMedium>
+            <AccuracyLong>0.20</AccuracyLong>
+            <RangedWeapon_Cooldown>1.59</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>118</Steel>
+            <Component>3</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_LMG_Chauchat_PA</projectileDef>
+                <warmupTicks>94</warmupTicks>
+                <range>23</range>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>11</ticksBetweenBurstShots>
+                <soundCast>ShotMinigun</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

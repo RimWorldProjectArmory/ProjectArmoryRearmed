@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    AWP
+     Source:                    https://en.wikipedia.org/wiki/https://en.wikipedia.org/wiki/Accuracy_International_Arctic_Warfare
+     Cyclic Rate of Fire:       N/A
+     Barrel Length:             686 mm
+     Muzzle Velocity:           897 m/s
+     Weapon's Weight:           6 900 g
+     Recoil:                    2.1 m/s
+
+    7.92x51mm NATO
+     Source:                    https://en.wikipedia.org/wiki/7.62×51mm_NATO
+     Projectile Mass:           10 g 
+     Tested Barrel Length:      610 mm
+     Tested Energy:             3 304 J
+     Tested Velocity:           897 m/s
+
+    Gun_SR_AWP_PA
+     Muzzle Energy:             6516 pa/J
+-->
+
+
+<ThingDefs>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_SR_AWP_PA</defName>
+        <label>AWP bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>47</damageAmountBase>
+            <speed>104</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_SR_AWP_PA</defName>
+        <label>Accuracy International AWP</label>
+        <description>Highly reliable and accurate commercial sporting, hunting and military rifle, all-around golden standard of sniper rifles both of the past, and of the present day. Widely employed by various midworld military forces as well as private companies.</description>
+        <graphicData>
+            <texPath>Things/SR/AWP</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>15725</WorkToMake>
+            <MarketValue>1022</MarketValue>
+            <AccuracyTouch>0.50</AccuracyTouch>
+            <AccuracyShort>0.87</AccuracyShort>
+            <AccuracyMedium>0.87</AccuracyMedium>
+            <AccuracyLong>0.89</AccuracyLong>
+            <RangedWeapon_Cooldown>2.3</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>169</Steel>
+            <Component>10</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_SR_AWP_PA</projectileDef>
+                <warmupTicks>76</warmupTicks>
+                <range>43</range>
+                <soundCast>ShotSniperRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>
