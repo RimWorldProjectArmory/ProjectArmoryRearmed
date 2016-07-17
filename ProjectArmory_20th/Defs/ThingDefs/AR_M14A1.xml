@@ -2,21 +2,20 @@
 
 <!-- WeaponData
     M14A1
-     Source:                https://en.wikipedia.org/wiki/M14A1
-     Cyclic rate of fire:      500 rds/min
-     Barrel Length:            559 mm
-     Muzzle Velocity:          850 m/s
-     Weapon's Weight:		   3590 g
-	 recoil:				    1.63 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/M14A1
+     Cyclic Rate of Fire:       500 rds/min
+     Barrel Length:             559 mm
+     Muzzle Velocity:           850 m/s
+     Weapon's Weight:           3590 g
+     Recoil:                    1.63 m/s
+
     .308 Winchester
-     Source:                https://en.wikipedia.org/wiki/.308_Winchester
-     Projectile Mass:          4.1 g  
-     Tested Barrel Length:     610 mm
-     Tested Energy:            3590 J
-     Tested Velocity:          860 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/.308_Winchester
+     Projectile Mass:           4.1 g  
+     Tested Barrel Length:      610 mm
+     Tested Energy:             3590 J
+     Tested Velocity:           860 m/s
+
     Gun_AR_M14A1_PA
      Muzzle Energy:           3251 pa/J
 -->
@@ -58,7 +57,7 @@
         <costList>
             <Steel>159</Steel>
             <Components>6</Components>
-			<WoodLog>15</WoodLog>
+            <WoodLog>15</WoodLog>
         </costList>
         <verbs>
             <li>

@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     M14
-     Source:                https://en.wikipedia.org/wiki/M14
-     Cyclic rate of fire:      AS FAST AS YOU CAN BURN THE VIETKONGS
-     Barrel Length:            559 mm
-     Muzzle Velocity:          850 m/s
-     Weapon's Weight:		   5200 g
-	 recoil:				    1.63 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/M14
+     Cyclic Rate of Fire:       N/A
+     Barrel Length:             559 mm
+     Muzzle Velocity:           850 m/s
+     Weapon's Weight:           5200 g
+     Recoil:                    1.63 m/s
+
     .308 Winchester
-     Source:                https://en.wikipedia.org/wiki/.308_Winchester
-     Projectile Mass:          10 g  
-     Tested Barrel Length:     610 mm
-     Tested Energy:          3 590 J
-     Tested Velocity:          860 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/.308_Winchester
+     Projectile Mass:           10 g  
+     Tested Barrel Length:      610 mm
+     Tested Energy:             3 590 J
+     Tested Velocity:           860 m/s
+
     Gun_R_M14_PA
-     Muzzle Energy:          3 252 pa/J
+     Muzzle Energy:             3 252 pa/J
 -->
 
 

@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     K31
-     Source:                https://en.wikipedia.org/wiki/K31
-     Cyclic rate of fire:      AS FAST AS YOU CAN CLIMB THE ALPS
-     Barrel Length:            652 mm
-     Muzzle Velocity:          780 m/s
-     Weapon's Weight:		   3582 g
-	 recoil:				    2.34 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/K31
+     Cyclic Rate of Fire:       N/A
+     Barrel Length:             652 mm
+     Muzzle Velocity:           780 m/s
+     Weapon's Weight:           3582 g
+     Recoil:                    2.34 m/s
+
     7.5x55mm Swiss
-     Source:                https://en.wikipedia.org/wiki/7.5×55mm_Swiss
-     Projectile Mass:          12 g  
-     Tested Barrel Length:     652 mm
-     Tested Energy:          3 582 J
-     Tested Velocity:          800 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/7.5×55mm_Swiss
+     Projectile Mass:           12 g  
+     Tested Barrel Length:      652 mm
+     Tested Energy:             3 582 J
+     Tested Velocity:           800 m/s
+
     Gun_R_K31_PA
-     Muzzle Energy:          3 582 pa/J
+     Muzzle Energy:             3 582 pa/J
 -->
 
 

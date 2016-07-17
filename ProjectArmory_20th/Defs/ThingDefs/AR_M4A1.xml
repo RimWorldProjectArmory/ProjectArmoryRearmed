@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     M4A1
-     Source:                https://en.wikipedia.org/wiki/M4A1
-     Cyclic rate of fire:      700 rds/min
-     Barrel Length:            370 mm
-     Muzzle Velocity:          880 m/s
-     Weapon's Weight:		   3510 g
-	 recoil:				    1.02 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/M4A1
+     Cyclic Rate of Fire:       700 rds/min
+     Barrel Length:             370 mm
+     Muzzle Velocity:           880 m/s
+     Weapon's Weight:           3510 g
+     Recoil:                    1.02 m/s
+
     5.56x45mm NATO
-     Source:                https://en.wikipedia.org/wiki/M4A1
-     Projectile Mass:          4.1 g  
-     Tested Barrel Length:     508 mm
-     Tested Energy:            1679 J
-     Tested Velocity:          905 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/M4A1
+     Projectile Mass:           4.1 g  
+     Tested Barrel Length:      508 mm
+     Tested Energy:             1679 J
+     Tested Velocity:           905 m/s
+
     Gun_AR_M4A1_PA
-     Muzzle Energy:           1189 pa/J
+     Muzzle Energy:             1189 pa/J
 -->
 
 

@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     M25
-     Source:                https://en.wikipedia.org/wiki/M25_Sniper_Weapon_System
-     Cyclic rate of fire:      as fast as you can pull the trigger and hit
-     Barrel Length:            560 mm
-     Muzzle Velocity:          860 m/s
-     Weapon's Weight:		 4 900 g
-	 recoil:				    1.75 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/M25_Sniper_Weapon_System
+     Cyclic Rate of Fire:       N/A
+     Barrel Length:             560 mm
+     Muzzle Velocity:           860 m/s
+     Weapon's Weight:           4 900 g
+     Recoil:                    1.75 m/s
+
     7.62x51mm NATO
-     Source:                https://en.wikipedia.org/wiki/7.62×51mm_NATO
-     Projectile Mass:          10 g 
-     Tested Barrel Length:     610 mm
-     Tested Energy:          3 590 J
-     Tested Velocity:          860 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/7.62×51mm_NATO
+     Projectile Mass:           10 g 
+     Tested Barrel Length:      610 mm
+     Tested Energy:             3 590 J
+     Tested Velocity:           860 m/s
+
     Gun_SR_M25_PA
-     Muzzle Energy:            3295 pa/J
+     Muzzle Energy:             3295 pa/J
 -->
 
 
@@ -41,7 +40,7 @@
         <defName>Gun_SR_M25_PA</defName>
         <label>M25</label>
         <description>Effective semi-automatic light sniper rifle, designed for efficiency based on all experience of sniper warfare which have been accumulated during the history of humanity back in the olden days, a few centuries ago. It still is a formidable sniper platform, combining superior accuracy, reliability and light weight. It is currently employed by advanced midworlds as well as, in some cases, special regiments of glitterworlds for it's renowned accuracy. </description>
-		<graphicData>
+        <graphicData>
             <texPath>Things/SR/M25</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
@@ -58,7 +57,7 @@
         <costList>
             <Steel>120</Steel>
             <Components>7</Components>
-			<WoodLog>20</WoodLog>
+            <WoodLog>20</WoodLog>
         </costList>
         <verbs>
             <li>

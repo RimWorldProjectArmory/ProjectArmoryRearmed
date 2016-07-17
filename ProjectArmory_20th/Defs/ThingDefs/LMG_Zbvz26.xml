@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     Zbvz26
-     Source:                https://en.wikipedia.org/wiki/ZB_vz._26
-     Cyclic rate of fire:      500 rds/min
-     Barrel Length:            672 mm
-     Muzzle Velocity:          744 m/s
-     Weapon's Weight:		10 500 g
-	 recoil:				    0.9 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/ZB_vz._26
+     Cyclic Rate of Fire:       500 rds/min
+     Barrel Length:             672 mm
+     Muzzle Velocity:           744 m/s
+     Weapon's Weight:           10 500 g
+     Recoil:                    0.9 m/s
+
     7.92x57mm Mauser
-     Source:                https://en.wikipedia.org/wiki/7.92×57mm_Mauser
-     Projectile Mass:          12.7 g 
-     Tested Barrel Length:     415 mm
-     Tested Energy:          4 064 J
-     Tested Velocity:          800 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/7.92×57mm_Mauser
+     Projectile Mass:           12.7 g 
+     Tested Barrel Length:      415 mm
+     Tested Energy:             4 064 J
+     Tested Velocity:           800 m/s
+
     Gun_LMG_Zbvz26_PA
-     Muzzle Energy:            4233 pa/J
+     Muzzle Energy:             4233 pa/J
 -->
 
 
@@ -41,7 +40,7 @@
         <defName>Gun_LMG_Zbvz26_PA</defName>
         <label>ZB vz. 26</label>
         <description>Typical light machine gun of early period, designed for squad suppresion and mobile warfare, has low rate of fire, but relatively high firepower.</description>
-		<graphicData>
+        <graphicData>
             <texPath>Things/LMG/Zbvz26</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>

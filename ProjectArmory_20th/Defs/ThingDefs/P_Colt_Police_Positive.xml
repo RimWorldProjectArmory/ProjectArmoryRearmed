@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     Colt Police Positive
-     Source:                https://en.wikipedia.org/wiki/Colt_Police_Positive
-     Cyclic rate of fire:      DEPENDS ON HOW ITCHY YOUR FINGER IS
-     Barrel Length:            102 mm
-     Muzzle Velocity:          260 m/s
-     Weapon's Weight:		   625 g
-	 recoil:				    2.08 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/Colt_Police_Positive
+     Cyclic Rate of Fire:       N/A
+     Barrel Length:             102 mm
+     Muzzle Velocity:           260 m/s
+     Weapon's Weight:           625 g
+     Recoil:                    2.08 m/s
+
     .32 Long Colt
-     Source:                https://en.wikipedia.org/wiki/.32_Long_Colt
-     Projectile Mass:          5 g  
-     Tested Barrel Length:     102 mm
-     Tested Energy:            171 J
-     Tested Velocity:          260 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/.32_Long_Colt
+     Projectile Mass:           5 g  
+     Tested Barrel Length:      102 mm
+     Tested Energy:             171 J
+     Tested Velocity:           260 m/s
+
     Gun_AR_Colt_Police_Positive_PA
-     Muzzle Energy:           171 pa/J
+     Muzzle Energy:             171 pa/J
 -->
 
 

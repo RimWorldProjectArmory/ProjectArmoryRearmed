@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     HoKMP5A2
-     Source:                https://en.wikipedia.org/wiki/Heckler_&_Koch_MP5
-     Cyclic rate of fire:      800 rds/min
-     Barrel Length:            225 mm
-     Muzzle Velocity:          400 m/s
-     Weapon's Weight:		   2500 g
-	 recoil:				    1.19 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/Heckler_&_Koch_MP5
+     Cyclic Rate of Fire:       800 rds/min
+     Barrel Length:             225 mm
+     Muzzle Velocity:           400 m/s
+     Weapon's Weight:           2500 g
+     Recoil:                    1.19 m/s
+
     9x19 Parabellum
-     Source:                https://en.wikipedia.org/wiki/9×19mm_Parabellum
-     Projectile Mass:          8.04 g  
-     Tested Barrel Length:     150 mm
-     Tested Energy:            518 J
-     Tested Velocity:          360 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/9×19mm_Parabellum
+     Projectile Mass:           8.04 g  
+     Tested Barrel Length:      150 mm
+     Tested Energy:             518 J
+     Tested Velocity:           360 m/s
+
     Gun_SMG_HoKMP5A3_PA
-     Muzzle Energy:            863 pa/J
+     Muzzle Energy:             863 pa/J
 -->
 
 

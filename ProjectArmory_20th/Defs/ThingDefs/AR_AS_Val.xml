@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     AS Val
-     Source:                https://en.wikipedia.org/wiki/AS Val
-     Cyclic rate of fire:      900 rds/min
-     Barrel Length:            200 mm
-     Muzzle Velocity:          280 m/s
-     Weapon's Weight:		   2500 g
-	 recoil:				    1.88 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/AS Val
+     Cyclic Rate of Fire:       900 rds/min
+     Barrel Length:             200 mm
+     Muzzle Velocity:           280 m/s
+     Weapon's Weight:           2500 g
+     Recoil:                    1.88 m/s
+
     9x39mm
-     Source:                https://en.wikipedia.org/wiki/9×39mm
-     Projectile Mass:         16.8 g  
-     Tested Barrel Length:     200 mm
-     Tested Energy:            658 J
-     Tested Velocity:          890 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/9×39mm
+     Projectile Mass:           16.8 g  
+     Tested Barrel Length:      200 mm
+     Tested Energy:             658 J
+     Tested Velocity:           890 m/s
+
     Gun_AR_AS Val_PA
-     Muzzle Energy:           658 pa/J
+     Muzzle Energy:             658 pa/J
 -->
 
 

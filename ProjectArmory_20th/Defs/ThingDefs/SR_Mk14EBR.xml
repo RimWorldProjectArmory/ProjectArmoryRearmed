@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     Mark 14 Enchanced Battle Rifle
-     Source:                https://en.wikipedia.org/wiki/Mk_14_Enhanced_Battle_Rifle
-     Cyclic rate of fire:      as fast as you can tactically hit people over the head with it.
-     Barrel Length:            457 mm
-     Muzzle Velocity:          853 m/s
-     Weapon's Weight:		 5 100 g
-	 recoil:				    1.67 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/Mk_14_Enhanced_Battle_Rifle
+     Cyclic Rate of Fire:       N/A
+     Barrel Length:             457 mm
+     Muzzle Velocity:           853 m/s
+     Weapon's Weight:           5 100 g
+     Recoil:                    1.67 m/s
+
     7.62x51mm NATO
-     Source:                https://en.wikipedia.org/wiki/7.62×51mm_NATO
-     Projectile Mass:          10 g 
-     Tested Barrel Length:     610 mm
-     Tested Energy:          3 304 J
-     Tested Velocity:          833 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/7.62×51mm_NATO
+     Projectile Mass:           10 g 
+     Tested Barrel Length:      610 mm
+     Tested Energy:             3 304 J
+     Tested Velocity:           833 m/s
+
     Gun_SR_Mk14EBR_PA
-     Muzzle Energy:            2 535 pa/J
+     Muzzle Energy:             2 535 pa/J
 -->
 
 
@@ -41,7 +40,7 @@
         <defName>Gun_SR_Mk14EBR_PA</defName>
         <label>Mark 14 Enchanced Battle Rifle</label>
         <description>Heavily modified M14 rifle, currently in service of various advanced midworlds. Very accurate, also quite pricey.  </description>
-		<graphicData>
+        <graphicData>
             <texPath>Things/SR/Mk14EBR</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>

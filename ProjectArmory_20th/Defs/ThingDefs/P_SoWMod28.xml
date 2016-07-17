@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     Smith & wesson Model 1928
-     Source:                https://en.wikipedia.org/wiki/Smith_&_Wesson_Model_28
-	 Cyclic Rate of Fire:	   DEPENDS ON HOW MUCH YOU WANT TO DOMINATE THE SAVAGES
-     Barrel Length:            150 mm
-     Muzzle Velocity:          380 m/s
-     Weapon's Weight:		   850 g
-	 recoil:				    1.58 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/Smith_&_Wesson_Model_28
+     Cyclic Rate of Fire:       N/A
+     Barrel Length:             150 mm
+     Muzzle Velocity:           380 m/s
+     Weapon's Weight:           850 g
+     Recoil:                    1.58 m/s
+
     .357 Magnum
-     Source:                https://en.wikipedia.org/wiki/.357_Magnum
-     Projectile Mass:          10 g  
-     Tested Barrel Length:     102 mm
-     Tested Energy:            731 J
-     Tested Velocity:          380 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/.357_Magnum
+     Projectile Mass:           10 g  
+     Tested Barrel Length:      102 mm
+     Tested Energy:             731 J
+     Tested Velocity:           380 m/s
+
     Gun_P_SoWMod28_PA
-     Muzzle Energy:           1075 pa/J
+     Muzzle Energy:             1075 pa/J
 -->
 
 

@@ -2,21 +2,20 @@
 
 <!-- WeaponData
     KRISSVector
-     Source:                https://en.wikipedia.org/wiki/KRISS_Vector
-     Cyclic rate of fire:      1200 rds/min
-     Barrel Length:            170 mm
-     Muzzle Velocity:          330 m/s
-     Weapon's Weight:		   2700 g
-	 recoil:				    1.59 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/KRISS_Vector
+     Cyclic Rate of Fire:       1200 rds/min
+     Barrel Length:             170 mm
+     Muzzle Velocity:           330 m/s
+     Weapon's Weight:           2700 g
+     Recoil:                    1.59 m/s
+
     .45 ACP
-     Source:                https://en.wikipedia.org/wiki/.45_ACP
-     Projectile Mass:          13 g  
-     Tested Barrel Length:     127 mm
-     Tested Energy:            702 J
-     Tested Velocity:          330 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/.45_ACP
+     Projectile Mass:           13 g  
+     Tested Barrel Length:      127 mm
+     Tested Energy:             702 J
+     Tested Velocity:           330 m/s
+
     Gun_SMG_KRISSVector_PA
      Muzzle Energy:            1340 pa/J
 -->
@@ -41,7 +40,7 @@
         <defName>Gun_SMG_KRISSVector_PA</defName>
         <label>KRISS Vector</label>
         <description>An innovative submachine gun with effective recoil dampening system.</description>
-		<graphicData>
+        <graphicData>
             <texPath>Things/SMG/KRISSVector</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>

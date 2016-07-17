@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     MAC-10
-     Source:                https://en.wikipedia.org/wiki/MAC-10
-     Cyclic rate of fire:      1250 rds/min
-     Barrel Length:            146 mm
-     Muzzle Velocity:          366 m/s
-     Weapon's Weight:		   2840 g
-	 recoil:				    1.03 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/MAC-10
+     Cyclic Rate of Fire:       1250 rds/min
+     Barrel Length:             146 mm
+     Muzzle Velocity:           366 m/s
+     Weapon's Weight:           2840 g
+     Recoil:                    1.03 m/s
+
     .45 ACP
-     Source:                https://en.wikipedia.org/wiki/.45_ACP
-     Projectile Mass:          8.04 g  
-     Tested Barrel Length:     150 mm
-     Tested Energy:            518 J
-     Tested Velocity:          360 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/.45_ACP
+     Projectile Mass:           8.04 g  
+     Tested Barrel Length:      150 mm
+     Tested Energy:             518 J
+     Tested Velocity:           360 m/s
+
     Gun_SMG_MAC-10_PA
-     Muzzle Energy:            512 pa/J
+     Muzzle Energy:             512 pa/J
 -->
 
 
@@ -41,7 +40,7 @@
         <defName>Gun_SMG_MAC-10_PA</defName>
         <label>MAC-10</label>
         <description>One of the most compact, chemically-propelled submachine guns on the market. At this point the author is unknown. It is very popular in a place of a sidearm which accompanies the primary weapon.</description>
-		<graphicData>
+        <graphicData>
             <texPath>Things/SMG/MAC-10</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>

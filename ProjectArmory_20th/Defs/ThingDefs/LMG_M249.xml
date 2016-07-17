@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     M249
-     Source:                https://en.wikipedia.org/wiki/M249_machine_gun
-     Cyclic rate of fire:      800 rds/min
-     Barrel Length:            465 mm
-     Muzzle Velocity:          915 m/s
-     Weapon's Weight:		10 000 g
-	 recoil:				    0.38 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/M249_machine_gun
+     Cyclic Rate of Fire:       800 rds/min
+     Barrel Length:             465 mm
+     Muzzle Velocity:           915 m/s
+     Weapon's Weight:           10 000 g
+     Recoil:                    0.38 m/s
+     
     5.56x45mm NATO
-     Source:                https://en.wikipedia.org/wiki/5.56×45mm_NATO
-     Projectile Mass:          4 g 
-     Tested Barrel Length:     508 mm
-     Tested Energy:          1 679 J
-     Tested Velocity:          905 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/5.56×45mm_NATO
+     Projectile Mass:           4 g 
+     Tested Barrel Length:      508 mm
+     Tested Energy:             1 679 J
+     Tested Velocity:           905 m/s
+
     Gun_LMG_M249_PA
-     Muzzle Energy:            1741 pa/J
+     Muzzle Energy:             1741 pa/J
 -->
 
 
@@ -41,7 +40,7 @@
         <defName>Gun_LMG_M249_PA</defName>
         <label>M249 machine gun</label>
         <description>One of the most popular, old-pattern small caliber special forces light machine guns. It offers superior control and suppresive power as well as rate of fire while being not as deadly as bigger caliber models.  </description>
-		<graphicData>
+        <graphicData>
             <texPath>Things/LMG/M249</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>

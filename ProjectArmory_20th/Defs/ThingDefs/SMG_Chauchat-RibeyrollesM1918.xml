@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     Chauchat-RibeyrollesM1918 M1918 SMG
-     Source:                https://en.wikipedia.org/wiki/Chauchat-RibeyrollesM1918_1918_submachine_gun
-     Cyclic rate of fire:      400 rds/min
-     Barrel Length:            400 mm
-     Muzzle Velocity:          540/s
-     Weapon's Weight:		   4000 g
-	 recoil:				    1.73 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/Chauchat-RibeyrollesM1918_1918_submachine_gun
+     Cyclic Rate of Fire:       400 rds/min
+     Barrel Length:             400 mm
+     Muzzle Velocity:           540/s
+     Weapon's Weight:           4000 g
+     Recoil:                    1.73 m/s
+
     8mm Lebel
-     Source:                https://en.wikipedia.org/wiki/8mm_Lebel
-     Projectile Mass:          12.8 g  
-     Tested Barrel Length:     510 mm
-     Tested Energy:          3 364 J
-     Tested Velocity:          730 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/8mm_Lebel
+     Projectile Mass:           12.8 g  
+     Tested Barrel Length:      510 mm
+     Tested Energy:             3 364 J
+     Tested Velocity:           730 m/s
+
     Gun_SMG_Chauchat-RibeyrollesM1918_PA
-     Muzzle Energy:          1 659 pa/J
+     Muzzle Energy:             1 659 pa/J
 -->
 
 

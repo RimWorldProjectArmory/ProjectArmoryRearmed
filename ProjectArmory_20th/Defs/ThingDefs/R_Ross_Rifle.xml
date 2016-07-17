@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     Ross_Rifle
-     Source:                https://en.wikipedia.org/wiki/Ross_Rifle
-     Cyclic rate of fire:      AS FAST AS YOU CAN SHELL THE HUNS
-     Barrel Length:            711 mm
-     Muzzle Velocity:          844 m/s
-     Weapon's Weight:		   3900 g
-	 recoil:				    2.16 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/Ross_Rifle
+     Cyclic Rate of Fire:       N/A
+     Barrel Length:             711 mm
+     Muzzle Velocity:           844 m/s
+     Weapon's Weight:           3900 g
+     Recoil:                    2.16 m/s
+
     .303 British
-     Source:                https://en.wikipedia.org/wiki/.303_British
-     Projectile Mass:          10 g  
-     Tested Barrel Length:     610 mm
-     Tested Energy:          3 463 J
-     Tested Velocity:          844 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/.303_British
+     Projectile Mass:           10 g  
+     Tested Barrel Length:      610 mm
+     Tested Energy:             3 463 J
+     Tested Velocity:           844 m/s
+
     Gun_R_Ross_Rifle_PA
-     Muzzle Energy:          4 036 pa/J
+     Muzzle Energy:             4 036 pa/J
 -->
 
 

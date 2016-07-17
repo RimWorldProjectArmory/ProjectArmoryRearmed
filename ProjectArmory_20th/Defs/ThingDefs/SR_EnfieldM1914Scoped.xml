@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     EnfieldM1914Scoped
-     Source:                https://en.wikipedia.org/wiki/Lee–Enfield
-     Cyclic rate of fire:      one dead kaiser forever
-     Barrel Length:            660 mm
-     Muzzle Velocity:          726 m/s
-     Weapon's Weight:		 4 250 g
-	 recoil:				    1.88 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/Lee–Enfield
+     Cyclic Rate of Fire:       N/A
+     Barrel Length:             660 mm
+     Muzzle Velocity:           726 m/s
+     Weapon's Weight:           4 250 g
+     Recoil:                    1.88 m/s
+
     .303 British
-     Source:                https://en.wikipedia.org/wiki/.303 British
-     Projectile Mass:          11 g 
-     Tested Barrel Length:     610 mm
-     Tested Energy:          3 265 J
-     Tested Velocity:          761 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/.303 British
+     Projectile Mass:           11 g 
+     Tested Barrel Length:      610 mm
+     Tested Energy:             3 265 J
+     Tested Velocity:           761 m/s
+
     Gun_SR_EnfieldM1914Scoped_PA
-     Muzzle Energy:            3370 pa/J
+     Muzzle Energy:             3370 pa/J
 -->
 
 
@@ -41,7 +40,7 @@
         <defName>Gun_SR_EnfieldM1914Scoped_PA</defName>
         <label>Lee-Enfield M1914 Scoped</label>
         <description>Good ol' bolt-action hunting rifle with a scope. Can you hunt animals with it? You sure can! Can you hunt humans? you sure can! Good, simple and effective long-range weapon.</description>
-		<graphicData>
+        <graphicData>
             <texPath>Things/SR/EnfieldM1914Scoped</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
@@ -58,7 +57,7 @@
         <costList>
             <Steel>104</Steel>
             <Components>6</Components>
-			<WoodLog>20</WoodLog>
+            <WoodLog>20</WoodLog>
         </costList>
         <verbs>
             <li>

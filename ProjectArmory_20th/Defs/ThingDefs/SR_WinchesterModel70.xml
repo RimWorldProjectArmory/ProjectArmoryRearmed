@@ -2,21 +2,20 @@
 
 <!-- WeaponData
     WinchesterModel70
-     Source:                https://en.wikipedia.org/wiki/Winchester_Model_70
-     Cyclic rate of fire:      as fast as you can yank the bolt and kill the deer.
-     Barrel Length:            610 mm
-     Muzzle Velocity:        1 070 m/s
-     Weapon's Weight:		 7 910 g
-	 recoil:				    1.08 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/Winchester_Model_70
+     Cyclic Rate of Fire:       N/A
+     Barrel Length:             610 mm
+     Muzzle Velocity:           1 070 m/s
+     Weapon's Weight:           7 910 g
+     Recoil:                    1.08 m/s
+
     9x39mm
-     Source:                https://en.wikipedia.org/wiki/.225_Winchester
-     Projectile Mass:          6 g 
-     Tested Barrel Length:     610 mm
-     Tested Energy:          3 708 J
-     Tested Velocity:        1 070 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/.225_Winchester
+     Projectile Mass:           6 g 
+     Tested Barrel Length:      610 mm
+     Tested Energy:             3 708 J
+     Tested Velocity:           1 070 m/s
+
     Gun_SR_WinchesterModel70_PA
      Muzzle Energy:            3 708 pa/J
 -->
@@ -41,7 +40,7 @@
         <defName>Gun_SR_WinchesterModel70_PA</defName>
         <label>Winchester Model 70</label>
         <description>Old, highly accurate bolt-action sporting rifle. Very flexible and variable rifle, is actively developed for civilian sector both on rimworlds and midworlds. This weapon has seen action in certain intermediate conflicts throughout the galaxy, being praised as one of the best minimalistic sniper platforms.  </description>
-		<graphicData>
+        <graphicData>
             <texPath>Things/SR/WinchesterModel70</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
@@ -58,7 +57,7 @@
         <costList>
             <Steel>90</Steel>
             <Components>5</Components>
-			<WoodLog>20</WoodLog>
+            <WoodLog>20</WoodLog>
         </costList>
         <verbs>
             <li>

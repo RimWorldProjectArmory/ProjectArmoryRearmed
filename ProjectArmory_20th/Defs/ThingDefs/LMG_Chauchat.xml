@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     Chauchat
-     Source:                https://en.wikipedia.org/wiki/Chauchat
-     Cyclic rate of fire:      240 rds/min
-     Barrel Length:            470 mm
-     Muzzle Velocity:          630 m/s
-     Weapon's Weight:		 9 350 g
-	 recoil:				    0.89 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/Chauchat
+     Cyclic Rate of Fire:       240 rds/min
+     Barrel Length:             470 mm
+     Muzzle Velocity:           630 m/s
+     Weapon's Weight:           9 350 g
+     Recoil:                    0.89 m/s
+
     8mm Lebel
-     Source:                https://en.wikipedia.org/wiki/8mm_Lebel
-     Projectile Mass:          12.8 g 
-     Tested Barrel Length:     470 mm
-     Tested Energy:          3 364 J
-     Tested Velocity:          730 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/8mm_Lebel
+     Projectile Mass:           12.8 g 
+     Tested Barrel Length:      470 mm
+     Tested Energy:             3 364 J
+     Tested Velocity:           730 m/s
+
     Gun_LMG_Chauchat_PA
-     Muzzle Energy:            2903 pa/J
+     Muzzle Energy:             2903 pa/J
 -->
 
 
@@ -41,7 +40,7 @@
         <defName>Gun_LMG_Chauchat_PA</defName>
         <label>Chauchat</label>
         <description>Early and not-so-successful design of a machinegun with relatively low rate of fire and not too reliable magazine action, it still is used here and there. Mostly because it's one of the cheapest light machineguns you can find on the market. Quality greatly varies. </description>
-		<graphicData>
+        <graphicData>
             <texPath>Things/LMG/Chauchat</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>

@@ -2,21 +2,21 @@
 
 <!-- WeaponData
     M1918BAR
-     Source:               https://en.wikipedia.org/wiki/M1918_Browning_Automatic_Rifle
-     Cyclic rate of fire:      600 rds/min
-     Barrel Length:            610 mm
-     Muzzle Velocity:          860 m/s
-     Weapon's Weight:		 7 250 g
-	 recoil:				    1.3 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/M1918_Browning_Automatic_Rifle
+     Cyclic Rate of Fire:       600 rds/min
+     Barrel Length:             610 mm
+     Muzzle Velocity:           860 m/s
+     Weapon's Weight:           7 250 g
+     Recoil:                    1.3 m/s
+ 
     .30-06 Springfield
-     Source:                https://en.wikipedia.org/wiki/.30-06_Springfield
-     Projectile Mass:          11 g 
-     Tested Barrel Length:     610 mm
-     Tested Energy:          3 894 J
-     Tested Velocity:          850 m/s
+     Source:                    https://en.wikipedia.org/wiki/.30-06_Springfield
+     Projectile Mass:           11 g 
+     Tested Barrel Length:      610 mm
+     Tested Energy:             3 894 J
+     Tested Velocity:           850 m/s
       
-	 
+     
     Gun_LMG_M1918BAR_PA
      Muzzle Energy:            3940 pa/J
 -->
@@ -41,7 +41,7 @@
         <defName>Gun_LMG_M1918BAR_PA</defName>
         <label>M1918 Browning Automatic Rifle</label>
         <description>One of the oldest designs of Automatic Rifles, this representative fills the role exactly of what it's name states- an Automatic Rifle. It is not an Assault rifle, nor an effective light machine gun, but it is capable of fulfilling the role which it has been given- suppresing. Due to it's low capacity magazine, and severe recoil, it was not a very popular or successful design, only employed in primitive midworld and rimworld armies which lack technology or resources to produce better and more suited weapons.  </description>
-		<graphicData>
+        <graphicData>
             <texPath>Things/LMG/M1918BAR</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>

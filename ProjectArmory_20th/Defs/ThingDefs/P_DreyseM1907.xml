@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     Desert Eagle
-     Source:                https://en.wikipedia.org/wiki/Dreyse_M1907
-     Cyclic rate of fire:      DEPENDS ON HOW MUCH YOU WANT TO ANNIHILATE
-     Barrel Length:            92 mm
-     Muzzle Velocity:          365 m/s
-     Weapon's Weight:		   710 g
-	 recoil:				    2.06 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/Dreyse_M1907
+     Cyclic Rate of Fire:       N/A
+     Barrel Length:             92 mm
+     Muzzle Velocity:           365 m/s
+     Weapon's Weight:           710 g
+     Recoil:                    2.06 m/s
+
     .32 ACP
-     Source:                https://en.wikipedia.org/wiki/.32_ACP
-     Projectile Mass:          4 g  
-     Tested Barrel Length:     102 mm
-     Tested Energy:            218 J
-     Tested Velocity:          335 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/.32_ACP
+     Projectile Mass:           4 g  
+     Tested Barrel Length:      102 mm
+     Tested Energy:             218 J
+     Tested Velocity:           335 m/s
+
     Gun_P_DreyseM1907_PA
-     Muzzle Energy:           214 pa/J
+     Muzzle Energy:             214 pa/J
 -->
 
 

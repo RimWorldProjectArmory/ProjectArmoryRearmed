@@ -2,21 +2,20 @@
 
 <!-- WeaponData
     RSC_M1917
-     Source:                https://en.wikipedia.org/wiki/Fusil_Automatique_Modèle_1917
-     Cyclic rate of fire:      AS FAST AS YOU CAN EXECUTE THE TRAITORS
-     Barrel Length:            798 mm
-     Muzzle Velocity:          730 m/s
-     Weapon's Weight:		   3364 g
-	 recoil:				    1.77 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/Fusil_Automatique_Modèle_1917
+     Cyclic Rate of Fire:       N/A
+     Barrel Length:             798 mm
+     Muzzle Velocity:           730 m/s
+     Weapon's Weight:           3364 g
+     Recoil:                    1.77 m/s
+
     8mm Lebel
-     Source:                https://en.wikipedia.org/wiki/8mm_Lebel
-     Projectile Mass:          12.8 g  
-     Tested Barrel Length:     798 mm
-     Tested Energy:          3 364 J
-     Tested Velocity:          844 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/8mm_Lebel
+     Projectile Mass:           12.8 g  
+     Tested Barrel Length:      798 mm
+     Tested Energy:             3 364 J
+     Tested Velocity:           844 m/s
+
     Gun_R_RSC_M1917_PA
      Muzzle Energy:          3 364 pa/J
 -->

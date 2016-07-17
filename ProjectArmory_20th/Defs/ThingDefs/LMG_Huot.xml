@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     Huot
-     Source:                https://en.wikipedia.org/wiki/Huot_Automatic_Rifle
-     Cyclic rate of fire:      475 rds/min
-     Barrel Length:            635 mm
-     Muzzle Velocity:          761 m/s
-     Weapon's Weight:		 3 600 g
-	 recoil:				    0.97 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/Huot_Automatic_Rifle
+     Cyclic Rate of Fire:       475 rds/min
+     Barrel Length:             635 mm
+     Muzzle Velocity:           761 m/s
+     Weapon's Weight:           3 600 g
+     Recoil:                    0.97 m/s
+
     .303 British
-     Source:                https://en.wikipedia.org/wiki/.303_British
-     Projectile Mass:          11 g 
-     Tested Barrel Length:     610 mm
-     Tested Energy:          3 265 J
-     Tested Velocity:          761 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/.303_British
+     Projectile Mass:           11 g 
+     Tested Barrel Length:      610 mm
+     Tested Energy:             3 265 J
+     Tested Velocity:           761 m/s
+
     Gun_LMG_Huot_PA
-     Muzzle Energy:            3399 pa/J
+     Muzzle Energy:             3399 pa/J
 -->
 
 
@@ -41,7 +40,7 @@
         <defName>Gun_LMG_Huot_PA</defName>
         <label>Huot Automatic Rifle</label>
         <description>Light machine gun project developed by midworld of Acadia, was not widely successful because of it's limited reliability and quite modest-capacity drum magazine. Nevertheless they are still sold to this day. </description>
-		<graphicData>
+        <graphicData>
             <texPath>Things/LMG/Huot</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>

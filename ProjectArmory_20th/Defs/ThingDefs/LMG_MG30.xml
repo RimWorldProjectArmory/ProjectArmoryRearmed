@@ -2,23 +2,23 @@
 
 <!-- WeaponData
     MG30
-     Source:                https://en.wikipedia.org/wiki/MG30
-     Cyclic rate of fire:      750 rds/min
-     Barrel Length:            720 mm
-     Muzzle Velocity:          808 m/s
-     Weapon's Weight:		12 000 g
-	 recoil:				    0.9 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/MG30
+     Cyclic Rate of Fire:       750 rds/min
+     Barrel Length:             720 mm
+     Muzzle Velocity:           808 m/s
+     Weapon's Weight:           12 000 g
+     Recoil:                    0.9 m/s
+     
     7x57mm Mauser
-     Source:                https://en.wikipedia.org/wiki/7×57mm_Mauser
-     Projectile Mass:          11 g 
-     Tested Barrel Length:     610 mm
-     Tested Energy:          2 737 J
-     Tested Velocity:          701 m/s
+     Source:                    https://en.wikipedia.org/wiki/7×57mm_Mauser
+     Projectile Mass:           11 g 
+     Tested Barrel Length:      610 mm
+     Tested Energy:             2 737 J
+     Tested Velocity:           701 m/s
       
-	 
+     
     Gun_LMG_MG30_PA
-     Muzzle Energy:            3724 pa/J
+     Muzzle Energy:             3724 pa/J
 -->
 
 
@@ -41,7 +41,7 @@
         <defName>Gun_LMG_MG30_PA</defName>
         <label>MG30 Light Machine Gun</label>
         <description>Earlier period light machine gun design, all around good multi-purpose light machine gun with typical problems of early light machine guns- 30 round box magazine, excess weight and limited heat capacity.   </description>
-		<graphicData>
+        <graphicData>
             <texPath>Things/LMG/MG30</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>

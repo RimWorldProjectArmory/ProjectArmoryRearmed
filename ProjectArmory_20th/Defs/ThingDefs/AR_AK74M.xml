@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     AK 74M
-     Source:                https://en.wikipedia.org/wiki/AKS74U
-     Cyclic rate of fire:      650 rds/min
-     Barrel Length:            415 mm
-     Muzzle Velocity:          890 m/s
-     Weapon's Weight:		   2700 g
-	 recoil:				    1.21 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/AKS74U
+     Cyclic Rate of Fire:       650 rds/min
+     Barrel Length:             415 mm
+     Muzzle Velocity:           890 m/s
+     Weapon's Weight:           2 700 g
+     Recoil:                    1.21 m/s
+
     5.45x39mm
-     Source:                https://en.wikipedia.org/wiki/5.45×39mm
-     Projectile Mass:          3.69 g  
-     Tested Barrel Length:     415 mm
-     Tested Energy:           1461 J
-     Tested Velocity:          890 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/5.45×39mm
+     Projectile Mass:           3.69 g  
+     Tested Barrel Length:      415 mm
+     Tested Energy:             1461 J
+     Tested Velocity:           890 m/s
+
     Gun_AR_AKS74U_PA
-     Muzzle Energy:          1461 pa/J
+     Muzzle Energy:             1461 pa/J
 -->
 
 
@@ -58,7 +57,7 @@
         <costList>
             <Steel>83</Steel>
             <Components>4</Components>
-			<WoodLog>10</WoodLog>
+            <WoodLog>10</WoodLog>
         </costList>
         <verbs>
             <li>

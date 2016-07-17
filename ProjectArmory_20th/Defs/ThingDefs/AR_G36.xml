@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     G36
-     Source:                https://en.wikipedia.org/wiki/Heckler_&_Koch_G36
-     Cyclic rate of fire:      750 rds/min
-     Barrel Length:            480 mm
-     Muzzle Velocity:          920 m/s
-     Weapon's Weight:		   3630 g
-	 recoil:				    1.01 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/Heckler_&_Koch_G36
+     Cyclic Rate of Fire:       750 rds/min
+     Barrel Length:             480 mm
+     Muzzle Velocity:           920 m/s
+     Weapon's Weight:           3630 g
+     Recoil:                    1.01 m/s
+
     5.56x45mm NATO
-     Source:                https://en.wikipedia.org/wiki/Heckler_&_Koch_G36
-     Projectile Mass:          4 g  
-     Tested Barrel Length:     508 mm
-     Tested Energy:            1767 J
-     Tested Velocity:          940 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/Heckler_&_Koch_G36
+     Projectile Mass:           4 g  
+     Tested Barrel Length:      508 mm
+     Tested Energy:             1767 J
+     Tested Velocity:           940 m/s
+
     Gun_AR_G36_PA
-     Muzzle Energy:           1634 pa/J
+     Muzzle Energy:             1634 pa/J
 -->
 
 

@@ -2,18 +2,20 @@
 
 <!-- WeaponData
     FN P90 TR
-     Source:                https://en.wikipedia.org/wiki/FN_P90
-     Cyclic rate of fire:      900 rds/min
-     Barrel Length:            264 mm
-     Muzzle Velocity:          715 m/s
-     
+     Source:                    https://en.wikipedia.org/wiki/FN_P90
+     Cyclic Rate of Fire:       900 rds/min
+     Barrel Length:             264 mm
+     Muzzle Velocity:           715 m/s
+     Weapon's Weight:           N/A
+     Recoil:                    N/A
+
     FN 5.7x28mm
      Source:                https://en.wikipedia.org/wiki/FN_5.7%C3%9728mm
      Projectile Mass:          2.0 g  
      Tested Barrel Length:     263 mm
      Tested Energy:            534 J
      Tested Velocity:          716 m/s
-    
+
     Gun_PDW_FNP90TR_PA
      Muzzle Energy:            454 pa/J
 -->

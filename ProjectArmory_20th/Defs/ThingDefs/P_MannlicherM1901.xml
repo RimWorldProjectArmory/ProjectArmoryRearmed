@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     Mannlicher M1901
-     Source:                https://en.wikipedia.org/wiki/Mannlicher_M1901
-	 Cyclic Rate of Fire:	   DEPENDS ON HOW MUCH THY SHALL HUNTETH THEE UNWORTHY
-     Barrel Length:            80 mm
-     Muzzle Velocity:          326 m/s
-     Weapon's Weight:		   640 g
-	 recoil:				    3.18 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/Mannlicher_M1901
+     Cyclic Rate of Fire:       N/A
+     Barrel Length:             80 mm
+     Muzzle Velocity:           326 m/s
+     Weapon's Weight:           640 g
+     Recoil:                    3.18 m/s
+
     7.63 Mannlicher
-     Source:                https://en.wikipedia.org/wiki/9×19mm_Parabellum
-     Projectile Mass:          6 g  
-     Tested Barrel Length:     80 mm
-     Tested Energy:            308 J
-     Tested Velocity:          340 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/9×19mm_Parabellum
+     Projectile Mass:           6 g  
+     Tested Barrel Length:      80 mm
+     Tested Energy:             308 J
+     Tested Velocity:           340 m/s
+
     Gun_P_MannlicherM1901_PA
-     Muzzle Energy:           321 pa/J
+     Muzzle Energy:             321 pa/J
 -->
 
 

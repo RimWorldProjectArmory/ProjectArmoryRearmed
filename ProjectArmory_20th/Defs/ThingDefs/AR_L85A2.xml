@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     L85A2
-     Source:                https://en.wikipedia.org/wiki/L85A2
-     Cyclic rate of fire:      720 rds/min
-     Barrel Length:            518 mm
-     Muzzle Velocity:          930 m/s
-     Weapon's Weight:		   4500 g
-	 recoil:				    0.83 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/L85A2
+     Cyclic Rate of Fire:       720 rds/min
+     Barrel Length:             518 mm
+     Muzzle Velocity:           930 m/s
+     Weapon's Weight:           4500 g
+     Recoil:                    0.83 m/s
+
     5.56x45mm NATO
-     Source:                https://en.wikipedia.org/wiki/L85A2
-     Projectile Mass:          4 g  
-     Tested Barrel Length:     508 mm
-     Tested Energy:            1767 J
-     Tested Velocity:          940 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/L85A2
+     Projectile Mass:           4 g  
+     Tested Barrel Length:      508 mm
+     Tested Energy:             1767 J
+     Tested Velocity:           940 m/s
+
     Gun_AR_L85A2_PA
-     Muzzle Energy:           1783 pa/J
+     Muzzle Energy:             1783 pa/J
 -->
 
 

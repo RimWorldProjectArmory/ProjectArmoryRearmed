@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     Winchester_M1907
-     Source:                https://en.wikipedia.org/wiki/Winchester_Model_1907
-     Cyclic rate of fire:      AS FAST AS YOU CAN SHIP AMMO FROM AMERICA
-     Barrel Length:            510 mm
-     Muzzle Velocity:          570 m/s
-     Weapon's Weight:		   4100 g
-	 recoil:				    1.66 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/Winchester_Model_1907
+     Cyclic Rate of Fire:       N/A
+     Barrel Length:             510 mm
+     Muzzle Velocity:           570 m/s
+     Weapon's Weight:           4100 g
+     Recoil:                    1.66 m/s
+     
     8mm Lebel
-     Source:                https://en.wikipedia.org/wiki/8mm_Lebel
-     Projectile Mass:          12 g  
-     Tested Barrel Length:     510 mm
-     Tested Energy:          1 900 J
-     Tested Velocity:          570 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/8mm_Lebel
+     Projectile Mass:           12 g  
+     Tested Barrel Length:      510 mm
+     Tested Energy:             1 900 J
+     Tested Velocity:           570 m/s
+
     Gun_R_Winchester_M1907_PA
-     Muzzle Energy:          1 900 pa/J
+     Muzzle Energy:             1 900 pa/J
 -->
 
 

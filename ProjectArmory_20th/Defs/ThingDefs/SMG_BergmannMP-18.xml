@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     BergmannMP-18
-     Source:                https://en.wikipedia.org/wiki/MP_18
-     Cyclic rate of fire:      500 rds/min
-     Barrel Length:            200 mm
-     Muzzle Velocity:          380 m/s
-     Weapon's Weight:		 4 180 g
-	 recoil:				    0.73 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/MP_18
+     Cyclic Rate of Fire:       500 rds/min
+     Barrel Length:             200 mm
+     Muzzle Velocity:           380 m/s
+     Weapon's Weight:           4 180 g
+     Recoil:                    0.73 m/s
+
     9x19mm Parabellum
-     Source:                https://en.wikipedia.org/wiki/9×19mm_Parabellum
-     Projectile Mass:          8.04 g 
-     Tested Barrel Length:     200 mm
-     Tested Energy:            518 J
-     Tested Velocity:          360 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/9×19mm_Parabellum
+     Projectile Mass:           8.04 g 
+     Tested Barrel Length:      200 mm
+     Tested Energy:             518 J
+     Tested Velocity:           360 m/s
+
     Gun_SMG_BergmannMP-18_PA
-     Muzzle Energy:            729 pa/J
+     Muzzle Energy:             729 pa/J
 -->
 
 
@@ -41,7 +40,7 @@
         <defName>Gun_SMG_BergmannMP-18_PA</defName>
         <label>Bergmann MP-18</label>
         <description>Another ancient design which is produced by desperate rimworlds for it's simplicity. Not a cheapest SMG, though, for a reason stated before- it is produced in considerable numbers, but is mostly handmade, so if you happen to have two of them- their parts are mostly not interchangeable.</description>
-		<graphicData>
+        <graphicData>
             <texPath>Things/SMG/BergmannMP-18</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>

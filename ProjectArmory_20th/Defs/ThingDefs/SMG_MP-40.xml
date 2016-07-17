@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     MP-40
-     Source:                https://en.wikipedia.org/wiki/MP_40
-     Cyclic rate of fire:      525 rds/min
-     Barrel Length:            251 mm
-     Muzzle Velocity:          400 m/s
-     Weapon's Weight:		 3 970 g
-	 recoil:				    0.75 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/MP_40
+     Cyclic Rate of Fire:       525 rds/min
+     Barrel Length:             251 mm
+     Muzzle Velocity:           400 m/s
+     Weapon's Weight:           3 970 g
+     Recoil:                    0.75 m/s
+
     9x19mm Parabellum
-     Source:                https://en.wikipedia.org/wiki/9×19mm_Parabellum
-     Projectile Mass:          7.45 g 
-     Tested Barrel Length:     251 mm
-     Tested Energy:            570 J
-     Tested Velocity:          390 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/9×19mm_Parabellum
+     Projectile Mass:           7.45 g 
+     Tested Barrel Length:      251 mm
+     Tested Energy:             570 J
+     Tested Velocity:           390 m/s
+
     Gun_SMG_MP-40_PA
-     Muzzle Energy:            978 pa/J
+     Muzzle Energy:             978 pa/J
 -->
 
 
@@ -41,7 +40,7 @@
         <defName>Gun_SMG_MP-40_PA</defName>
         <label>M-40</label>
         <description>One of the most iconic and successful SMG's in the galaxy. This weapon took part in conflicts and still does many millenias after the design was discovered. It's history speaks for itself. it is not the best, nor the most perfect SMG, but it gets the job done efficiently and without delays or setbacks. Reliable, Sturdy, and packs a hefty punch. </description>
-		<graphicData>
+        <graphicData>
             <texPath>Things/SMG/MP-40</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>

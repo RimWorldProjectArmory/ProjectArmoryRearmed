@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     Walther PPK
-     Source:                https://en.wikipedia.org/wiki/Walther_PPK
-	 Cyclic Rate of Fire:	   DEPENDS ON HOW MUCH YOU WANT TO ASSASSINMATE
-     Barrel Length:            83 mm
-     Muzzle Velocity:          244 m/s
-     Weapon's Weight:		   590 g
-	 recoil:				    2.48 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/Walther_PPK
+     Cyclic Rate of Fire:       N/A
+     Barrel Length:             83 mm
+     Muzzle Velocity:           244 m/s
+     Weapon's Weight:           590 g
+     Recoil:                    2.48 m/s
+
     .32 ACP
-     Source:                https://en.wikipedia.org/wiki/Star_Model_14
-     Projectile Mass:          6 g  
-     Tested Barrel Length:     95 mm
-     Tested Energy:            270 J
-     Tested Velocity:          300 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/Star_Model_14
+     Projectile Mass:           6 g  
+     Tested Barrel Length:      95 mm
+     Tested Energy:             270 J
+     Tested Velocity:           300 m/s
+
     Gun_P_WaltherPPK_PA
-     Muzzle Energy:           192 pa/J
+     Muzzle Energy:             192 pa/J
 -->
 
 

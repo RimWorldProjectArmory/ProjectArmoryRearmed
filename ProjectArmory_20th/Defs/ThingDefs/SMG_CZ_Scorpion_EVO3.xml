@@ -2,23 +2,23 @@
 
 <!-- WeaponData
     CZ_Scorpion_EVO3
-     Source:                https://en.wikipedia.org/wiki/CZ_Scorpion_Evo_3
-     Cyclic rate of fire:    1 150 rds/min
-     Barrel Length:            196 mm
-     Muzzle Velocity:          370/s
-     Weapon's Weight:		   2770 g
-	 recoil:				    1.07 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/CZ_Scorpion_Evo_3
+     Cyclic Rate of Fire:       1 150 rds/min
+     Barrel Length:             196 mm
+     Muzzle Velocity:           370/s
+     Weapon's Weight:           2770 g
+     Recoil:                    1.07 m/s
+     
     9x19 Parabellum
-     Source:                https://en.wikipedia.org/wiki/9×19mm_Parabellum
-     Projectile Mass:          8.04 g  
-     Tested Barrel Length:     150 mm
-     Tested Energy:            518 J
-     Tested Velocity:          360 m/s
+     Source:                    https://en.wikipedia.org/wiki/9×19mm_Parabellum
+     Projectile Mass:           8.04 g  
+     Tested Barrel Length:      150 mm
+     Tested Energy:             518 J
+     Tested Velocity:           360 m/s
       
-	 
+     
     Gun_SMG_CZ_Scorpion_EVO3_PA
-     Muzzle Energy:            696 pa/J
+     Muzzle Energy:             696 pa/J
 -->
 
 

@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     McMillan Tac-50
-     Source:                https://en.wikipedia.org/wiki/McMillan_Tac-50
-     Cyclic rate of fire:      as fast as you can remove the... things.
-     Barrel Length:            737 mm
-     Muzzle Velocity:          805 m/s
-     Weapon's Weight:		11 800 g
-	 recoil:				    3.34 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/McMillan_Tac-50
+     Cyclic Rate of Fire:       N/A
+     Barrel Length:             737 mm
+     Muzzle Velocity:           805 m/s
+     Weapon's Weight:           11 800 g
+     Recoil:                    3.34 m/s
+
     .50 BMG
-     Source:                https://en.wikipedia.org/wiki/.50 BMG
-     Projectile Mass:          52 g 
-     Tested Barrel Length:     1100 mm
-     Tested Energy:         17 952 J
-     Tested Velocity:          785 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/.50 BMG
+     Projectile Mass:           52 g 
+     Tested Barrel Length:      1100 mm
+     Tested Energy:             17 952 J
+     Tested Velocity:           785 m/s
+
     Gun_SR_McMillan Tac-50_PA
-     Muzzle Energy:           11 258 pa/J
+     Muzzle Energy:             11 258 pa/J
 -->
 
 
@@ -41,7 +40,7 @@
         <defName>Gun_SR_McMillanTac-50_PA</defName>
         <label>McMillan Tac-50</label>
         <description>Commercial Anti-Materiel rifle, modern, hard-hitting and reliable, but due to light weight, accuracy suffers a lot.  </description>
-		<graphicData>
+        <graphicData>
             <texPath>Things/SR/McMillanTac-50</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>

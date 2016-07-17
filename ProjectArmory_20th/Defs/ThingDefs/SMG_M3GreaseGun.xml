@@ -2,23 +2,23 @@
 
 <!-- WeaponData
     M3GreaseGun
-     Source:                https://en.wikipedia.org/wiki/M3_Grease_Gun
-     Cyclic rate of fire:      450 rds/min
-     Barrel Length:            203 mm
-     Muzzle Velocity:          280 m/s
-     Weapon's Weight:		   2700 g
-	 recoil:				    1.59 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/M3_Grease_Gun
+     Cyclic Rate of Fire:       450 rds/min
+     Barrel Length:             203 mm
+     Muzzle Velocity:           280 m/s
+     Weapon's Weight:           2700 g
+     Recoil:                    1.59 m/s
+     
     .45 ACP
-     Source:                https://en.wikipedia.org/wiki/.45_ACP
-     Projectile Mass:          15 g  
-     Tested Barrel Length:     127 mm
-     Tested Energy:            702 J
-     Tested Velocity:          270 m/s
+     Source:                    https://en.wikipedia.org/wiki/.45_ACP
+     Projectile Mass:           15 g  
+     Tested Barrel Length:      127 mm
+     Tested Energy:             702 J
+     Tested Velocity:           270 m/s
       
-	 
+     
     Gun_SMG_M3GreaseGun_PA
-     Muzzle Energy:            1340 pa/J
+     Muzzle Energy:             1340 pa/J
 -->
 
 
@@ -41,7 +41,7 @@
         <defName>Gun_SMG_M3GreaseGun_PA</defName>
         <label>M3 Grease gun</label>
         <description>Rugged and effective submachine gun developed by a full-time pirate kingpin and part-time rimworld gunsmith which name we'd rather not name, this submachine gun is fairly simple, cheap and effective, with decent stopping power. It has never made it's way on full production line because of the nature of it's inventor, so it is moslty found in arms of pirates and shady mercenaries.</description>
-		<graphicData>
+        <graphicData>
             <texPath>Things/SMG/M3GreaseGun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>

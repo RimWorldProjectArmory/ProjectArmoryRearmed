@@ -2,21 +2,20 @@
 
 <!-- WeaponData
     VSSVintorez
-     Source:                https://en.wikipedia.org/wiki/VSS_Vintorez
-     Cyclic rate of fire:      as fast as you can cut the bolts.
-     Barrel Length:            200 mm
-     Muzzle Velocity:          292 m/s
-     Weapon's Weight:		 2 600 g
-	 recoil:				    1.88 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/VSS_Vintorez
+     Cyclic Rate of Fire:       N/A
+     Barrel Length:             200 mm
+     Muzzle Velocity:           292 m/s
+     Weapon's Weight:           2 600 g
+     Recoil:                    1.88 m/s
+
     9x39mm
-     Source:                https://en.wikipedia.org/wiki/9×39mm
-     Projectile Mass:          16.8 g 
-     Tested Barrel Length:     200 mm
-     Tested Energy:            658 J
-     Tested Velocity:          280 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/9×39mm
+     Projectile Mass:           16.8 g 
+     Tested Barrel Length:      200 mm
+     Tested Energy:             658 J
+     Tested Velocity:           280 m/s
+
     Gun_SR_VSSVintorez_PA
      Muzzle Energy:             686 pa/J
 -->
@@ -41,7 +40,7 @@
         <defName>Gun_SR_VSSVintorez_PA</defName>
         <label>VSS Vintorez</label>
         <description>Special forces marksman's weapon designed from the ground up to be as quiet as possible. Sub-sonic ammunition, fully suppressed barrel, heavy and hardened bullets are the things which make it effective. It lacks the stopping power of a sniper rifle, making up for it by how quiet it is.  </description>
-		<graphicData>
+        <graphicData>
             <texPath>Things/SR/VSSVintorez</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>

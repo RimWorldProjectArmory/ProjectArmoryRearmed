@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     Ruby M1915
-     Source:                https://en.wikipedia.org/wiki/Ruby_pistol
-	 Cyclic Rate of Fire:	   DEPENDS ON HOW MUCH YOU WANT TO DOMINATE THE SAVAGES
-     Barrel Length:            120 mm
-     Muzzle Velocity:          335 m/s
-     Weapon's Weight:		   850 g
-	 recoil:				    1.58 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/Ruby_pistol
+     Cyclic Rate of Fire:       N/A
+     Barrel Length:             120 mm
+     Muzzle Velocity:           335 m/s
+     Weapon's Weight:           850 g
+     Recoil:                    1.58 m/s
+
     .32 ACP
-     Source:                https://en.wikipedia.org/wiki/.32_ACP
-     Projectile Mass:          4 g  
-     Tested Barrel Length:     102 mm
-     Tested Energy:            218 J
-     Tested Velocity:          335 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/.32_ACP
+     Projectile Mass:           4 g  
+     Tested Barrel Length:      102 mm
+     Tested Energy:             218 J
+     Tested Velocity:           335 m/s
+
     Gun_P_RubyM1915_PA
-     Muzzle Energy:           256 pa/J
+     Muzzle Energy:             256 pa/J
 -->
 
 

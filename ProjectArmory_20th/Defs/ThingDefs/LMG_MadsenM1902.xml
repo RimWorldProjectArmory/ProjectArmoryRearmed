@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     MadsenM1902
-     Source:                https://en.wikipedia.org/wiki/Madsen_machine_gun
-     Cyclic rate of fire:      450 rds/min
-     Barrel Length:            584 mm
-     Muzzle Velocity:          870 m/s
-     Weapon's Weight:		 7 250 g
-	 recoil:				    1.3 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/Madsen_machine_gun
+     Cyclic Rate of Fire:       450 rds/min
+     Barrel Length:             584 mm
+     Muzzle Velocity:           870 m/s
+     Weapon's Weight:           7 250 g
+     Recoil:                    1.3 m/s
+
     .30-06 Springfield
-     Source:                https://en.wikipedia.org/wiki/.30-06_Springfield
-     Projectile Mass:          11 g 
-     Tested Barrel Length:     610 mm
-     Tested Energy:          3 240 J
-     Tested Velocity:          900 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/.30-06_Springfield
+     Projectile Mass:           11 g 
+     Tested Barrel Length:      610 mm
+     Tested Energy:             3 240 J
+     Tested Velocity:           900 m/s
+
     Gun_LMG_MadsenM1902_PA
-     Muzzle Energy:            2999 pa/J
+     Muzzle Energy:             2999 pa/J
 -->
 
 
@@ -41,7 +40,7 @@
         <defName>Gun_LMG_MadsenM1902_PA</defName>
         <label>M1902 Madsen Machine Gun</label>
         <description>One of the earliest light machine gun designs, still is as succesful and popular as many centuries ago when it was first put into production. Popular all around the poor midworld and rimworld colonies which are very happy with the price tag, and are not bothered with slow rate of fire and reliability issues.  </description>
-		<graphicData>
+        <graphicData>
             <texPath>Things/LMG/MadsenM1902</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>

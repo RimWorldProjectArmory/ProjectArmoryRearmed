@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     Star model 1914
-     Source:                https://en.wikipedia.org/wiki/Star_Model_14
-	 Cyclic Rate of Fire:	   DEPENDS ON HOW MUCH YOU WANT TO KILL ZE GERMANS
-     Barrel Length:            140 mm
-     Muzzle Velocity:          335 m/s
-     Weapon's Weight:		   910 g
-	 recoil:				    1.47 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/Star_Model_14
+     Cyclic Rate of Fire:       N/A
+     Barrel Length:             140 mm
+     Muzzle Velocity:           335 m/s
+     Weapon's Weight:           910 g
+     Recoil:                    1.47 m/s
+
     .32 ACP
-     Source:                https://en.wikipedia.org/wiki/Star_Model_14
-     Projectile Mass:          4 g  
-     Tested Barrel Length:     102 mm
-     Tested Energy:            218 J
-     Tested Velocity:          305 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/Star_Model_14
+     Projectile Mass:           4 g  
+     Tested Barrel Length:      102 mm
+     Tested Energy:             218 J
+     Tested Velocity:           305 m/s
+
     Gun_P_StarModel1914_PA
-     Muzzle Energy:           328 pa/J
+     Muzzle Energy:             328 pa/J
 -->
 
 

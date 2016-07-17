@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     G11
-     Source:                https://en.wikipedia.org/wiki/Heckler_&_Koch_G11
-     Cyclic rate of fire:     1050 rds/min
-     Barrel Length:            488 mm
-     Muzzle Velocity:          925 m/s
-     Weapon's Weight:		   3800 g
-	 recoil:				    0.43 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/Heckler_&_Koch_G11
+     Cyclic Rate of Fire:       1050 rds/min
+     Barrel Length:             488 mm
+     Muzzle Velocity:           925 m/s
+     Weapon's Weight:           3800 g
+     Recoil:                    0.43 m/s
+
     4.7mm caseless ammunition
      Source:                
-     Projectile Mass:          2 g  
-     Tested Barrel Length:     540 mm
-     Tested Energy:            830 J
-     Tested Velocity:          930 m/s
-      
-	 
+     Projectile Mass:           2 g  
+     Tested Barrel Length:      540 mm
+     Tested Energy:             830 J
+     Tested Velocity:           930 m/s
+
     Gun_AR_G11_PA
-     Muzzle Energy:           830 pa/J
+     Muzzle Energy:             830 pa/J
 -->
 
 

@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     Desert Eagle
-     Source:                https://en.wikipedia.org/wiki/Desert_Eagle
-     Cyclic rate of fire:      DEPENDS ON HOW MUCH YOU HATE YOUR WRIST
-     Barrel Length:            152 mm
-     Muzzle Velocity:          470 m/s
-     Weapon's Weight:		   1999 g
-	 recoil:				    4.46 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/Desert_Eagle
+     Cyclic Rate of Fire:       N/A
+     Barrel Length:             152 mm
+     Muzzle Velocity:           470 m/s
+     Weapon's Weight:           1999 g
+     Recoil:                    4.46 m/s
+
     .32 Long Colt
-     Source:                https://en.wikipedia.org/wiki/.32_Long_Colt
-     Projectile Mass:          19 g  
-     Tested Barrel Length:     152 mm
-     Tested Energy:            2200 J
-     Tested Velocity:          470 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/.32_Long_Colt
+     Projectile Mass:           19 g  
+     Tested Barrel Length:      152 mm
+     Tested Energy:             2200 J
+     Tested Velocity:           470 m/s
+
     Gun_AR_Desert_Eagle_PA
-     Muzzle Energy:           2200 pa/J
+     Muzzle Energy:             2200 pa/J
 -->
 
 

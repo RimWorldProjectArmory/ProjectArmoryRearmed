@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     Mauser HSC
-     Source:                https://en.wikipedia.org/wiki/Mauser_HSc
-	 Cyclic Rate of Fire:	   DEPENDS ON HOW MUCH YOU WANT TO PUNISH THE PUNY
-     Barrel Length:            86 mm
-     Muzzle Velocity:          310 m/s
-     Weapon's Weight:		   700 g
-	 recoil:				    2.21 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/Mauser_HSc
+     Cyclic Rate of Fire:       DEPENDS ON HOW MUCH YOU WANT TO PUNISH THE PUNY
+     Barrel Length:             86 mm
+     Muzzle Velocity:           310 m/s
+     Weapon's Weight:           700 g
+     Recoil:                    2.21 m/s
+
     .32 ACP
-     Source:                https://en.wikipedia.org/wiki/.32_ACP
-     Projectile Mass:          5 g  
-     Tested Barrel Length:     102 mm
-     Tested Energy:            221 J
-     Tested Velocity:          310 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/.32_ACP
+     Projectile Mass:           5 g  
+     Tested Barrel Length:      102 mm
+     Tested Energy:             221 J
+     Tested Velocity:           310 m/s
+
     Gun_P_MauserHSC_PA
-     Muzzle Energy:           186 pa/J
+     Muzzle Energy:             186 pa/J
 -->
 
 

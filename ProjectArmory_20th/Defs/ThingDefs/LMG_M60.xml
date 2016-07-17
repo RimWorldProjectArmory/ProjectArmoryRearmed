@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     M60
-     Source:                https://en.wikipedia.org/wiki/M60_machine_gun
-     Cyclic rate of fire:      625 rds/min
-     Barrel Length:            560 mm
-     Muzzle Velocity:          853 m/s
-     Weapon's Weight:		10 500 g
-	 recoil:				    0.81 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/M60_machine_gun
+     Cyclic Rate of Fire:       625 rds/min
+     Barrel Length:             560 mm
+     Muzzle Velocity:           853 m/s
+     Weapon's Weight:           10 500 g
+     Recoil:                    0.81 m/s
+
     7.62x51mm NATO
-     Source:                https://en.wikipedia.org/wiki/7.62×51mm_NATO
-     Projectile Mass:          10 g 
-     Tested Barrel Length:     610 mm
-     Tested Energy:          3 304 J
-     Tested Velocity:          761 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/7.62×51mm_NATO
+     Projectile Mass:           10 g 
+     Tested Barrel Length:      610 mm
+     Tested Energy:             3 304 J
+     Tested Velocity:           761 m/s
+
     Gun_LMG_M60_PA
-     Muzzle Energy:            3106 pa/J
+     Muzzle Energy:             3106 pa/J
 -->
 
 
@@ -41,7 +40,7 @@
         <defName>Gun_LMG_M60_PA</defName>
         <label>M60 machine gun</label>
         <description>Veteran of Bucaneer wars on Jungle worlds in Sector 39-104, this machine gun was designed for brutal suppresive effectiveness in compact package, while being effective enough for accurate fire when necessary. Decent, adequate LMG. </description>
-		<graphicData>
+        <graphicData>
             <texPath>Things/LMG/M60</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>

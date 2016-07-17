@@ -2,23 +2,22 @@
 
 <!-- WeaponData
     MauserM1918T-gewehr
-     Source:                https://en.wikipedia.org/wiki/Mauser_1918_T-Gewehr
-     Cyclic rate of fire:      as fast as you can break your shoulder
-     Barrel Length:            990 mm
-     Muzzle Velocity:          785 m/s
-     Weapon's Weight:		15 868 g
-	 recoil:				    2.19 m/s
-	 
+     Source:                    https://en.wikipedia.org/wiki/Mauser_1918_T-Gewehr
+     Cyclic Rate of Fire:       N/A
+     Barrel Length:             990 mm
+     Muzzle Velocity:           785 m/s
+     Weapon's Weight:           15 868 g
+     Recoil:                    2.19 m/s
+
     13.2mm TuF
-     Source:                https://en.wikipedia.org/wiki/13.2mm_TuF
-     Projectile Mass:          51.5 g 
-     Tested Barrel Length:     990 mm
-     Tested Energy:         15 868 J
-     Tested Velocity:          785 m/s
-      
-	 
+     Source:                    https://en.wikipedia.org/wiki/13.2mm_TuF
+     Projectile Mass:           51.5 g 
+     Tested Barrel Length:      990 mm
+     Tested Energy:             15 868 J
+     Tested Velocity:           785 m/s
+
     Gun_SR_MauserM1918T-gewehr_PA
-     Muzzle Energy:           15 868 pa/J
+     Muzzle Energy:             15 868 pa/J
 -->
 
 
@@ -41,7 +40,7 @@
         <defName>Gun_SR_MauserM1918T-gewehr_PA</defName>
         <label>Mauser M1918 T-gewehr</label>
         <description>World's first anti-tank rifle design. it is known for it's brutal simplicity, and it was and still popular on rimworld of  </description>
-		<graphicData>
+        <graphicData>
             <texPath>Things/SR/MauserM1918T-gewehr</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
@@ -58,7 +57,7 @@
         <costList>
             <Steel>450</Steel>
             <Components>17</Components>
-			<WoodLog>20</WoodLog>
+            <WoodLog>20</WoodLog>
         </costList>
         <verbs>
             <li>
