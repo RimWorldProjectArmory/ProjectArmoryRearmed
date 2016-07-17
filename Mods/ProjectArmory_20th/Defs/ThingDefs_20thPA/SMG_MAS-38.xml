@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    MAS-38
+     Source:                    https://en.wikipedia.org/wiki/MAS-38
+     Cyclic Rate of Fire:       650 rds/min
+     Barrel Length:             224 mm
+     Muzzle Velocity:           345 m/s
+     Weapon's Weight:           3560 g
+     Recoil:                    0.48 m/s
+     
+    7.65x20mm Longue
+     Source:                    https://en.wikipedia.org/wiki/7.65×20mm_Longue
+     Projectile Mass:           5 g 
+     Tested Barrel Length:      224 mm
+     Tested Energy:             330 J
+     Tested Velocity:           345 m/s
+      
+     
+    Gun_SMG_MAS-38_PA
+     Muzzle Energy:             330 pa/J
+-->
+
+
+<ThingDefs>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_SMG_MAS-38_PA</defName>
+        <label>MAS-38 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>3</damageAmountBase>
+            <speed>50</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_SMG_MAS-38_PA</defName>
+        <label>MAS-38</label>
+        <description>One of the earliest submachine gun designs in history, re-discovered countless times by clueless regressed and re-progressed tribes and cultures scattered accross thousands of rimworlds. Hardly deadly, but very accurate for an smg.</description>
+        <graphicData>
+            <texPath>Things/SMG/MAS-38</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>7830</WorkToMake>
+            <MarketValue>440</MarketValue>
+            <AccuracyTouch>0.99</AccuracyTouch>
+            <AccuracyShort>0.95</AccuracyShort>
+            <AccuracyMedium>0.76</AccuracyMedium>
+            <AccuracyLong>0.33</AccuracyLong>
+            <RangedWeapon_Cooldown>0.78</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>140</Steel>
+            <Component>4</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_SMG_MAS-38_PA</projectileDef>
+                <warmupTicks>118</warmupTicks>
+                <range>18</range>
+                <burstShotCount>4</burstShotCount>
+                <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+                <soundCast>ShotHeavySMG</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

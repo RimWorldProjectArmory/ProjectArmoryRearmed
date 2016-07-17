@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    Smith & wesson Model 1928
+     Source:                    https://en.wikipedia.org/wiki/Smith_&_Wesson_Model_28
+     Cyclic Rate of Fire:       N/A
+     Barrel Length:             150 mm
+     Muzzle Velocity:           380 m/s
+     Weapon's Weight:           850 g
+     Recoil:                    1.58 m/s
+
+    .357 Magnum
+     Source:                    https://en.wikipedia.org/wiki/.357_Magnum
+     Projectile Mass:           10 g  
+     Tested Barrel Length:      102 mm
+     Tested Energy:             731 J
+     Tested Velocity:           380 m/s
+
+    Gun_P_SoWMod28_PA
+     Muzzle Energy:             1075 pa/J
+-->
+
+
+<ThingDefs>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_P_SoWMod28_PA</defName>
+        <label>SoWMod28 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>16</damageAmountBase>
+            <speed>64</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_P_SoWMod28_PA</defName>
+        <label>Smith and Wesson Moodel 28</label>
+        <description>Relatively modern, powerful midworld revolver will grant all the stopping power you need from a pistol, and some more.</description>
+        <graphicData>
+            <texPath>Things/P/SoWMod28</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractPistol</soundInteract>
+        <statBases>
+            <WorkToMake>8325</WorkToMake>
+            <MarketValue>275</MarketValue>
+            <AccuracyTouch>0.99</AccuracyTouch>
+            <AccuracyShort>0.83</AccuracyShort>
+            <AccuracyMedium>0.58</AccuracyMedium>
+            <AccuracyLong>0.37</AccuracyLong>
+            <RangedWeapon_Cooldown>0.59</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>34</Steel>
+            <Component>2</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_P_SoWMod28_PA</projectileDef>
+                <warmupTicks>60</warmupTicks>
+                <range>22</range>
+                <soundCast>ShotPistol</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

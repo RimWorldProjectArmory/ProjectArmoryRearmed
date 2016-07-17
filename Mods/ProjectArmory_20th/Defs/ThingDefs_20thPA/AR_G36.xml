@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    G36
+     Source:                    https://en.wikipedia.org/wiki/Heckler_&_Koch_G36
+     Cyclic Rate of Fire:       750 rds/min
+     Barrel Length:             480 mm
+     Muzzle Velocity:           920 m/s
+     Weapon's Weight:           3630 g
+     Recoil:                    1.01 m/s
+
+    5.56x45mm NATO
+     Source:                    https://en.wikipedia.org/wiki/Heckler_&_Koch_G36
+     Projectile Mass:           4 g  
+     Tested Barrel Length:      508 mm
+     Tested Energy:             1767 J
+     Tested Velocity:           940 m/s
+
+    Gun_AR_G36_PA
+     Muzzle Energy:             1634 pa/J
+-->
+
+
+<ThingDefs>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_AR_G36_PA</defName>
+        <label>G36 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>6</damageAmountBase>
+            <speed>69</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_AR_G36_PA</defName>
+        <label>G36</label>
+        <description>Experimental, and partially successful assault rifle utilizing caseless ammunition without sources of energy, unlike the renowned charge rifle. It is more often kept as a curiosity rather than a practical weapon, for ammunition manufacturing process is much more complicated than that of a regular cased ammunition, and considering the severe competition from charge rifles, this concept realistically only took off on underdeveloped and very faraway worlds on which metal is a very precious resource that cannot be spent on making cases.</description>
+        <graphicData>
+            <texPath>Things/AR/G36</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>13190</WorkToMake>
+            <MarketValue>820</MarketValue>
+            <AccuracyTouch>0.68</AccuracyTouch>
+            <AccuracyShort>0.85</AccuracyShort>
+            <AccuracyMedium>0.76</AccuracyMedium>
+            <AccuracyLong>0.63</AccuracyLong>
+            <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>111</Steel>
+            <Component>4</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_AR_G36_PA</projectileDef>
+                <warmupTicks>82</warmupTicks>
+                <range>31</range>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+                <soundCast>ShotAssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>
