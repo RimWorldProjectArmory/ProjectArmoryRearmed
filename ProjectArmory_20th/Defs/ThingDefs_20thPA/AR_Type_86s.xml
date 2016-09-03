@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <!-- WeaponData
-    AK 47
-     Source:                https://en.wikipedia.org/wiki/AK-47
-     Cyclic rate of fire:      600 rds/min
-     Barrel Length:            415 mm
-     Muzzle Velocity:          715 m/s
-     Weapon's Weight:		   3470 g
-	 recoil:				    1.62 m/s
+    Type_86s
+     Source:                https://en.wikipedia.org/wiki/Norinco_Type_86S
+     Cyclic rate of fire:      750 rds/min
+     Barrel Length:            460 mm
+     Muzzle Velocity:          710 m/s
+     Weapon's Weight:		   3680 g
+	 recoil:				    0.98 m/s
 	 
-    7.62x39mm
-     Source:                https://en.wikipedia.org/wiki/7.62%C3%9739mm
-     Projectile Mass:          7.9 g  
+    7.62x39mm NATO
+     Source:                https://en.wikipedia.org/wiki/7.62×39mm
+     Projectile Mass:          10 g  
      Tested Barrel Length:     415 mm
-     Tested Energy:          2 108 J
-     Tested Velocity:          730 m/s
+     Tested Energy:           2056 J
+     Tested Velocity:          640 m/s
       
 	 
-    Gun_AR_AK47_PA
-     Muzzle Energy:          2 064 pa/J
+    Gun_AR_Type_86s_PA
+     Muzzle Energy:           2404 pa/J
 -->
 
 
@@ -30,49 +30,48 @@
 		</weaponTags>
 	</ThingDef>
     <ThingDef ParentName="PA_BaseBullet">
-        <defName>Bullet_AR_AK47_PA</defName>
-        <label>AK47 bullet</label>
+        <defName>Bullet_AR_Type_86s_PA</defName>
+        <label>Type_86s bullet</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Small</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile>
             <damageDef>Bullet</damageDef>
-            <damageAmountBase>8</damageAmountBase>
+            <damageAmountBase>9</damageAmountBase>
             <speed>61</speed>
         </projectile>
     </ThingDef>
 
     <ThingDef ParentName="PA_BaseHumanMakeableGun">
-        <defName>Gun_AR_AK47_PA</defName>
-        <label>AK-47</label>
-        <description>A general-purpose ancient pattern military weapon for field or urban combat. It fires a three-round burst. Good range, low power, high rate of fire.</description>
+        <defName>Gun_AR_Type_86s_PA</defName>
+        <label>Norinco Type 86s</label>
+        <description>Norinco Type 86s is a bullpup-design assault rifle produced by the factory world of Tyr, this assault rifle has great stopping power at the expense of accuracy and quite abrupt recoil, while also having above average range thanks to the weight of the projectile. </description>
         <graphicData>
-            <texPath>Things/AR/AK47</texPath>
+            <texPath>Things/AR/Type_86s</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>InteractRifle</soundInteract>
         <statBases>
-            <WorkToMake>109000</WorkToMake>
-            <MarketValue>550</MarketValue>
+            <WorkToMake>131705</WorkToMake>
+            <MarketValue>710</MarketValue>
             <AccuracyTouch>0.62</AccuracyTouch>
             <AccuracyShort>0.77</AccuracyShort>
             <AccuracyMedium>0.68</AccuracyMedium>
             <AccuracyLong>0.56</AccuracyLong>
-            <RangedWeapon_Cooldown>0.93</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>0.99</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <Steel>106</Steel>
-            <WoodLog>10</WoodLog>
-            <Component>4</Component>
+            <Steel>122</Steel>
+            <Component>5</Component>
         </costList>
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <projectileDef>Bullet_AR_AK47_PA</projectileDef>
-                <warmupTicks>78</warmupTicks>
-                <range>36.0</range>
+                <projectileDef>Bullet_AR_Type_86s_PA</projectileDef>
+                <warmupTicks>90</warmupTicks>
+                <range>38</range>
                 <burstShotCount>3</burstShotCount>
                 <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
                 <soundCast>ShotAssaultRifle</soundCast>

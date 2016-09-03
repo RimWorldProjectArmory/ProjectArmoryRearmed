@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    Kbkg_wz_1960
+     Source:                https://en.wikipedia.org/wiki/Kbkg_wz_1960
+     Cyclic rate of fire:      750 rds/min
+     Barrel Length:            460 mm
+     Muzzle Velocity:          900 m/s
+     Weapon's Weight:		   4150 g
+	 recoil:				    0.87 m/s
+	 
+    5.56x45mm NATO
+     Source:                https://en.wikipedia.org/wiki/5.56x45mm_NATO
+     Projectile Mass:          4.1 g  
+     Tested Barrel Length:     508 mm
+     Tested Energy:            1767 J
+     Tested Velocity:          940 m/s
+      
+	 
+    Gun_AR_Kbkg_wz_1960_PA
+     Muzzle Energy:           1617 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef ParentName="BaseGunThing">
+		<defName>Gun_Rifle_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_AssaultRifles</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_AR_Kbkg_wz_1960_PA</defName>
+        <label>Kbkg_wz_1960 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>8</damageAmountBase>
+            <speed>61</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_AR_Kbkg_wz_1960_PA</defName>
+        <label>Kbkg wz. 1960</label>
+        <description>Kbkg wz. 1960 is a service rifle from the midworld of Fryderyk, this rifle is heavily based upon AK pattern of rifles, featuring a long muzzlebreak which allows for attachment of grenades. </description>
+        <graphicData>
+            <texPath>Things/AR/Kbkg_wz_1960</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>117070</WorkToMake>
+            <MarketValue>630</MarketValue>
+            <AccuracyTouch>0.64</AccuracyTouch>
+            <AccuracyShort>0.8</AccuracyShort>
+            <AccuracyMedium>0.71</AccuracyMedium>
+            <AccuracyLong>0.59</AccuracyLong>
+            <RangedWeapon_Cooldown>0.79</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>143</Steel>
+            <Component>6</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_AR_Kbkg_wz_1960_PA</projectileDef>
+                <warmupTicks>105</warmupTicks>
+                <range>34</range>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+                <soundCast>ShotAssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

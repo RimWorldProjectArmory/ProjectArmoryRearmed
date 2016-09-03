@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    Rk_62
+     Source:                https://en.wikipedia.org/wiki/Rk_62
+     Cyclic rate of fire:      700 rds/min
+     Barrel Length:            418 mm
+     Muzzle Velocity:          715 m/s
+     Weapon's Weight:		   4300 g
+	 recoil:				    1.31 m/s
+	 
+    7.62x39mm
+     Source:                https://en.wikipedia.org/wiki/7.62×39mm
+     Projectile Mass:          7.9 g  
+     Tested Barrel Length:     415 mm
+     Tested Energy:           2108 J
+     Tested Velocity:          730 m/s
+      
+	 
+    Gun_AR_Rk_62_PA
+     Muzzle Energy:           2080 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef ParentName="BaseGunThing">
+		<defName>Gun_Rifle_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_AssaultRifles</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_AR_Rk_62_PA</defName>
+        <label>Rk_62 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>8</damageAmountBase>
+            <speed>61</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_AR_Rk_62_PA</defName>
+        <label>Rk 62</label>
+        <description>One of the older Assault Rifles designed and developed on the midworld of Vilppu, loosely based on both AK-47 and AR-18 designs, it uses an outdated low-velocity high-impact assault rifle cartridge, which gives it very decent stopping power but somewhat inferior accuracy to similar designs. It is material-intensive weapon, but fairly cheap due to overproduction. </description>
+        <graphicData>
+            <texPath>Things/AR/Rk_62</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>120730</WorkToMake>
+            <MarketValue>650</MarketValue>
+            <AccuracyTouch>0.64</AccuracyTouch>
+            <AccuracyShort>0.79</AccuracyShort>
+            <AccuracyMedium>0.7</AccuracyMedium>
+            <AccuracyLong>0.58</AccuracyLong>
+            <RangedWeapon_Cooldown>0.82</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>132</Steel>
+            <Component>5</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_AR_Rk_62_PA</projectileDef>
+                <warmupTicks>97</warmupTicks>
+                <range>34</range>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+                <soundCast>ShotAssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    Pindad_SS1
+     Source:                https://en.wikipedia.org/wiki/Pindad_SS1
+     Cyclic rate of fire:      650 rds/min
+     Barrel Length:            506 mm
+     Muzzle Velocity:          710 m/s
+     Weapon's Weight:		   4310 g
+	 recoil:				    0.68 m/s
+	 
+    5.56x45mm NATO
+     Source:                https://en.wikipedia.org/wiki/5.56x45mm_NATO
+     Projectile Mass:          4.1 g  
+     Tested Barrel Length:     506 mm
+     Tested Energy:           1796 J
+     Tested Velocity:          908 m/s
+      
+	 
+    Gun_AR_Pindad_SS1_PA
+     Muzzle Energy:           1404 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef ParentName="BaseGunThing">
+		<defName>Gun_Rifle_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_AssaultRifles</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_AR_Pindad_SS1_PA</defName>
+        <label>Pindad_SS1 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>6</damageAmountBase>
+            <speed>61</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_AR_Pindad_SS1_PA</defName>
+        <label>Pindad SS1</label>
+        <description>Assault Rifle design based off FN FNC, manufactured by the midworld of Raja as a service assault rifle. It's main difference from FN FNC includes low recoil and high control of the burst thanks to relatively low fire rate. Main disadvantage is the range, which is rather low because of the inefficient ammunition use and low muzzle velocity combined with low projectile weight. </description>
+        <graphicData>
+            <texPath>Things/AR/Pindad_SS1</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>139755</WorkToMake>
+            <MarketValue>755</MarketValue>
+            <AccuracyTouch>0.71</AccuracyTouch>
+            <AccuracyShort>0.88</AccuracyShort>
+            <AccuracyMedium>0.78</AccuracyMedium>
+            <AccuracyLong>0.65</AccuracyLong>
+            <RangedWeapon_Cooldown>0.59</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>132</Steel>
+            <Component>5</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_AR_Pindad_SS1_PA</projectileDef>
+                <warmupTicks>97</warmupTicks>
+                <range>25</range>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+                <soundCast>ShotAssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    Norinco_CQ
+     Source:                https://en.wikipedia.org/wiki/Norinco_CQ
+     Cyclic rate of fire:      900 rds/min
+     Barrel Length:            504 mm
+     Muzzle Velocity:          990 m/s
+     Weapon's Weight:		   3300 g
+	 recoil:				    1.23 m/s
+	 
+    5.56x45mm NATO
+     Source:                https://en.wikipedia.org/wiki/5.56x45mm_NATO
+     Projectile Mass:          4.1 g  
+     Tested Barrel Length:     508 mm
+     Tested Energy:            1679 J
+     Tested Velocity:          970 m/s
+      
+	 
+    Gun_AR_Norinco_CQ_PA
+     Muzzle Energy:           1846 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef ParentName="BaseGunThing">
+		<defName>Gun_Rifle_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_AssaultRifles</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_AR_Norinco_CQ_PA</defName>
+        <label>Norinco_CQ bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>7</damageAmountBase>
+            <speed>72</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_AR_Norinco_CQ_PA</defName>
+        <label>Norinco CQ</label>
+        <description>Norinco CQ is an assault rifle based off widely popular M16 pattern. It was produced as a necessity for arming the isolationist midworld of Xia. These rifles used to be exceptionally rare, but by some means their blueprints were distributed around the galaxy and used by various weapons manufacturers. In comparison to traditional M16 assault rifle Norinco CQ boasts higher rate of fire and stopping power, while sacrificing accuracy due to harsh recoil. </description>
+        <graphicData>
+            <texPath>Things/AR/Norinco_CQ</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>133170</WorkToMake>
+            <MarketValue>720</MarketValue>
+            <AccuracyTouch>0.67</AccuracyTouch>
+            <AccuracyShort>0.84</AccuracyShort>
+            <AccuracyMedium>0.74</AccuracyMedium>
+            <AccuracyLong>0.62</AccuracyLong>
+            <RangedWeapon_Cooldown>0.79</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>101</Steel>
+            <Component>4</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_AR_Norinco_CQ_PA</projectileDef>
+                <warmupTicks>74</warmupTicks>
+                <range>34</range>
+                <burstShotCount>4</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <soundCast>ShotAssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    BSA-28P
+     Source:                https://en.wikipedia.org/wiki/BSA-28P
+     Cyclic rate of fire:      600 rds/min
+     Barrel Length:            508 mm
+     Muzzle Velocity:          777 m/s
+     Weapon's Weight:		   4264 g
+	 recoil:				    1.64 m/s
+	 
+    .280 British
+     Source:                https://en.wikipedia.org/wiki/.280_British
+     Projectile Mass:          9 g  
+     Tested Barrel Length:     508 mm
+     Tested Energy:            2717 J
+     Tested Velocity:          777 m/s
+      
+	 
+    Gun_AR_BSA-28P_PA
+     Muzzle Energy:           2717 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef ParentName="BaseGunThing">
+		<defName>Gun_Rifle_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_AssaultRifles</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_AR_BSA-28P_PA</defName>
+        <label>BSA-28P bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>11</damageAmountBase>
+            <speed>64</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_AR_BSA-28P_PA</defName>
+        <label>BSA-28P</label>
+        <description>Experimental early assault rifle design, scarcely employed by some militaries. Fairly good performance, with largest drawback being uncommon weapon cartridge which is hard to come buy unless you manufacture it.</description>
+        <graphicData>
+            <texPath>Things/AR/BSA-28P</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>109755</WorkToMake>
+            <MarketValue>593</MarketValue>
+            <AccuracyTouch>0.63</AccuracyTouch>
+            <AccuracyShort>0.79</AccuracyShort>
+            <AccuracyMedium>0.69</AccuracyMedium>
+            <AccuracyLong>0.57</AccuracyLong>
+            <RangedWeapon_Cooldown>0.94</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>131</Steel>
+            <Component>5</Component>
+			<WoodLog>15</WoodLog>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_AR_BSA-28P_PA</projectileDef>
+                <warmupTicks>96</warmupTicks>
+                <range>40</range>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+                <soundCast>ShotAssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

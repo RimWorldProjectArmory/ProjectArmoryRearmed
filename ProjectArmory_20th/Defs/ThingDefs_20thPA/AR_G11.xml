@@ -2,26 +2,33 @@
 
 <!-- WeaponData
     G11
-     Source:                    https://en.wikipedia.org/wiki/Heckler_&_Koch_G11
-     Cyclic Rate of Fire:       1050 rds/min
-     Barrel Length:             488 mm
-     Muzzle Velocity:           925 m/s
-     Weapon's Weight:           3800 g
-     Recoil:                    0.43 m/s
-
+     Source:                https://en.wikipedia.org/wiki/Heckler_&_Koch_G11
+     Cyclic rate of fire:     1050 rds/min
+     Barrel Length:            488 mm
+     Muzzle Velocity:          925 m/s
+     Weapon's Weight:		   3800 g
+	 recoil:				    0.43 m/s
+	 
     4.7mm caseless ammunition
      Source:                
-     Projectile Mass:           2 g  
-     Tested Barrel Length:      540 mm
-     Tested Energy:             830 J
-     Tested Velocity:           930 m/s
-
+     Projectile Mass:          2 g  
+     Tested Barrel Length:     540 mm
+     Tested Energy:            830 J
+     Tested Velocity:          930 m/s
+      
+	 
     Gun_AR_G11_PA
-     Muzzle Energy:             830 pa/J
+     Muzzle Energy:           830 pa/J
 -->
 
 
 <ThingDefs>
+	<ThingDef ParentName="BaseGunThing">
+		<defName>Gun_Rifle_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_AssaultRifles</li>
+		</weaponTags>
+	</ThingDef>
     <ThingDef ParentName="PA_BaseBullet">
         <defName>Bullet_AR_G11_PA</defName>
         <label>G11 bullet</label>
@@ -38,7 +45,7 @@
 
     <ThingDef ParentName="PA_BaseHumanMakeableGun">
         <defName>Gun_AR_G11_PA</defName>
-        <label>G11</label>
+        <label>H&amp;K G11</label>
         <description>Experimental, and partially successful assault rifle utilizing caseless ammunition without sources of energy, unlike the renowned charge rifle. It is more often kept as a curiosity rather than a practical weapon, for ammunition manufacturing process is much more complicated than that of a regular cased ammunition, and considering the severe competition from charge rifles, this concept realistically only took off on underdeveloped and very faraway worlds on which metal is a very precious resource that cannot be spent on making cases.</description>
         <graphicData>
             <texPath>Things/AR/G11</texPath>
@@ -46,7 +53,7 @@
         </graphicData>
         <soundInteract>InteractRifle</soundInteract>
         <statBases>
-            <WorkToMake>12790</WorkToMake>
+            <WorkToMake>139000</WorkToMake>
             <MarketValue>790</MarketValue>
             <AccuracyTouch>0.86</AccuracyTouch>
             <AccuracyShort>0.95</AccuracyShort>

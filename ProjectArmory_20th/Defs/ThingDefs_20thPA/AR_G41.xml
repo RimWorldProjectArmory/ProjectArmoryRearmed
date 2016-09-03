@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <!-- WeaponData
-    G36
-     Source:                https://en.wikipedia.org/wiki/Heckler_&_Koch_G36
-     Cyclic rate of fire:      750 rds/min
-     Barrel Length:            480 mm
+    H&amp;K G41
+     Source:                https://en.wikipedia.org/wiki/H&amp;K G41
+     Cyclic rate of fire:      850 rds/min
+     Barrel Length:            450 mm
      Muzzle Velocity:          920 m/s
-     Weapon's Weight:		   3630 g
-	 recoil:				    1.01 m/s
+     Weapon's Weight:		   4100 g
+	 recoil:				    0.9 m/s
 	 
     5.56x45mm NATO
-     Source:                https://en.wikipedia.org/wiki/Heckler_&_Koch_G36
-     Projectile Mass:          4 g  
+     Source:                https://en.wikipedia.org/wiki/H&amp;K G41
+     Projectile Mass:          4.1 g  
      Tested Barrel Length:     508 mm
      Tested Energy:            1767 J
      Tested Velocity:          940 m/s
       
 	 
-    Gun_AR_G36_PA
-     Muzzle Energy:           1634 pa/J
+    Gun_AR_H&amp;K G41_PA
+     Muzzle Energy:           1532 pa/J
 -->
 
 
@@ -30,8 +30,8 @@
 		</weaponTags>
 	</ThingDef>
     <ThingDef ParentName="PA_BaseBullet">
-        <defName>Bullet_AR_G36_PA</defName>
-        <label>G36 bullet</label>
+        <defName>Bullet_AR_HoK_G41_PA</defName>
+        <label>H&amp;K G41 bullet</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Small</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -44,36 +44,36 @@
     </ThingDef>
 
     <ThingDef ParentName="PA_BaseHumanMakeableGun">
-        <defName>Gun_AR_G36_PA</defName>
-        <label>H&amp;K G36</label>
-        <description>Reliable and advanced assault rifle based off AR-18 commercial-base firearm. Employed by many midworld militaries.</description>
+        <defName>Gun_AR_HoK_G41_PA</defName>
+        <label>H&amp;K G41</label>
+        <description>Next assault rifle of G series, boasts high standard in accuracy and reliability, and very low recoil. Popular among private military companies since it isn't exactly cheap compared to other rifles.</description>
         <graphicData>
-            <texPath>Things/AR/G36</texPath>
+            <texPath>Things/AR/G41</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>InteractRifle</soundInteract>
         <statBases>
-            <WorkToMake>144145</WorkToMake>
-            <MarketValue>820</MarketValue>
-            <AccuracyTouch>0.68</AccuracyTouch>
-            <AccuracyShort>0.85</AccuracyShort>
-            <AccuracyMedium>0.76</AccuracyMedium>
-            <AccuracyLong>0.63</AccuracyLong>
-            <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+            <WorkToMake>134630</WorkToMake>
+            <MarketValue>730</MarketValue>
+            <AccuracyTouch>0.7</AccuracyTouch>
+            <AccuracyShort>0.87</AccuracyShort>
+            <AccuracyMedium>0.77</AccuracyMedium>
+            <AccuracyLong>0.64</AccuracyLong>
+            <RangedWeapon_Cooldown>0.67</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <Steel>111</Steel>
-            <Component>4</Component>
+            <Steel>126</Steel>
+            <Component>5</Component>
         </costList>
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <projectileDef>Bullet_AR_G36_PA</projectileDef>
-                <warmupTicks>82</warmupTicks>
+                <projectileDef>Bullet_AR_HoK_G41_PA</projectileDef>
+                <warmupTicks>92</warmupTicks>
                 <range>31</range>
-                <burstShotCount>3</burstShotCount>
-                <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+                <burstShotCount>4</burstShotCount>
+                <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
                 <soundCast>ShotAssaultRifle</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>

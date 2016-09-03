@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    QBZ-95
+     Source:                https://en.wikipedia.org/wiki/QBZ-95
+     Cyclic rate of fire:      650 rds/min
+     Barrel Length:            463 mm
+     Muzzle Velocity:          930 m/s
+     Weapon's Weight:		   3250 g
+	 recoil:				    1.32 m/s
+	 
+    5.8x42mm DBP87
+     Source:                https://en.wikipedia.org/wiki/5.8x42mm_DBP87
+     Projectile Mass:          4.6 g  
+     Tested Barrel Length:     557 mm
+     Tested Energy:           1926 J
+     Tested Velocity:          915 m/s
+      
+	 
+    Gun_AR_QBZ-95_PA
+     Muzzle Energy:           1627 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef ParentName="BaseGunThing">
+		<defName>Gun_Rifle_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_AssaultRifles</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_AR_QBZ-95_PA</defName>
+        <label>QBZ-95 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>6</damageAmountBase>
+            <speed>69</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_AR_QBZ-95_PA</defName>
+        <label>QBZ-95</label>
+        <description>Assault rifle originating from the midworld of Zhihao, posesses moderate performance in comparison to more conventional firearms, with major drawback being the caliber manufactured only by armories on that midworld. Relatively difficult to make and expensive, it is a fairly reliable weapon, while being material efficient. </description>
+        <graphicData>
+            <texPath>Things/AR/QBZ-95</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>144145</WorkToMake>
+            <MarketValue>790</MarketValue>
+            <AccuracyTouch>0.66</AccuracyTouch>
+            <AccuracyShort>0.82</AccuracyShort>
+            <AccuracyMedium>0.73</AccuracyMedium>
+            <AccuracyLong>0.6</AccuracyLong>
+            <RangedWeapon_Cooldown>0.82</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>100</Steel>
+            <Component>4</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_AR_QBZ-95_PA</projectileDef>
+                <warmupTicks>73</warmupTicks>
+                <range>34</range>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+                <soundCast>ShotAssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <!-- WeaponData
-    AK 74M
-     Source:                https://en.wikipedia.org/wiki/AKS74U
-     Cyclic rate of fire:      650 rds/min
-     Barrel Length:            415 mm
-     Muzzle Velocity:          890 m/s
-     Weapon's Weight:		   2700 g
-	 recoil:				    1.21 m/s
+    SR-88
+     Source:                https://en.wikipedia.org/wiki/SR-88
+     Cyclic rate of fire:      750 rds/min
+     Barrel Length:            460 mm
+     Muzzle Velocity:          905 m/s
+     Weapon's Weight:		   3680 g
+	 recoil:				    0.98 m/s
 	 
-    5.45x39mm
-     Source:                https://en.wikipedia.org/wiki/5.45×39mm
-     Projectile Mass:          3.69 g  
-     Tested Barrel Length:     415 mm
-     Tested Energy:           1461 J
-     Tested Velocity:          890 m/s
+    5.56x45mm NATO
+     Source:                https://en.wikipedia.org/wiki/5.56x45mm_NATO
+     Projectile Mass:          4 g  
+     Tested Barrel Length:     508 mm
+     Tested Energy:           1679 J
+     Tested Velocity:          905 m/s
       
 	 
-    Gun_AR_AK74M_PA
-     Muzzle Energy:          1461 pa/J
+    Gun_AR_SR-88_PA
+     Muzzle Energy:           1520 pa/J
 -->
 
 
@@ -30,8 +30,8 @@
 		</weaponTags>
 	</ThingDef>
     <ThingDef ParentName="PA_BaseBullet">
-        <defName>Bullet_AR_AK74M_PA</defName>
-        <label>AK74M bullet</label>
+        <defName>Bullet_AR_SR-88_PA</defName>
+        <label>SR-88 bullet</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Small</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -44,35 +44,34 @@
     </ThingDef>
 
     <ThingDef ParentName="PA_BaseHumanMakeableGun">
-        <defName>Gun_AR_AK74M_PA</defName>
-        <label>AK-74M</label>
-        <description>AK74M is an upgraded variant of AK47 system of assault rifles, which uses superior to previous caliber.</description>
+        <defName>Gun_AR_SR-88_PA</defName>
+        <label>SR 88</label>
+        <description>"Seine Rifle Model 88" is an assault rifle developed by factory world of Seine as an export firearm on a request of a southern arm confederation of midworlds for a weapon platform to protect them against mechanoid and pirate attacks. It is heavily inspired by AR-15 design, and heavily improved upon. It is a very versatile assault rifle which is capable of operation in harsh enviroment. </description>
         <graphicData>
-            <texPath>Things/AR/AK74M</texPath>
+            <texPath>Things/AR/SR-88</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>InteractRifle</soundInteract>
         <statBases>
-            <WorkToMake>127315</WorkToMake>
-            <MarketValue>688</MarketValue>
+            <WorkToMake>134630</WorkToMake>
+            <MarketValue>730</MarketValue>
             <AccuracyTouch>0.69</AccuracyTouch>
             <AccuracyShort>0.86</AccuracyShort>
             <AccuracyMedium>0.76</AccuracyMedium>
-            <AccuracyLong>0.7</AccuracyLong>
+            <AccuracyLong>0.63</AccuracyLong>
             <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <Steel>104</Steel>
+            <Steel>113</Steel>
             <Component>4</Component>
-			<WoodLog>10</WoodLog>
         </costList>
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <projectileDef>Bullet_AR_AK74M_PA</projectileDef>
-                <warmupTicks>77</warmupTicks>
-                <range>29</range>
+                <projectileDef>Bullet_AR_SR-88_PA</projectileDef>
+                <warmupTicks>82</warmupTicks>
+                <range>31</range>
                 <burstShotCount>3</burstShotCount>
                 <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
                 <soundCast>ShotAssaultRifle</soundCast>

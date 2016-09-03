@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <!-- WeaponData
-    M4A1
-     Source:                https://en.wikipedia.org/wiki/M4A1
-     Cyclic rate of fire:      700 rds/min
-     Barrel Length:            370 mm
-     Muzzle Velocity:          880 m/s
-     Weapon's Weight:		   3510 g
-	 recoil:				    1.02 m/s
+    Howa_Type_89
+     Source:                https://en.wikipedia.org/wiki/Howa_Type_89
+     Cyclic rate of fire:      850 rds/min
+     Barrel Length:            450 mm
+     Muzzle Velocity:          920 m/s
+     Weapon's Weight:		   4100 g
+	 recoil:				    0.9 m/s
 	 
     5.56x45mm NATO
-     Source:                https://en.wikipedia.org/wiki/M4A1
+     Source:                https://en.wikipedia.org/wiki/Howa_Type_89
      Projectile Mass:          4.1 g  
      Tested Barrel Length:     508 mm
-     Tested Energy:            1679 J
-     Tested Velocity:          905 m/s
+     Tested Energy:            1767 J
+     Tested Velocity:          940 m/s
       
 	 
-    Gun_AR_M4A1_PA
-     Muzzle Energy:           1189 pa/J
+    Gun_AR_Howa_Type_89_PA
+     Muzzle Energy:           1532 pa/J
 -->
 
 
@@ -30,48 +30,48 @@
 		</weaponTags>
 	</ThingDef>
     <ThingDef ParentName="PA_BaseBullet">
-        <defName>Bullet_AR_M4A1_PA</defName>
-        <label>M4A1 bullet</label>
+        <defName>Bullet_AR_Howa_Type_89_PA</defName>
+        <label>Howa_Type_89 bullet</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Small</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile>
             <damageDef>Bullet</damageDef>
-            <damageAmountBase>7</damageAmountBase>
+            <damageAmountBase>6</damageAmountBase>
             <speed>69</speed>
         </projectile>
     </ThingDef>
 
     <ThingDef ParentName="PA_BaseHumanMakeableGun">
-        <defName>Gun_AR_M4A1_PA</defName>
-        <label>M4A1</label>
-        <description>One of the best representatives of assault carbines, this one is very well loved by a great deal of midworld, hiveworld and factoryworld special and security forces, as well as mercenaries all over the galaxy.</description>
+        <defName>Gun_AR_Howa_Type_89_PA</defName>
+        <label>Howa Type 89</label>
+        <description>Somewhat alien assault rifle which comes from a very distant midworld of Li Hyeon, while being quite different in some ways, it is very similar to AR series of assault rifles, albeit with differences in recoil compensating mechanisms which improve accuracy of automatic fire greatly.</description>
         <graphicData>
-            <texPath>Things/AR/M4A1</texPath>
+            <texPath>Things/AR/Howa_Type_89</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>InteractRifle</soundInteract>
         <statBases>
-            <WorkToMake>142000</WorkToMake>
-            <MarketValue>810</MarketValue>
+            <WorkToMake>138290</WorkToMake>
+            <MarketValue>750</MarketValue>
             <AccuracyTouch>0.68</AccuracyTouch>
             <AccuracyShort>0.85</AccuracyShort>
             <AccuracyMedium>0.75</AccuracyMedium>
             <AccuracyLong>0.62</AccuracyLong>
-            <RangedWeapon_Cooldown>0.72</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>0.73</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <Steel>108</Steel>
+            <Steel>107</Steel>
             <Component>4</Component>
         </costList>
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <projectileDef>Bullet_AR_M4A1_PA</projectileDef>
+                <projectileDef>Bullet_AR_Howa_Type_89_PA</projectileDef>
                 <warmupTicks>79</warmupTicks>
-                <range>30</range>
+                <range>31</range>
                 <burstShotCount>3</burstShotCount>
                 <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
                 <soundCast>ShotAssaultRifle</soundCast>

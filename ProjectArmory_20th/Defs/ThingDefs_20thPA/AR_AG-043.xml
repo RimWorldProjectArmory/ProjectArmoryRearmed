@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    AG-043
+     Source:                https://en.wikipedia.org/wiki/AG-043
+     Cyclic rate of fire:      800 rds/min
+     Barrel Length:            215 mm
+     Muzzle Velocity:          700 m/s
+     Weapon's Weight:		   2100 g
+	 recoil:				    1.62 m/s
+	 
+    5.45x39mm
+     Source:                https://en.wikipedia.org/wiki/5.45×39mm
+     Projectile Mass:          3.43 g  
+     Tested Barrel Length:     415 mm
+     Tested Energy:          1 328 J
+     Tested Velocity:          880 m/s
+      
+	 
+    Gun_AR_AG-043_PA
+     Muzzle Energy:            547 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef ParentName="BaseGunThing">
+		<defName>Gun_Rifle_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_AssaultRifles</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_AR_AG-043_PA</defName>
+        <label>AG-043 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>3</damageAmountBase>
+            <speed>61</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_AR_AG-043_PA</defName>
+        <label>AG-043</label>
+        <description>While technically being an assault rifle, this close quarters combat platform uses intermediate cartridge while fulfilling the role of an SMG. It simplifies process of acquisition of ammunition, at the cost of inefficient use of the said ammunition. This gun is popular among the pirates, especially in a role of a boarding gun. It has a reasonable accuracy thanks to low recoil, too, it's main disadvantage is the lack of stopping power.</description>
+        <graphicData>
+            <texPath>Things/AR/AG-043</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>127315</WorkToMake>
+            <MarketValue>720</MarketValue>
+            <AccuracyTouch>0.7</AccuracyTouch>
+            <AccuracyShort>0.87</AccuracyShort>
+            <AccuracyMedium>0.77</AccuracyMedium>
+            <AccuracyLong>0.64</AccuracyLong>
+            <RangedWeapon_Cooldown>0.59</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>107</Steel>
+            <Component>4</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_AR_AG-043_PA</projectileDef>
+                <warmupTicks>78</warmupTicks>
+                <range>23.0</range>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+                <soundCast>ShotAssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

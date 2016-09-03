@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    AEK-971
+     Source:                https://en.wikipedia.org/wiki/AEK-971
+     Cyclic rate of fire:      900 rds/min
+     Barrel Length:            420 mm
+     Muzzle Velocity:          880 m/s
+     Weapon's Weight:		   3470 g
+	 recoil:				    1.62 m/s
+	 
+    5.45x39mm
+     Source:                https://en.wikipedia.org/wiki/5.45×39mm
+     Projectile Mass:          3.43 g  
+     Tested Barrel Length:     415 mm
+     Tested Energy:          1 328 J
+     Tested Velocity:          880 m/s
+      
+	 
+    Gun_AR_AEK-971_PA
+     Muzzle Energy:          1 344 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef ParentName="BaseGunThing">
+		<defName>Gun_Rifle_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_AssaultRifles</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_AR_AEK-971_PA</defName>
+        <label>AEK-971 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>5</damageAmountBase>
+            <speed>67</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_AR_AEK-971_PA</defName>
+        <label>AEK-971</label>
+        <description>Modernized assault rifle employed by Miarea midworld military forces, based off an ancient and widely popular AK pattern of assault rifles, this one features balanced automatics recoil system which improves accuracy of automatic fire.</description>
+        <graphicData>
+            <texPath>Things/AR/AEK-971</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>130245</WorkToMake>
+            <MarketValue>745</MarketValue>
+            <AccuracyTouch>0.7</AccuracyTouch>
+            <AccuracyShort>0.87</AccuracyShort>
+            <AccuracyMedium>0.77</AccuracyMedium>
+            <AccuracyLong>0.64</AccuracyLong>
+            <RangedWeapon_Cooldown>0.66</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>107</Steel>
+            <Component>4</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_AR_AEK-971_PA</projectileDef>
+                <warmupTicks>78</warmupTicks>
+                <range>28.0</range>
+                <burstShotCount>4</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <soundCast>ShotAssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

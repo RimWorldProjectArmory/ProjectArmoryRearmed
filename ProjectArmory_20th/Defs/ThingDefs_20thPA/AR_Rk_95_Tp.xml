@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <!-- WeaponData
-    AK 47
-     Source:                https://en.wikipedia.org/wiki/AK-47
-     Cyclic rate of fire:      600 rds/min
+    Rk_95_Tp
+     Source:                https://en.wikipedia.org/wiki/Rk_95_Tp
+     Cyclic rate of fire:      750 rds/min
      Barrel Length:            415 mm
      Muzzle Velocity:          715 m/s
-     Weapon's Weight:		   3470 g
-	 recoil:				    1.62 m/s
+     Weapon's Weight:		   3700 g
+	 recoil:				    1.53 m/s
 	 
     7.62x39mm
-     Source:                https://en.wikipedia.org/wiki/7.62%C3%9739mm
+     Source:                https://en.wikipedia.org/wiki/7.62×39mm
      Projectile Mass:          7.9 g  
      Tested Barrel Length:     415 mm
-     Tested Energy:          2 108 J
+     Tested Energy:           2108 J
      Tested Velocity:          730 m/s
       
 	 
-    Gun_AR_AK47_PA
-     Muzzle Energy:          2 064 pa/J
+    Gun_AR_Rk_95_Tp_PA
+     Muzzle Energy:           2090 pa/J
 -->
 
 
@@ -30,8 +30,8 @@
 		</weaponTags>
 	</ThingDef>
     <ThingDef ParentName="PA_BaseBullet">
-        <defName>Bullet_AR_AK47_PA</defName>
-        <label>AK47 bullet</label>
+        <defName>Bullet_AR_Rk_95_Tp_PA</defName>
+        <label>Rk_95_Tp bullet</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Small</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -44,37 +44,36 @@
     </ThingDef>
 
     <ThingDef ParentName="PA_BaseHumanMakeableGun">
-        <defName>Gun_AR_AK47_PA</defName>
-        <label>AK-47</label>
-        <description>A general-purpose ancient pattern military weapon for field or urban combat. It fires a three-round burst. Good range, low power, high rate of fire.</description>
+        <defName>Gun_AR_Rk_95_Tp_PA</defName>
+        <label>Rk 95 Tp</label>
+        <description>Successor of the Rk 62 designed and developed on the midworld of Vilppu, it offers improvement in mechanical capabilities as well as material manufacture costs in comparison with the previous model. As a result it is more expensive, accuracy leaves much to be desired, but stopping power is high. </description>
         <graphicData>
-            <texPath>Things/AR/AK47</texPath>
+            <texPath>Things/AR/Rk_95_Tp</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>InteractRifle</soundInteract>
         <statBases>
-            <WorkToMake>109000</WorkToMake>
-            <MarketValue>550</MarketValue>
-            <AccuracyTouch>0.62</AccuracyTouch>
-            <AccuracyShort>0.77</AccuracyShort>
-            <AccuracyMedium>0.68</AccuracyMedium>
-            <AccuracyLong>0.56</AccuracyLong>
-            <RangedWeapon_Cooldown>0.93</RangedWeapon_Cooldown>
+            <WorkToMake>142680</WorkToMake>
+            <MarketValue>770</MarketValue>
+            <AccuracyTouch>0.63</AccuracyTouch>
+            <AccuracyShort>0.78</AccuracyShort>
+            <AccuracyMedium>0.69</AccuracyMedium>
+            <AccuracyLong>0.57</AccuracyLong>
+            <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <Steel>106</Steel>
-            <WoodLog>10</WoodLog>
+            <Steel>113</Steel>
             <Component>4</Component>
         </costList>
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <projectileDef>Bullet_AR_AK47_PA</projectileDef>
-                <warmupTicks>78</warmupTicks>
-                <range>36.0</range>
+                <projectileDef>Bullet_AR_Rk_95_Tp_PA</projectileDef>
+                <warmupTicks>83</warmupTicks>
+                <range>34</range>
                 <burstShotCount>3</burstShotCount>
-                <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+                <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
                 <soundCast>ShotAssaultRifle</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>

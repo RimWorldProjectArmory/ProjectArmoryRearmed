@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    CEAMModele1950
+     Source:                https://en.wikipedia.org/wiki/CEAM_Modèle_1950
+     Cyclic rate of fire:      600 rds/min
+     Barrel Length:            425 mm
+     Muzzle Velocity:          610 m/s
+     Weapon's Weight:		   4330 g
+	 recoil:				    1.13 m/s
+	 
+    7.92x33mm Kurz
+     Source:                https://en.wikipedia.org/wiki/7.92x33mm_Kurz
+     Projectile Mass:          8 g  
+     Tested Barrel Length:     419 mm
+     Tested Energy:            2717 J
+     Tested Velocity:          685 m/s
+      
+	 
+    Gun_AR_CEAMModele1950_PA
+     Muzzle Energy:           2454 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef ParentName="BaseGunThing">
+		<defName>Gun_Rifle_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_AssaultRifles</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_AR_CEAMModele1950_PA</defName>
+        <label>CEAMModele1950 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>10</damageAmountBase>
+            <speed>58</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_AR_CEAMModele1950_PA</defName>
+        <label>CEAM Modele 1950</label>
+        <description>Fairly inaccurate and heavy-recoil but powerful early assault rifle design manufactured by the midworld of Bedivere. Still in use today in limited numbers.</description>
+        <graphicData>
+            <texPath>Things/AR/CEAMModele1950</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>109755</WorkToMake>
+            <MarketValue>593</MarketValue>
+            <AccuracyTouch>0.64</AccuracyTouch>
+            <AccuracyShort>0.79</AccuracyShort>
+            <AccuracyMedium>0.7</AccuracyMedium>
+            <AccuracyLong>0.58</AccuracyLong>
+            <RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>133</Steel>
+            <Component>5</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_AR_CEAMModele1950_PA</projectileDef>
+                <warmupTicks>97</warmupTicks>
+                <range>29</range>
+                <burstShotCount>2</burstShotCount>
+                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+                <soundCast>ShotAssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

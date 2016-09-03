@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    EM-2
+     Source:                https://en.wikipedia.org/wiki/EM-2_rifle
+     Cyclic rate of fire:      750 rds/min
+     Barrel Length:            465 mm
+     Muzzle Velocity:          960 m/s
+     Weapon's Weight:		   3260 g
+	 recoil:				    1.15 m/s
+	 
+    .280 British
+     Source:                https://en.wikipedia.org/wiki/.280_British
+     Projectile Mass:          9 g  
+     Tested Barrel Length:     610 mm
+     Tested Energy:            2717 J
+     Tested Velocity:          777 m/s
+      
+	 
+    Gun_AR_EM-2_PA
+     Muzzle Energy:           2753 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef ParentName="BaseGunThing">
+		<defName>Gun_Rifle_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_AssaultRifles</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_AR_EM-2_PA</defName>
+        <label>EM-2 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>11</damageAmountBase>
+            <speed>63</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_AR_EM-2_PA</defName>
+        <label>EM-2</label>
+        <description>One of the more interesting assault rifles, while being completely inferior in everything except stopping power to other assault rifles, this one is still being actively used on a rimworld of Volund, the place where it was re-discovered.</description>
+        <graphicData>
+            <texPath>Things/AR/EM-2</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>109750</WorkToMake>
+            <MarketValue>600</MarketValue>
+            <AccuracyTouch>0.61</AccuracyTouch>
+            <AccuracyShort>0.76</AccuracyShort>
+            <AccuracyMedium>0.68</AccuracyMedium>
+            <AccuracyLong>0.56</AccuracyLong>
+            <RangedWeapon_Cooldown>1.07</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>107</Steel>
+            <Component>4</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_AR_EM-2_PA</projectileDef>
+                <warmupTicks>79</warmupTicks>
+                <range>40</range>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+                <soundCast>ShotAssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

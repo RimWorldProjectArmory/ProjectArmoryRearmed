@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <!-- WeaponData
-    AK 74M
-     Source:                https://en.wikipedia.org/wiki/AKS74U
+    AKS-74U
+     Source:                https://en.wikipedia.org/wiki/AKS-74U
      Cyclic rate of fire:      650 rds/min
-     Barrel Length:            415 mm
-     Muzzle Velocity:          890 m/s
+     Barrel Length:            206 mm
+     Muzzle Velocity:          735 m/s
      Weapon's Weight:		   2700 g
-	 recoil:				    1.21 m/s
+	 recoil:				    1 m/s
 	 
     5.45x39mm
      Source:                https://en.wikipedia.org/wiki/5.45×39mm
-     Projectile Mass:          3.69 g  
+     Projectile Mass:          8 g  
      Tested Barrel Length:     415 mm
-     Tested Energy:           1461 J
+     Tested Energy:          1 461 J
      Tested Velocity:          890 m/s
       
 	 
-    Gun_AR_AK74M_PA
-     Muzzle Energy:          1461 pa/J
+    Gun_AR_AKS-74U_PA
+     Muzzle Energy:            598 pa/J
 -->
 
 
@@ -30,49 +30,48 @@
 		</weaponTags>
 	</ThingDef>
     <ThingDef ParentName="PA_BaseBullet">
-        <defName>Bullet_AR_AK74M_PA</defName>
-        <label>AK74M bullet</label>
+        <defName>Bullet_AR_AKS_74U_PA</defName>
+        <label>AKS-74U bullet</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Small</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile>
             <damageDef>Bullet</damageDef>
-            <damageAmountBase>6</damageAmountBase>
-            <speed>68</speed>
+            <damageAmountBase>4</damageAmountBase>
+            <speed>62</speed>
         </projectile>
     </ThingDef>
 
     <ThingDef ParentName="PA_BaseHumanMakeableGun">
-        <defName>Gun_AR_AK74M_PA</defName>
-        <label>AK-74M</label>
-        <description>AK74M is an upgraded variant of AK47 system of assault rifles, which uses superior to previous caliber.</description>
+        <defName>Gun_AR_AKS-74U_PA</defName>
+        <label>AKS-74U</label>
+        <description>Compact carbine version of AK-74 assault rifle. Employed mainly by budget-tight midworld special forces.  </description>
         <graphicData>
-            <texPath>Things/AR/AK74M</texPath>
+            <texPath>Things/AR/AKS-74U</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>InteractRifle</soundInteract>
         <statBases>
-            <WorkToMake>127315</WorkToMake>
-            <MarketValue>688</MarketValue>
-            <AccuracyTouch>0.69</AccuracyTouch>
-            <AccuracyShort>0.86</AccuracyShort>
-            <AccuracyMedium>0.76</AccuracyMedium>
-            <AccuracyLong>0.7</AccuracyLong>
-            <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+            <WorkToMake>139750</WorkToMake>
+            <MarketValue>755</MarketValue>
+            <AccuracyTouch>0.66</AccuracyTouch>
+            <AccuracyShort>0.82</AccuracyShort>
+            <AccuracyMedium>0.73</AccuracyMedium>
+            <AccuracyLong>0.61</AccuracyLong>
+            <RangedWeapon_Cooldown>0.71</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <Steel>104</Steel>
-            <Component>4</Component>
-			<WoodLog>10</WoodLog>
+            <Steel>83</Steel>
+            <Component>3</Component>
         </costList>
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <projectileDef>Bullet_AR_AK74M_PA</projectileDef>
-                <warmupTicks>77</warmupTicks>
-                <range>29</range>
+                <projectileDef>Bullet_AR_AKS_74U_PA</projectileDef>
+                <warmupTicks>61</warmupTicks>
+                <range>25.0</range>
                 <burstShotCount>3</burstShotCount>
                 <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
                 <soundCast>ShotAssaultRifle</soundCast>

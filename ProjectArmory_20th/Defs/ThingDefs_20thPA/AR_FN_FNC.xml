@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <!-- WeaponData
-    FAMAS_G2
-     Source:                https://en.wikipedia.org/wiki/FAMAS_G2
-     Cyclic rate of fire:     1050 rds/min
-     Barrel Length:            488 mm
-     Muzzle Velocity:          925 m/s
-     Weapon's Weight:		   3800 g
-	 recoil:				    1 m/s
+    FN_FNC
+     Source:                https://en.wikipedia.org/wiki/FN_FNC
+     Cyclic rate of fire:      700 rds/min
+     Barrel Length:            449 mm
+     Muzzle Velocity:          965 m/s
+     Weapon's Weight:		   3840 g
+	 recoil:				    1.01 m/s
 	 
     5.56x45mm NATO
-     Source:                https://en.wikipedia.org/wiki/5.56×45mm_NATO
+     Source:                https://en.wikipedia.org/wiki/FN_FNC
      Projectile Mass:          4.1 g  
      Tested Barrel Length:     508 mm
-     Tested Energy:            1796 J
-     Tested Velocity:          936 m/s
+     Tested Energy:            1767 J
+     Tested Velocity:          940 m/s
       
 	 
-    Gun_AR_FAMAS_G2_PA
-     Muzzle Energy:           1705 pa/J
+    Gun_AR_FN_FNC_PA
+     Muzzle Energy:           1603 pa/J
 -->
 
 
@@ -30,50 +30,50 @@
 		</weaponTags>
 	</ThingDef>
     <ThingDef ParentName="PA_BaseBullet">
-        <defName>Bullet_AR_FAMAS_G2_PA</defName>
-        <label>FAMAS_G2 bullet</label>
+        <defName>Bullet_AR_FN_FNC_PA</defName>
+        <label>FN_FNC bullet</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Small</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile>
             <damageDef>Bullet</damageDef>
-            <damageAmountBase>7</damageAmountBase>
-            <speed>69</speed>
+            <damageAmountBase>6</damageAmountBase>
+            <speed>71</speed>
         </projectile>
     </ThingDef>
 
     <ThingDef ParentName="PA_BaseHumanMakeableGun">
-        <defName>Gun_AR_FAMAS_G2_PA</defName>
-        <label>FAMAS G2</label>
-        <description>Bullpup-styled assault rifle designed and manufactured on factory world of Lagille.</description>
+        <defName>Gun_AR_FN_FNC_PA</defName>
+        <label>FN FNC</label>
+        <description>Improved version of highly successful FN CAL assault rifle, it was and still is especially popular among bounty hunters for it's reliability in the harshest conditions.</description>
         <graphicData>
-            <texPath>Things/AR/FAMAS_G2</texPath>
+            <texPath>Things/AR/FN_FNC</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>InteractRifle</soundInteract>
         <statBases>
-            <WorkToMake>132440</WorkToMake>
+            <WorkToMake>130975</WorkToMake>
             <MarketValue>710</MarketValue>
             <AccuracyTouch>0.69</AccuracyTouch>
             <AccuracyShort>0.86</AccuracyShort>
             <AccuracyMedium>0.76</AccuracyMedium>
-            <AccuracyLong>0.63</AccuracyLong>
-            <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+            <AccuracyLong>0.64</AccuracyLong>
+            <RangedWeapon_Cooldown>0.71</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <Steel>117</Steel>
+            <Steel>118</Steel>
             <Component>5</Component>
         </costList>
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <projectileDef>Bullet_AR_FAMAS_G2_PA</projectileDef>
+                <projectileDef>Bullet_AR_FN_FNC_PA</projectileDef>
                 <warmupTicks>86</warmupTicks>
-                <range>31</range>
-                <burstShotCount>5</burstShotCount>
-                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <range>33</range>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
                 <soundCast>ShotAssaultRifle</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>

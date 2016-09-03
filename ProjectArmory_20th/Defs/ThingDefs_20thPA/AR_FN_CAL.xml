@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <!-- WeaponData
-    M4A1
-     Source:                https://en.wikipedia.org/wiki/M4A1
-     Cyclic rate of fire:      700 rds/min
-     Barrel Length:            370 mm
-     Muzzle Velocity:          880 m/s
-     Weapon's Weight:		   3510 g
-	 recoil:				    1.02 m/s
+    FN_CAL
+     Source:                https://en.wikipedia.org/wiki/FN_CAL
+     Cyclic rate of fire:      850 rds/min
+     Barrel Length:            510 mm
+     Muzzle Velocity:          920 m/s
+     Weapon's Weight:		   3350 g
+	 recoil:				    1.1 m/s
 	 
     5.56x45mm NATO
-     Source:                https://en.wikipedia.org/wiki/M4A1
+     Source:                https://en.wikipedia.org/wiki/FN_CAL
      Projectile Mass:          4.1 g  
      Tested Barrel Length:     508 mm
-     Tested Energy:            1679 J
-     Tested Velocity:          905 m/s
+     Tested Energy:            1767 J
+     Tested Velocity:          940 m/s
       
 	 
-    Gun_AR_M4A1_PA
-     Muzzle Energy:           1189 pa/J
+    Gun_AR_FN_CAL_PA
+     Muzzle Energy:           1736 pa/J
 -->
 
 
@@ -30,8 +30,8 @@
 		</weaponTags>
 	</ThingDef>
     <ThingDef ParentName="PA_BaseBullet">
-        <defName>Bullet_AR_M4A1_PA</defName>
-        <label>M4A1 bullet</label>
+        <defName>Bullet_AR_FN_CAL_PA</defName>
+        <label>FN_CAL bullet</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Small</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -44,36 +44,36 @@
     </ThingDef>
 
     <ThingDef ParentName="PA_BaseHumanMakeableGun">
-        <defName>Gun_AR_M4A1_PA</defName>
-        <label>M4A1</label>
-        <description>One of the best representatives of assault carbines, this one is very well loved by a great deal of midworld, hiveworld and factoryworld special and security forces, as well as mercenaries all over the galaxy.</description>
+        <defName>Gun_AR_FN_CAL_PA</defName>
+        <label>FN CAL</label>
+        <description>One of the first successful assault rifle designs to be employed by the militaries and alliances across the whole galaxy, it was truly one of the groundbreaking designs.</description>
         <graphicData>
-            <texPath>Things/AR/M4A1</texPath>
+            <texPath>Things/AR/FN_CAL</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>InteractRifle</soundInteract>
         <statBases>
-            <WorkToMake>142000</WorkToMake>
-            <MarketValue>810</MarketValue>
+            <WorkToMake>121460</WorkToMake>
+            <MarketValue>660</MarketValue>
             <AccuracyTouch>0.68</AccuracyTouch>
-            <AccuracyShort>0.85</AccuracyShort>
+            <AccuracyShort>0.84</AccuracyShort>
             <AccuracyMedium>0.75</AccuracyMedium>
             <AccuracyLong>0.62</AccuracyLong>
-            <RangedWeapon_Cooldown>0.72</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>0.74</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <Steel>108</Steel>
+            <Steel>103</Steel>
             <Component>4</Component>
         </costList>
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <projectileDef>Bullet_AR_M4A1_PA</projectileDef>
-                <warmupTicks>79</warmupTicks>
-                <range>30</range>
-                <burstShotCount>3</burstShotCount>
-                <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+                <projectileDef>Bullet_AR_FN_CAL_PA</projectileDef>
+                <warmupTicks>75</warmupTicks>
+                <range>31</range>
+                <burstShotCount>4</burstShotCount>
+                <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
                 <soundCast>ShotAssaultRifle</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>

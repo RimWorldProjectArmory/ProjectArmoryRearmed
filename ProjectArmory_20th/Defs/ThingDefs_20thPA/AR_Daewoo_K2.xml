@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <!-- WeaponData
-    M4A1
-     Source:                https://en.wikipedia.org/wiki/M4A1
-     Cyclic rate of fire:      700 rds/min
-     Barrel Length:            370 mm
-     Muzzle Velocity:          880 m/s
-     Weapon's Weight:		   3510 g
-	 recoil:				    1.02 m/s
+    Daewoo_K2
+     Source:                https://en.wikipedia.org/wiki/Colt_Canada_C7_rifle
+     Cyclic rate of fire:      750 rds/min
+     Barrel Length:            465 mm
+     Muzzle Velocity:          960 m/s
+     Weapon's Weight:		   3260 g
+	 recoil:				    1.15 m/s
 	 
-    5.56x45mm NATO
-     Source:                https://en.wikipedia.org/wiki/M4A1
-     Projectile Mass:          4.1 g  
-     Tested Barrel Length:     508 mm
-     Tested Energy:            1679 J
-     Tested Velocity:          905 m/s
+    .223 Remington
+     Source:                https://en.wikipedia.org/wiki/.223_Remington
+     Projectile Mass:          3.9 g  
+     Tested Barrel Length:     610 mm
+     Tested Energy:            1800 J
+     Tested Velocity:          960 m/s
       
 	 
-    Gun_AR_M4A1_PA
-     Muzzle Energy:           1189 pa/J
+    Gun_AR_Daewoo_K2_PA
+     Muzzle Energy:           1372 pa/J
 -->
 
 
@@ -30,48 +30,48 @@
 		</weaponTags>
 	</ThingDef>
     <ThingDef ParentName="PA_BaseBullet">
-        <defName>Bullet_AR_M4A1_PA</defName>
-        <label>M4A1 bullet</label>
+        <defName>Bullet_AR_Daewoo_K2_PA</defName>
+        <label>Daewoo_K2 bullet</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Small</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile>
             <damageDef>Bullet</damageDef>
-            <damageAmountBase>7</damageAmountBase>
+            <damageAmountBase>8</damageAmountBase>
             <speed>69</speed>
         </projectile>
     </ThingDef>
 
     <ThingDef ParentName="PA_BaseHumanMakeableGun">
-        <defName>Gun_AR_M4A1_PA</defName>
-        <label>M4A1</label>
-        <description>One of the best representatives of assault carbines, this one is very well loved by a great deal of midworld, hiveworld and factoryworld special and security forces, as well as mercenaries all over the galaxy.</description>
+        <defName>Gun_AR_Daewoo_K2_PA</defName>
+        <label>Daewoo K2</label>
+        <description>Military assault rifle originating from the distant midworld of Kyung Seo, it is neither supperior nor inferior to other assault rifles in the galaxy, but undoubtedly there are better models.</description>
         <graphicData>
-            <texPath>Things/AR/M4A1</texPath>
+            <texPath>Things/AR/Daewoo_K2</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>InteractRifle</soundInteract>
         <statBases>
-            <WorkToMake>142000</WorkToMake>
-            <MarketValue>810</MarketValue>
+            <WorkToMake>134630</WorkToMake>
+            <MarketValue>730</MarketValue>
             <AccuracyTouch>0.68</AccuracyTouch>
-            <AccuracyShort>0.85</AccuracyShort>
-            <AccuracyMedium>0.75</AccuracyMedium>
+            <AccuracyShort>0.84</AccuracyShort>
+            <AccuracyMedium>0.74</AccuracyMedium>
             <AccuracyLong>0.62</AccuracyLong>
-            <RangedWeapon_Cooldown>0.72</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>0.76</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <Steel>108</Steel>
+            <Steel>100</Steel>
             <Component>4</Component>
         </costList>
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <projectileDef>Bullet_AR_M4A1_PA</projectileDef>
-                <warmupTicks>79</warmupTicks>
-                <range>30</range>
+                <projectileDef>Bullet_AR_Daewoo_K2_PA</projectileDef>
+                <warmupTicks>73</warmupTicks>
+                <range>32</range>
                 <burstShotCount>3</burstShotCount>
                 <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
                 <soundCast>ShotAssaultRifle</soundCast>

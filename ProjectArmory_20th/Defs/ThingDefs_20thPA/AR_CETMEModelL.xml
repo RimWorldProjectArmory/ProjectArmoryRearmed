@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <!-- WeaponData
-    L85A2
-     Source:                https://en.wikipedia.org/wiki/SA80
-     Cyclic rate of fire:      720 rds/min
-     Barrel Length:            518 mm
-     Muzzle Velocity:          930 m/s
-     Weapon's Weight:		   4980 g
-	 recoil:				    0.77 m/s
+    CETMEModelL
+     Source:                https://en.wikipedia.org/wiki/CETME_Model_L
+     Cyclic rate of fire:      750 rds/min
+     Barrel Length:            400 mm
+     Muzzle Velocity:          875 m/s
+     Weapon's Weight:		   3400 g
+	 recoil:				    1.06 m/s
 	 
-    5.56x45mm NATO
+    7.92x33mm Kurz
      Source:                https://en.wikipedia.org/wiki/5.56x45mm_NATO
      Projectile Mass:          4.1 g  
      Tested Barrel Length:     508 mm
-     Tested Energy:            1679 J
+     Tested Energy:            2717 J
      Tested Velocity:          905 m/s
       
 	 
-    Gun_AR_L85A2_PA
-     Muzzle Energy:           1754 pa/J
+    Gun_AR_CETMEModelL_PA
+     Muzzle Energy:           2068 pa/J
 -->
 
 
@@ -30,48 +30,48 @@
 		</weaponTags>
 	</ThingDef>
     <ThingDef ParentName="PA_BaseBullet">
-        <defName>Bullet_AR_L85A2_PA</defName>
-        <label>L85A2 bullet</label>
+        <defName>Bullet_AR_CETMEModelL_PA</defName>
+        <label>CETMEModelL bullet</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Small</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile>
             <damageDef>Bullet</damageDef>
-            <damageAmountBase>7</damageAmountBase>
-            <speed>69</speed>
+            <damageAmountBase>8</damageAmountBase>
+            <speed>67</speed>
         </projectile>
     </ThingDef>
 
     <ThingDef ParentName="PA_BaseHumanMakeableGun">
-        <defName>Gun_AR_L85A2_PA</defName>
-        <label>L85A2</label>
-        <description>L85A2 is a service bullpup design assault rifle from the midworld of Ceomhan, it is very accurate with very low recoil, at the expense of excessive weight and problems with reliability when working in dusty enviroments. </description>
+        <defName>Gun_AR_CETMEModelL_PA</defName>
+        <label>CETME Model L</label>
+        <description>Medium-performance model of an assault rifle built on a rimworld of Bedwyr, it sports a surprisingly sturdy and effective design for a rifle being developed on a rimworld.</description>
         <graphicData>
-            <texPath>Things/AR/L85A2</texPath>
+            <texPath>Things/AR/CETMEModelL</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>InteractRifle</soundInteract>
         <statBases>
-            <WorkToMake>135365</WorkToMake>
-            <MarketValue>730</MarketValue>
-            <AccuracyTouch>0.73</AccuracyTouch>
-            <AccuracyShort>0.91</AccuracyShort>
-            <AccuracyMedium>0.8</AccuracyMedium>
-            <AccuracyLong>0.67</AccuracyLong>
-            <RangedWeapon_Cooldown>0.62</RangedWeapon_Cooldown>
+            <WorkToMake>136096</WorkToMake>
+            <MarketValue>735</MarketValue>
+            <AccuracyTouch>0.68</AccuracyTouch>
+            <AccuracyShort>0.84</AccuracyShort>
+            <AccuracyMedium>0.74</AccuracyMedium>
+            <AccuracyLong>0.62</AccuracyLong>
+            <RangedWeapon_Cooldown>0.73</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <Steel>153</Steel>
-            <Component>6</Component>
+            <Steel>104</Steel>
+            <Component>4</Component>
         </costList>
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <projectileDef>Bullet_AR_L85A2_PA</projectileDef>
-                <warmupTicks>112</warmupTicks>
-                <range>32</range>
+                <projectileDef>Bullet_AR_CETMEModelL_PA</projectileDef>
+                <warmupTicks>77</warmupTicks>
+                <range>30</range>
                 <burstShotCount>3</burstShotCount>
                 <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
                 <soundCast>ShotAssaultRifle</soundCast>

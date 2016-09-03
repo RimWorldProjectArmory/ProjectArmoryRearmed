@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+ 
+	<!-- Adding these ThingCategoryDefs present in Rimfire makes "AztecMelee" Rimfire GunModMCM  !!  COMPATIBLE  !! -->
+	<ThingCategoryDef>
+		<defName>GunModMCM_WeaponsRanged</defName>
+		<label>ranged weapons</label>
+	</ThingCategoryDef>
+ 
+		<!-- idem. -->
+		<ThingCategoryDef>
+			<defName>IndustrialRanged</defName>
+			<label>firearms</label>
+			<parent>GunModMCM_WeaponsRanged</parent>
+		</ThingCategoryDef>
+ 
+			<!-- Without the two ThingCategoryDefs above, this would have a Rimfire GunModMCM  !!  REQUIREMENT  !! -->
+			<ThingCategoryDef>
+				<defName>AssaultRifles</defName>
+				<label>Assault Rifles</label>
+				<parent>IndustrialRanged</parent>
+			</ThingCategoryDef>
+ 
+</Defs>

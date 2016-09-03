@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    OTs-12
+     Source:                https://en.wikipedia.org/wiki/OTs-12
+     Cyclic rate of fire:      800 rds/min
+     Barrel Length:            206 mm
+     Muzzle Velocity:          280 m/s
+     Weapon's Weight:		   2800 g
+	 recoil:				    1.23 m/s
+	 
+    9x39mm
+     Source:                https://en.wikipedia.org/wiki/9x39mm
+     Projectile Mass:          16.8 g  
+     Tested Barrel Length:     206 mm
+     Tested Energy:            658 J
+     Tested Velocity:          280 m/s
+      
+	 
+    Gun_AR_OTs-12_PA
+     Muzzle Energy:            658 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef ParentName="BaseGunThing">
+		<defName>Gun_Rifle_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_AssaultRifles</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_AR_OTs-12_PA</defName>
+        <label>OTs-12 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>8</damageAmountBase>
+            <speed>45</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_AR_OTs-12_PA</defName>
+        <label>OTs-12</label>
+        <description>Low-velocity heavy-projectile assault rifle designed on the midworld of Sevastian, while having all the disadvantages of low-velocity ammo it can be effectively suppressed, since it moves at subsonic speed. </description>
+        <graphicData>
+            <texPath>Things/AR/OTs-12</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>141220</WorkToMake>
+            <MarketValue>760</MarketValue>
+            <AccuracyTouch>0.58</AccuracyTouch>
+            <AccuracyShort>0.73</AccuracyShort>
+            <AccuracyMedium>0.64</AccuracyMedium>
+            <AccuracyLong>0.53</AccuracyLong>
+            <RangedWeapon_Cooldown>0.95</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>86</Steel>
+            <Component>3</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_AR_OTs-12_PA</projectileDef>
+                <warmupTicks>63</warmupTicks>
+                <range>22</range>
+                <burstShotCount>4</burstShotCount>
+                <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+                <soundCast>ShotAssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    CZ-2000
+     Source:                https://en.wikipedia.org/wiki/Colt_Canada_C7_rifle
+     Cyclic rate of fire:      850 rds/min
+     Barrel Length:            382 mm
+     Muzzle Velocity:          910 m/s
+     Weapon's Weight:		   3000 g
+	 recoil:				    1.24 m/s
+	 
+    5.56x45mm NATO
+     Source:                https://en.wikipedia.org/wiki/5.56x45mm_NATO
+     Projectile Mass:          4.1 g  
+     Tested Barrel Length:     508 mm
+     Tested Energy:            2717 J
+     Tested Velocity:          905 m/s
+      
+	 
+    Gun_AR_CZ-2000_PA
+     Muzzle Energy:           2054 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef ParentName="BaseGunThing">
+		<defName>Gun_Rifle_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_AssaultRifles</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_AR_CZ-2000_PA</defName>
+        <label>CZ-2000 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>8</damageAmountBase>
+            <speed>69</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_AR_CZ-2000_PA</defName>
+        <label>CZ-2000</label>
+        <description>Costly, but material-efficient and highly improved variant of an AK system assault rifle, it's main advantage is the utilized caliber which outperforms majority of calibers used in AK-system assault rifles.</description>
+        <graphicData>
+            <texPath>Things/AR/CZ-2000</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>139025</WorkToMake>
+            <MarketValue>750</MarketValue>
+            <AccuracyTouch>0.66</AccuracyTouch>
+            <AccuracyShort>0.82</AccuracyShort>
+            <AccuracyMedium>0.73</AccuracyMedium>
+            <AccuracyLong>0.61</AccuracyLong>
+            <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>92</Steel>
+            <Component>4</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_AR_CZ-2000_PA</projectileDef>
+                <warmupTicks>68</warmupTicks>
+                <range>31</range>
+                <burstShotCount>4</burstShotCount>
+                <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+                <soundCast>ShotAssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

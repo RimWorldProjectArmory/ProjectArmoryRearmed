@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <!-- WeaponData
-    L85A2
-     Source:                https://en.wikipedia.org/wiki/SA80
-     Cyclic rate of fire:      720 rds/min
-     Barrel Length:            518 mm
-     Muzzle Velocity:          930 m/s
-     Weapon's Weight:		   4980 g
-	 recoil:				    0.77 m/s
+    SIG_SG_550
+     Source:                https://en.wikipedia.org/wiki/SIG_SG_550
+     Cyclic rate of fire:      700 rds/min
+     Barrel Length:            528 mm
+     Muzzle Velocity:          910 m/s
+     Weapon's Weight:		   4100 g
+	 recoil:				    0.89 m/s
 	 
     5.56x45mm NATO
      Source:                https://en.wikipedia.org/wiki/5.56x45mm_NATO
-     Projectile Mass:          4.1 g  
+     Projectile Mass:          4 g  
      Tested Barrel Length:     508 mm
-     Tested Energy:            1679 J
-     Tested Velocity:          905 m/s
+     Tested Energy:           1679 J
+     Tested Velocity:          910 m/s
       
 	 
-    Gun_AR_L85A2_PA
-     Muzzle Energy:           1754 pa/J
+    Gun_AR_SIG_SG_550_PA
+     Muzzle Energy:           1755 pa/J
 -->
 
 
@@ -30,8 +30,8 @@
 		</weaponTags>
 	</ThingDef>
     <ThingDef ParentName="PA_BaseBullet">
-        <defName>Bullet_AR_L85A2_PA</defName>
-        <label>L85A2 bullet</label>
+        <defName>Bullet_AR_SIG_SG_550_PA</defName>
+        <label>SIG_SG_550 bullet</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Small</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -44,34 +44,34 @@
     </ThingDef>
 
     <ThingDef ParentName="PA_BaseHumanMakeableGun">
-        <defName>Gun_AR_L85A2_PA</defName>
-        <label>L85A2</label>
-        <description>L85A2 is a service bullpup design assault rifle from the midworld of Ceomhan, it is very accurate with very low recoil, at the expense of excessive weight and problems with reliability when working in dusty enviroments. </description>
+        <defName>Gun_AR_SIG_SG_550_PA</defName>
+        <label>SIG SG 550</label>
+        <description>Assault rifle developed on an industrial world of Theud, it offers solid performance for an affordable price, being both quite accurate and deadly, this weapon is often employed by private military organisations as their main choice of firearm for all-around role. </description>
         <graphicData>
-            <texPath>Things/AR/L85A2</texPath>
+            <texPath>Things/AR/SiG_SG_550</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>InteractRifle</soundInteract>
         <statBases>
-            <WorkToMake>135365</WorkToMake>
-            <MarketValue>730</MarketValue>
-            <AccuracyTouch>0.73</AccuracyTouch>
-            <AccuracyShort>0.91</AccuracyShort>
-            <AccuracyMedium>0.8</AccuracyMedium>
-            <AccuracyLong>0.67</AccuracyLong>
-            <RangedWeapon_Cooldown>0.62</RangedWeapon_Cooldown>
+            <WorkToMake>145610</WorkToMake>
+            <MarketValue>790</MarketValue>
+            <AccuracyTouch>0.7</AccuracyTouch>
+            <AccuracyShort>0.87</AccuracyShort>
+            <AccuracyMedium>0.77</AccuracyMedium>
+            <AccuracyLong>0.64</AccuracyLong>
+            <RangedWeapon_Cooldown>0.67</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <Steel>153</Steel>
-            <Component>6</Component>
+            <Steel>126</Steel>
+            <Component>5</Component>
         </costList>
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <projectileDef>Bullet_AR_L85A2_PA</projectileDef>
-                <warmupTicks>112</warmupTicks>
-                <range>32</range>
+                <projectileDef>Bullet_AR_SIG_SG_550_PA</projectileDef>
+                <warmupTicks>92</warmupTicks>
+                <range>31</range>
                 <burstShotCount>3</burstShotCount>
                 <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
                 <soundCast>ShotAssaultRifle</soundCast>

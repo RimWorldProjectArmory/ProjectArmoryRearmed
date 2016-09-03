@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    Ak5
+     Source:                https://en.wikipedia.org/wiki/Ak_5
+     Cyclic rate of fire:      700 rds/min
+     Barrel Length:            450 mm
+     Muzzle Velocity:          930 m/s
+     Weapon's Weight:		   4500 g
+	 recoil:				    0.83 m/s
+	 
+    5.45x45mm NATO
+     Source:                https://en.wikipedia.org/wiki/5.56×45mm_NATO
+     Projectile Mass:          4 g  
+     Tested Barrel Length:     508 mm
+     Tested Energy:          1 767 J
+     Tested Velocity:          940 m/s
+      
+	 
+    Gun_AR_Ak5_PA
+     Muzzle Energy:          1 548 pa/J
+-->
+
+
+<ThingDefs>
+<ThingDef ParentName="BaseGunThing">
+		<thingCategories>
+			<li>WeaponsRanged</li>
+		</thingCategories>
+	</ThingDef>
+	<ThingDef ParentName="PA_BaseGun">
+		<defName>Gun_Rifle_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_AssaultRifles</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_AR_Ak5_PA</defName>
+        <label>Ak5 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>6</damageAmountBase>
+            <speed>69</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_AR_Ak5_PA</defName>
+        <label>Ak 5</label>
+        <description>Ak 5 is a military-production version of an FN FNC rifle, production is based on midworld of Meiral, it is a sub-arctic climate modified version of an FN FNC assault rifle. Good accuracy, range, great stopping power, relatively slow rate of fire.</description>
+        <graphicData>
+            <texPath>Things/AR/Ak5</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>133170</WorkToMake>
+            <MarketValue>780</MarketValue>
+            <AccuracyTouch>0.72</AccuracyTouch>
+            <AccuracyShort>0.89</AccuracyShort>
+            <AccuracyMedium>0.79</AccuracyMedium>
+            <AccuracyLong>0.66</AccuracyLong>
+            <RangedWeapon_Cooldown>0.65</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>138</Steel>
+            <Component>5</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_AR_Ak5_PA</projectileDef>
+                <warmupTicks>101</warmupTicks>
+                <range>31.0</range>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+                <soundCast>ShotAssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

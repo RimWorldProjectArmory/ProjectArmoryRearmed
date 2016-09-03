@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    Pindad_SS2
+     Source:                https://en.wikipedia.org/wiki/Pindad_SS2
+     Cyclic rate of fire:      675 rds/min
+     Barrel Length:            460 mm
+     Muzzle Velocity:          936 m/s
+     Weapon's Weight:		   4200 g
+	 recoil:				    0.91 m/s
+	 
+    5.56x45mm NATO
+     Source:                https://en.wikipedia.org/wiki/5.56x45mm_NATO
+     Projectile Mass:          4.1 g  
+     Tested Barrel Length:     506 mm
+     Tested Energy:           1796 J
+     Tested Velocity:          936 m/s
+      
+	 
+    Gun_AR_Pindad_SS2_PA
+     Muzzle Energy:           1626 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef ParentName="BaseGunThing">
+		<defName>Gun_Rifle_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_AssaultRifles</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_AR_Pindad_SS2_PA</defName>
+        <label>Pindad_SS2 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>6</damageAmountBase>
+            <speed>70</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_AR_Pindad_SS2_PA</defName>
+        <label>Pindad SS2</label>
+        <description>Assault Rifle manufactured by the midworld of Raja as a service assault rifle, designed to replace Pindad SS1. Has ballistic performance on-par with M16, perfectly adequate assault rifle, somewhat over-complicated and expensive. </description>
+        <graphicData>
+            <texPath>Things/AR/Pindad_SS2</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>145600</WorkToMake>
+            <MarketValue>790</MarketValue>
+            <AccuracyTouch>0.7</AccuracyTouch>
+            <AccuracyShort>0.87</AccuracyShort>
+            <AccuracyMedium>0.77</AccuracyMedium>
+            <AccuracyLong>0.64</AccuracyLong>
+            <RangedWeapon_Cooldown>0.68</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>129</Steel>
+            <Component>5</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_AR_Pindad_SS2_PA</projectileDef>
+                <warmupTicks>95</warmupTicks>
+                <range>32</range>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+                <soundCast>ShotAssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>
