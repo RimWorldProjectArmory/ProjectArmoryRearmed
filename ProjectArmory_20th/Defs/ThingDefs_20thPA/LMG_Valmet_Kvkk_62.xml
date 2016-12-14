@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    Valmet_Kvkk_62
+     Source:                https://en.wikipedia.org/wiki/Kk_62
+     Cyclic rate of fire:     1100 rds/min
+     Barrel Length:            470 mm
+     Muzzle Velocity:          730 m/s
+     Weapon's Weight:		 8500 g
+	 recoil:				    0.69 m/s
+	 
+    
+	https://en.wikipedia.org/wiki/7.62×39mm
+     Projectile Mass:          8 g  
+     Tested Barrel Length:     415 mm
+     Tested Energy:          2 108 J
+     Tested Velocity:          730.3 m/s
+      
+	 
+    Gun_LMG_Valmet_Kvkk_62_PA
+     Muzzle Energy:          2 413 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef ParentName="BaseGunThing">
+		<defName>Gun_Rifle_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_LightMachineGuns</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_LMG_Valmet_Kvkk_62_PA</defName>
+        <label>Valmet_Kvkk_62 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>7</damageAmountBase>
+            <speed>53</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_LMG_Valmet_Kvkk_62_PA</defName>
+        <label>Valmet Kvkk 62</label>
+        <description>Valmet kvkk 62 is a light machine gun developed for rimworld exploration and science groups to protect them from local wildlife. It has well over-done it's purpose, having very high rate of fire, high realibility, and considerable damage, the downside being somewhat exotic construction, which might make improper handling more risky. </description>
+        <graphicData>
+            <texPath>Things/LMG/Valmet_Kvkk_62</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>122368</WorkToMake>
+            <MarketValue>1080</MarketValue>
+            <AccuracyTouch>0.49</AccuracyTouch>
+            <AccuracyShort>0.63</AccuracyShort>
+            <AccuracyMedium>0.40</AccuracyMedium>
+            <AccuracyLong>0.22</AccuracyLong>
+            <RangedWeapon_Cooldown>1.39</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>111</Steel>
+            <Component>3</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_LMG_Valmet_Kvkk_62_PA</projectileDef>
+                <warmupTicks>88</warmupTicks>
+                <range>21</range>
+                <burstShotCount>12</burstShotCount>
+                <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+                <soundCast>ShotAssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

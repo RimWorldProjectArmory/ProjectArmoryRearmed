@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    FN_Minimi
+     Source:                https://en.wikipedia.org/wiki/FN_Minimi
+     Cyclic rate of fire:      750 rds/min
+     Barrel Length:            502 mm
+     Muzzle Velocity:          833 m/s
+     Weapon's Weight:		   8170 g
+	 recoil:				    1.02 m/s
+	 
+    7.62x51mm NATO
+     Source:                https://en.wikipedia.org/wiki/7.62x51mm_NATO
+     Projectile Mass:          10 g  
+     Tested Barrel Length:     610 mm
+     Tested Energy:          3 304 J
+     Tested Velocity:          833 m/s
+      
+	 
+    Gun_LMG_FN_Minimi_PA
+     Muzzle Energy:          2 719 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef ParentName="BaseGunThing">
+		<defName>Gun_Rifle_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_LightMachineGuns</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_LMG_FN_Minimi_PA</defName>
+        <label>FN_Minimi bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>7</damageAmountBase>
+            <speed>55</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_LMG_FN_Minimi_PA</defName>
+        <label>FN Minimi</label>
+        <description>Light Machine Gun developed on the factory world of Hyacinth, this is the 7.62x51mm variant of the weapon, this rifle cartridge offers the weapon superior range and firepower at the expense of fire rate and accuracy.</description>
+        <graphicData>
+            <texPath>Things/LMG/FN_Minimi</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>137368</WorkToMake>
+            <MarketValue>1210</MarketValue>
+            <AccuracyTouch>0.47</AccuracyTouch>
+            <AccuracyShort>0.61</AccuracyShort>
+            <AccuracyMedium>0.39</AccuracyMedium>
+            <AccuracyLong>0.21</AccuracyLong>
+            <RangedWeapon_Cooldown>1.72</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>188</Steel>
+            <Component>5</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_LMG_FN_Minimi_PA</projectileDef>
+                <warmupTicks>85</warmupTicks>
+                <range>26</range>
+                <burstShotCount>8</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <soundCast>ShotAssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

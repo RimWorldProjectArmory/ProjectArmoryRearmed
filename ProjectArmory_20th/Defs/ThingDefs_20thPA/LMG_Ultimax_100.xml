@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    Ultimax_100
+     Source:                https://en.wikipedia.org/wiki/Ultimax_100
+     Cyclic rate of fire:     500 rds/min
+     Barrel Length:            508 mm
+     Muzzle Velocity:          945 m/s
+     Weapon's Weight:		 4750 g
+	 recoil:				    0.80 m/s
+	 
+    
+	https://en.wikipedia.org/wiki/5.56×45mm_NATO
+     Projectile Mass:          4 g  
+     Tested Barrel Length:     508 mm
+     Tested Energy:          1 767 J
+     Tested Velocity:          940 m/s
+      
+	 
+    Gun_LMG_Ultimax_100_PA
+     Muzzle Energy:          1 776 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef ParentName="BaseGunThing">
+		<defName>Gun_Rifle_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_LightMachineGuns</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_LMG_Ultimax_100_PA</defName>
+        <label>Ultimax_100 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>5</damageAmountBase>
+            <speed>58</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_LMG_Ultimax_100_PA</defName>
+        <label>Ultimax 100</label>
+        <description>Ultimax 100 is a modern-design highly accurate light machine gun which utilizes constant recoil technology in order to not only supress, but kill. Very popular with mercenary squads, being used mainly as a Squad Assault Weapon, a.k.a. SAW. It's main downside is a pretty low rate of fire, and relatively low stopping power.</description>
+        <graphicData>
+            <texPath>Things/LMG/Ultimax_100</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>139740</WorkToMake>
+            <MarketValue>1250</MarketValue>
+            <AccuracyTouch>0.5</AccuracyTouch>
+            <AccuracyShort>0.64</AccuracyShort>
+            <AccuracyMedium>0.41</AccuracyMedium>
+            <AccuracyLong>0.22</AccuracyLong>
+            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>61</Steel>
+            <Component>2</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_LMG_Ultimax_100_PA</projectileDef>
+                <warmupTicks>49</warmupTicks>
+                <range>20</range>
+                <burstShotCount>5</burstShotCount>
+                <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+                <soundCast>ShotAssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

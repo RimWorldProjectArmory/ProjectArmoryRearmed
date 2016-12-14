@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    CETME_Ameli
+     Source:                https://en.wikipedia.org/wiki/CETME_Ameli
+     Cyclic rate of fire:      900 rds/min
+     Barrel Length:            400 mm
+     Muzzle Velocity:          875 m/s
+     Weapon's Weight:		   5300 g
+	 recoil:				    0.68 m/s
+	 
+    5.45x45mm NATO
+     Source:                https://en.wikipedia.org/wiki/5.56x45mm_NATO
+     Projectile Mass:          4.1 g  
+     Tested Barrel Length:     508 mm
+     Tested Energy:          1 679 J
+     Tested Velocity:          905 m/s
+      
+	 
+    Gun_LMG_CETME_Ameli_PA
+     Muzzle Energy:          1 278 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef ParentName="BaseGunThing">
+		<defName>Gun_Rifle_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_LightMachineGuns</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_LMG_CETME_Ameli_PA</defName>
+        <label>CETME_Ameli bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>4</damageAmountBase>
+            <speed>56</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_LMG_CETME_Ameli_PA</defName>
+        <label>CETME_Ameli</label>
+        <description>Light Machine Gun developed by CETME armoury based on the factory world of Gloria, it offers high rate of fire, good burst control and low recoil, while being lightweight, thanks to the intermediate cartridge being used, which also shows in the stopping power, which is low compared to other machine guns. The main drawback is the range, which has been compromised in favor of the fire rate, and also, it is quite pricey.</description>
+        <graphicData>
+            <texPath>Things/LMG/CETME_Ameli</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>143685</WorkToMake>
+            <MarketValue>1265</MarketValue>
+            <AccuracyTouch>0.51</AccuracyTouch>
+            <AccuracyShort>0.65</AccuracyShort>
+            <AccuracyMedium>0.42</AccuracyMedium>
+            <AccuracyLong>0.22</AccuracyLong>
+            <RangedWeapon_Cooldown>1.38</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>122</Steel>
+            <Component>4</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_LMG_CETME_Ameli_PA</projectileDef>
+                <warmupTicks>55</warmupTicks>
+                <range>19.0</range>
+                <burstShotCount>10</burstShotCount>
+                <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+                <soundCast>ShotAssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    SIG_MG_710-3
+     Source:                https://en.wikipedia.org/wiki/SIG_MG_710-3
+     Cyclic rate of fire:     875 rds/min
+     Barrel Length:            559 mm
+     Muzzle Velocity:          790 m/s
+     Weapon's Weight:		 9250 g
+	 recoil:				    0.94 m/s
+	 
+    
+	https://en.wikipedia.org/wiki/7.62×51mm_NATO
+     Projectile Mass:          11 g  
+     Tested Barrel Length:     610 mm
+     Tested Energy:          3 506 J
+     Tested Velocity:          790 m/s
+      
+	 
+    Gun_LMG_SIG_MG_710-3_PA
+     Muzzle Energy:          3 213 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef ParentName="BaseGunThing">
+		<defName>Gun_Rifle_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_LightMachineGuns</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_LMG_SIG_MG_710-3_PA</defName>
+        <label>SIG_MG_710-3 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>9</damageAmountBase>
+            <speed>54</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_LMG_SIG_MG_710-3_PA</defName>
+        <label>SIG MG 710-3</label>
+        <description>SIG MG 710-3 is one of the most popular light machine gun designs produced by factoryworlds all around the populated galaxy. It is loved for it's range, fire rate, and stopping power.</description>
+        <graphicData>
+            <texPath>Things/LMG/SIG_MG_710-3</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>124740</WorkToMake>
+            <MarketValue>1100</MarketValue>
+            <AccuracyTouch>0.47</AccuracyTouch>
+            <AccuracyShort>0.61</AccuracyShort>
+            <AccuracyMedium>0.39</AccuracyMedium>
+            <AccuracyLong>0.21</AccuracyLong>
+            <RangedWeapon_Cooldown>1.64</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>121</Steel>
+            <Component>3</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_LMG_SIG_MG_710-3_PA</projectileDef>
+                <warmupTicks>96</warmupTicks>
+                <range>26</range>
+                <burstShotCount>10</burstShotCount>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <soundCast>ShotAssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

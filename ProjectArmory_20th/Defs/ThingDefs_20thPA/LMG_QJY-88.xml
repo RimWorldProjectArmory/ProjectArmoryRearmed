@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    QJY-88
+     Source:                https://en.wikipedia.org/wiki/QJY-88
+     Cyclic rate of fire:     675 rds/min
+     Barrel Length:            600 mm
+     Muzzle Velocity:          895 m/s
+     Weapon's Weight:		 7600 g
+	 recoil:				    0.59 m/s
+	 
+    
+	https://en.wikipedia.org/wiki/5.8×42mm
+     Projectile Mass:          5 g  
+     Tested Barrel Length:     557 mm
+     Tested Energy:          1 892 J
+     Tested Velocity:          870 m/s
+      
+	 
+    Gun_LMG_QJY-88_PA
+     Muzzle Energy:          2 097 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef ParentName="BaseGunThing">
+		<defName>Gun_Rifle_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_LightMachineGuns</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_LMG_QJY-88_PA</defName>
+        <label>QJY-88 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>6</damageAmountBase>
+            <speed>56</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_LMG_QJY-88_PA</defName>
+        <label>QJY-88</label>
+        <description>QJY-88 is a modern-designed firearm light machine gun, brought up to glitterworld standards of production and material quality, designed to be mass-produced on rimworld colonies by glitterworld interest forces.</description>
+        <graphicData>
+            <texPath>Things/LMG/QJY-88</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>149210</WorkToMake>
+            <MarketValue>1320</MarketValue>
+            <AccuracyTouch>0.52</AccuracyTouch>
+            <AccuracyShort>0.67</AccuracyShort>
+            <AccuracyMedium>0.43</AccuracyMedium>
+            <AccuracyLong>0.23</AccuracyLong>
+            <RangedWeapon_Cooldown>1.29</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>99</Steel>
+            <Component>3</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_LMG_QJY-88_PA</projectileDef>
+                <warmupTicks>79</warmupTicks>
+                <range>21</range>
+                <burstShotCount>7</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <soundCast>ShotAssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

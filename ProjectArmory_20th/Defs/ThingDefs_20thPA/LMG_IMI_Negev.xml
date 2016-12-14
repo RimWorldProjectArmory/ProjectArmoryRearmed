@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    IMI_Negev
+     Source:                https://en.wikipedia.org/wiki/IMI_Negev
+     Cyclic rate of fire:     1000 rds/min
+     Barrel Length:            460 mm
+     Muzzle Velocity:          915 m/s
+     Weapon's Weight:		   7499 g
+	 recoil:				    0.51 m/s
+	 
+    5.56x45mm NATO
+     Source:                https://en.wikipedia.org/wiki/5.56x45mm_NATO
+     Projectile Mass:          4.1 g  
+     Tested Barrel Length:     508 mm
+     Tested Energy:          1 796 J
+     Tested Velocity:          936 m/s
+      
+	 
+    Gun_LMG_IMI_Negev_PA
+     Muzzle Energy:          1 590 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef ParentName="BaseGunThing">
+		<defName>Gun_Rifle_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_LightMachineGuns</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_LMG_IMI_Negev_PA</defName>
+        <label>IMI_Negev bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>4</damageAmountBase>
+            <speed>57</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_LMG_IMI_Negev_PA</defName>
+        <label>IMI Negev</label>
+        <description>Light Machine Gun designed and produced by Irenel Manufacure Installations based on the factory world of Joan, this machine gun sports very high rate of fire and burst control, while being rather expensive. It is popular on various midworlds which can afford it.</description>
+        <graphicData>
+            <texPath>Things/LMG/IMI_Negev</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>155525</WorkToMake>
+            <MarketValue>1370</MarketValue>
+            <AccuracyTouch>0.54</AccuracyTouch>
+            <AccuracyShort>0.69</AccuracyShort>
+            <AccuracyMedium>0.44</AccuracyMedium>
+            <AccuracyLong>0.24</AccuracyLong>
+            <RangedWeapon_Cooldown>1.21</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>171</Steel>
+            <Component>5</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_LMG_IMI_Negev_PA</projectileDef>
+                <warmupTicks>77</warmupTicks>
+                <range>20</range>
+                <burstShotCount>12</burstShotCount>
+                <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+                <soundCast>ShotAssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

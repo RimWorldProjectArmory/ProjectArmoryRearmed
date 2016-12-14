@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    HoK_HK21
+     Source:                https://en.wikipedia.org/wiki/Heckler_&_Koch_HK21
+     Cyclic rate of fire:      900 rds/min
+     Barrel Length:            450 mm
+     Muzzle Velocity:          800 m/s
+     Weapon's Weight:		   7920 g
+	 recoil:				    1.01 m/s
+	 
+    7.62x51mm NATO
+     Source:                https://en.wikipedia.org/wiki/7.62x51mm_NATO
+     Projectile Mass:          11 g  
+     Tested Barrel Length:     610 mm
+     Tested Energy:          3 506 J
+     Tested Velocity:          790 m/s
+      
+	 
+    Gun_LMG_HoK_HK21_PA
+     Muzzle Energy:          2 619 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef ParentName="BaseGunThing">
+		<defName>Gun_Rifle_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_LightMachineGuns</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_LMG_HoK_HK21_PA</defName>
+        <label>HoK_HK21 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>7</damageAmountBase>
+            <speed>54</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_LMG_HoK_HK21_PA</defName>
+        <label>H&amp;K HK21</label>
+        <description>HK21 is a light machine gun developed and manufactured by Hampbell &amp; Klein ltd. based on the factory world of Arnfinn, high demand in cheap rifle caliber machine guns have brought about the design and development of cheap and efficient HK21 LMG. It is relatively cheap compared to other machine guns, sporting good damage and accuracy. Being one of the most successful and widespread machine guns out there, it is also one of the most mass-produced ones.</description>
+        <graphicData>
+            <texPath>Things/LMG/HoK_HK21</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>127105</WorkToMake>
+            <MarketValue>1120</MarketValue>
+            <AccuracyTouch>0.47</AccuracyTouch>
+            <AccuracyShort>0.6</AccuracyShort>
+            <AccuracyMedium>0.38</AccuracyMedium>
+            <AccuracyLong>0.21</AccuracyLong>
+            <RangedWeapon_Cooldown>1.81</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>183</Steel>
+            <Component>5</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_LMG_HoK_HK21_PA</projectileDef>
+                <warmupTicks>85</warmupTicks>
+                <range>26</range>
+                <burstShotCount>10</burstShotCount>
+                <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+                <soundCast>ShotAssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

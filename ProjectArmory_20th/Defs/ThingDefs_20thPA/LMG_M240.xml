@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    M240
+     Source:                https://en.wikipedia.org/wiki/M240
+     Cyclic rate of fire:     1000 rds/min
+     Barrel Length:            460 mm
+     Muzzle Velocity:          915 m/s
+     Weapon's Weight:		   7499 g
+	 recoil:				    0.51 m/s
+	 
+    7.62x51mm NATO
+     Source:                https://en.wikipedia.org/wiki/7.62x51mm_NATO
+     Projectile Mass:          10 g  
+     Tested Barrel Length:     630 mm
+     Tested Energy:          3 304 J
+     Tested Velocity:          833 m/s
+      
+	 
+    Gun_LMG_M240_PA
+     Muzzle Energy:          3 383 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef ParentName="BaseGunThing">
+		<defName>Gun_Rifle_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_LightMachineGuns</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_LMG_M240_PA</defName>
+        <label>M240 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>9</damageAmountBase>
+            <speed>55</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_LMG_M240_PA</defName>
+        <label>M240 Machine Gun</label>
+        <description>Accurate and powerful machine gun originally designated as FN MAG, with border world export version known as M240, it uses rifle cartridge, while having good burst control at the cost of being quite heavy. It is a good defensive weapon. </description>
+        <graphicData>
+            <texPath>Things/LMG/M240</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>139740</WorkToMake>
+            <MarketValue>1230</MarketValue>
+            <AccuracyTouch>0.5</AccuracyTouch>
+            <AccuracyShort>0.64</AccuracyShort>
+            <AccuracyMedium>0.41</AccuracyMedium>
+            <AccuracyLong>0.22</AccuracyLong>
+            <RangedWeapon_Cooldown>1.38</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>288</Steel>
+            <Component>8</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_LMG_M240_PA</projectileDef>
+                <warmupTicks>130</warmupTicks>
+                <range>27</range>
+                <burstShotCount>10</burstShotCount>
+                <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+                <soundCast>ShotAssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

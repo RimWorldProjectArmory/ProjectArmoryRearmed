@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    PK(M)
+     Source:                https://en.wikipedia.org/wiki/PK_machine_gun
+     Cyclic rate of fire:     650 rds/min
+     Barrel Length:            605 mm
+     Muzzle Velocity:          825 m/s
+     Weapon's Weight:		 7500 g
+	 recoil:				    1.067 m/s
+	 
+    
+	https://en.wikipedia.org/wiki/7.62×54mmR
+     Projectile Mass:          9.7 g  
+     Tested Barrel Length:     730 mm
+     Tested Energy:          3 629 J
+     Tested Velocity:          865 m/s
+      
+	 
+    Gun_LMG_PK(M)_PA
+     Muzzle Energy:          2 869 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef ParentName="BaseGunThing">
+		<defName>Gun_Rifle_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_LightMachineGuns</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_LMG_PK(M)_PA</defName>
+        <label>PK(M) bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>8</damageAmountBase>
+            <speed>55</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_LMG_PK(M)_PA</defName>
+        <label>PK(M)</label>
+        <description>PK(M) is a somewhat outdated and archaic machinegun developed on the midworld of Seria, which uses rimmed cartridges. Because of that it is not a very popular weapon outside a couple of midworlds which base their small arms around rimmed cartridges. Has mediocre accuracy and high recoil.</description>
+        <graphicData>
+            <texPath>Things/LMG/PK(M)</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>126315</WorkToMake>
+            <MarketValue>1111</MarketValue>
+            <AccuracyTouch>0.47</AccuracyTouch>
+            <AccuracyShort>0.60</AccuracyShort>
+            <AccuracyMedium>0.39</AccuracyMedium>
+            <AccuracyLong>0.21</AccuracyLong>
+            <RangedWeapon_Cooldown>1.767</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>98</Steel>
+            <Component>3</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_LMG_PK(M)_PA</projectileDef>
+                <warmupTicks>78</warmupTicks>
+                <range>26</range>
+                <burstShotCount>7</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <soundCast>ShotAssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

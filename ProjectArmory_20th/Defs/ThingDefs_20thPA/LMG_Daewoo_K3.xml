@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    Daewoo_K3
+     Source:                https://en.wikipedia.org/wiki/Daewoo_K3
+     Cyclic rate of fire:      900 rds/min
+     Barrel Length:            533 mm
+     Muzzle Velocity:          915 m/s
+     Weapon's Weight:		   6850 g
+	 recoil:				    0.55 m/s
+	 
+    5.45x45mm NATO
+     Source:                https://en.wikipedia.org/wiki/5.56x45mm_NATO
+     Projectile Mass:          4.1 g  
+     Tested Barrel Length:     508 mm
+     Tested Energy:          1 679 J
+     Tested Velocity:          905 m/s
+      
+	 
+    Gun_LMG_Daewoo_K3_PA
+     Muzzle Energy:          1 781 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef ParentName="BaseGunThing">
+		<defName>Gun_Rifle_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_LightMachineGuns</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_LMG_Daewoo_K3_PA</defName>
+        <label>Daewoo_K3 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>5</damageAmountBase>
+            <speed>57</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_LMG_Daewoo_K3_PA</defName>
+        <label>Daewoo_K3</label>
+        <description>Light Machine Gun developed by Daewoo Manufacturers Inc. based on the factory world Embla, this Light Machine Gun uses intermediate cartridge, offering great rate of fire at the cost of reduced effective range and stopping power.It is very recoil-efficient and thanks to that has excelent burst control.</description>
+        <graphicData>
+            <texPath>Things/LMG/Daewoo_K3</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>149210</WorkToMake>
+            <MarketValue>1310</MarketValue>
+            <AccuracyTouch>0.53</AccuracyTouch>
+            <AccuracyShort>0.68</AccuracyShort>
+            <AccuracyMedium>0.44</AccuracyMedium>
+            <AccuracyLong>0.23</AccuracyLong>
+            <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>158</Steel>
+            <Component>4</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_LMG_Daewoo_K3_PA</projectileDef>
+                <warmupTicks>55</warmupTicks>
+                <range>20</range>
+                <burstShotCount>10</burstShotCount>
+                <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+                <soundCast>ShotAssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

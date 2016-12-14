@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    RPK
+     Source:                https://en.wikipedia.org/wiki/RPK
+     Cyclic rate of fire:     600 rds/min
+     Barrel Length:            590 mm
+     Muzzle Velocity:          745 m/s
+     Weapon's Weight:		 4800 g
+	 recoil:				    1.226 m/s
+	 
+    
+	https://en.wikipedia.org/wiki/7.62×39mm
+     Projectile Mass:          7.9 g  
+     Tested Barrel Length:     415 mm
+     Tested Energy:          1 555 J
+     Tested Velocity:          730 m/s
+      
+	 
+    Gun_LMG_RPK_PA
+     Muzzle Energy:          2 256 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef ParentName="BaseGunThing">
+		<defName>Gun_Rifle_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_LightMachineGuns</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_LMG_RPK_PA</defName>
+        <label>RPK bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>6</damageAmountBase>
+            <speed>53</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_LMG_RPK_PA</defName>
+        <label>RPK</label>
+        <description>RPK is one of the most popular machine gun designs developed on the midworlds of the inner rim, very abundant, it's design is heavily based upon AK assault rifle.</description>
+        <graphicData>
+            <texPath>Things/LMG/RPK</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>127105</WorkToMake>
+            <MarketValue>1120</MarketValue>
+            <AccuracyTouch>0.46</AccuracyTouch>
+            <AccuracyShort>0.59</AccuracyShort>
+            <AccuracyMedium>0.38</AccuracyMedium>
+            <AccuracyLong>0.20</AccuracyLong>
+            <RangedWeapon_Cooldown>1.93</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>63</Steel>
+            <Component>2</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_LMG_RPK_PA</projectileDef>
+                <warmupTicks>50</warmupTicks>
+                <range>21</range>
+                <burstShotCount>7</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <soundCast>ShotAssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

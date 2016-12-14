@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    Uk_vz._59
+     Source:                https://en.wikipedia.org/wiki/Uk_vz._59
+     Cyclic rate of fire:     750 rds/min
+     Barrel Length:            650 mm
+     Muzzle Velocity:          830 m/s
+     Weapon's Weight:		 9280 g
+	 recoil:				    0.89 m/s
+	 
+    
+	https://en.wikipedia.org/wiki/7.62×51mm_NATO
+     Projectile Mass:          10 g  
+     Tested Barrel Length:     610 mm
+     Tested Energy:          3 304 J
+     Tested Velocity:          833 m/s
+      
+	 
+    Gun_LMG_Uk_vz._59_PA
+     Muzzle Energy:          3 507 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef ParentName="BaseGunThing">
+		<defName>Gun_Rifle_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_LightMachineGuns</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef ParentName="PA_BaseBullet">
+        <defName>Bullet_LMG_Uk_vz._59_PA</defName>
+        <label>Uk_vz._59 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>10</damageAmountBase>
+            <speed>55</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_LMG_Uk_vz._59_PA</defName>
+        <label>Uk vz. 59</label>
+        <description>Uk vz. 59 is a light machine gun produced by distant midworld of Jassra, being the main competitor for the RPK light machine gun, this machine gun was manufactured for both center-fire and rim-fire cartridge configurations, which lent it it's main portion of success, as well as having one of the most respectable stopping powers among all known LMG designs.</description>
+        <graphicData>
+            <texPath>Things/LMG/Uk_vz_59</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractRifle</soundInteract>
+        <statBases>
+            <WorkToMake>125525</WorkToMake>
+            <MarketValue>1100</MarketValue>
+            <AccuracyTouch>0.48</AccuracyTouch>
+            <AccuracyShort>0.62</AccuracyShort>
+            <AccuracyMedium>0.39</AccuracyMedium>
+            <AccuracyLong>0.21</AccuracyLong>
+            <RangedWeapon_Cooldown>1.59</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>121</Steel>
+            <Component>3</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_LMG_Uk_vz._59_PA</projectileDef>
+                <warmupTicks>79</warmupTicks>
+                <range>26</range>
+                <burstShotCount>7</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <soundCast>ShotAssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>
