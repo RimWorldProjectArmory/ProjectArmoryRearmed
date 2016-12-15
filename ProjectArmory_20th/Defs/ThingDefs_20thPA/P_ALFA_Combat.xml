@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    ALFA_Combat
+     Source:                https://en.wikipedia.org/wiki/ALFA_Combat
+     Cyclic rate of fire:      
+     BPrel Length:            113 mm
+     Muzzle Velocity:          367 m/s
+     Weapon's Weight:		   850 g
+	 recoil:				    4.32 m/s
+	 
+    .40 S&W
+     Source:                https://en.wikipedia.org/wiki/.40_S&W
+     Projectile Mass:          10 g  
+     Tested Barrel Length:     100 mm
+     Tested Energy:            680 J
+     Tested Velocity:          367 m/s
+      
+	 
+    Gun_P_ALFA_Combat_PA
+     Muzzle Energy:            768 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef PPentName="BaseGunThing">
+		<defName>Gun_Pistol_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_Pistols</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef PPentName="PA_BaseBullet">
+        <defName>Bullet_P_ALFA_Combat_PA</defName>
+        <label>ALFA_Combat bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>13</damageAmountBase>
+            <speed>63</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef PPentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_P_ALFA_Combat_PA</defName>
+        <label>ALFA Combat</label>
+        <description>All-around commercial firearm good for all purposes, including military application, law-enforcement, self-defense and sports. Design first surfaced on a midworld of Dvorak. Good all-around pistol to have.</description>
+        <graphicData>
+            <texPath>Things/P/ALFA_Combat</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractPistol</soundInteract>
+        <statBases>
+            <WorkToMake>55352</WorkToMake>
+            <MarketValue>346</MarketValue>
+            <AccuracyTouch>0.92</AccuracyTouch>
+            <AccuracyShort>0.72</AccuracyShort>
+            <AccuracyMedium>0.51</AccuracyMedium>
+            <AccuracyLong>0.32</AccuracyLong>
+            <RangedWeapon_Cooldown>0.84</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>23</Steel>
+            <Component>2</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_P_ALFA_Combat_PA</projectileDef>
+                <warmupTicks>40</warmupTicks>
+                <range>27</range>
+                <soundCast>ShotPistol</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

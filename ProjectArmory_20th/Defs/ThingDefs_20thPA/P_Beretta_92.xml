@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    Beretta_92
+     Source:                https://en.wikipedia.org/wiki/Beretta_92
+     Cyclic rate of fire:      
+     Barrel Length:            150 mm
+     Muzzle Velocity:          381 m/s
+     Weapon's Weight:		   950 g
+	 recoil:				    2.98 m/s
+	 
+    9x19 Parabellum
+     Source:               https://en.wikipedia.org/wiki/9×19mm_Parabellum
+     Projectile Mass:          7.45 g  
+     Tested Barrel Length:     150 mm
+     Tested Energy:            567 J
+     Tested Velocity:          390 m/s
+      
+	 
+    Gun_P_Beretta_92_PA
+     Muzzle Energy:           462 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef PPentName="BaseGunThing">
+		<defName>Gun_Pistol_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_Pistols</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef PPentName="PA_BaseBullet">
+        <defName>Bullet_P_Beretta_92_PA</defName>
+        <label>Beretta_92 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>9</damageAmountBase>
+            <speed>64</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef PPentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_P_Beretta_92_PA</defName>
+        <label>Beretta 92</label>
+        <description>Mainly military and security-oriented sidearm, this weapon design has been well-recieved around the galaxy for it's elegance and efffectiveness, as well as allowing a great range of re-chambering operations for different pistol cartridges, this sidearm has made quite a following over the history, almost reaching the iconic status.</description>
+        <graphicData>
+            <texPath>Things/P/Beretta_92</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractPistol</soundInteract>
+        <statBases>
+            <WorkToMake>50450</WorkToMake>
+            <MarketValue>315</MarketValue>
+            <AccuracyTouch>0.95</AccuracyTouch>
+            <AccuracyShort>0.84</AccuracyShort>
+            <AccuracyMedium>0.59</AccuracyMedium>
+            <AccuracyLong>0.38</AccuracyLong>
+            <RangedWeapon_Cooldown>0.58</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>26</Steel>
+            <Component>2</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_P_Beretta_92_PA</projectileDef>
+                <warmupTicks>46</warmupTicks>
+                <range>24</range>
+                <soundCast>ShotPistol</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

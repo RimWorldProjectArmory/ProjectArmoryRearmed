@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    AMT_Automag_III
+     Source:                https://en.wikipedia.org/wiki/AMT_AutoMag_III
+     Cyclic rate of fire:      
+     Barrel Length:            165 mm
+     Muzzle Velocity:          440 m/s
+     Weapon's Weight:		  1200 g
+	 recoil:				    2.57 m/s
+	 
+    9mm Winchester Magnum
+     Source:                https://en.wikipedia.org/wiki/9mm_Winchester_Magnum
+     Projectile Mass:          7 g  
+     Tested Barrel Length:     114 mm
+     Tested Energy:            728 J
+     Tested Velocity:          440 m/s
+      
+	 
+    Gun_P_AMT_Automag_III_PA
+     Muzzle Energy:           1026 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef PPentName="BaseGunThing">
+		<defName>Gun_Pistol_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_Pistols</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef PPentName="PA_BaseBullet">
+        <defName>Bullet_P_AMT_Automag_III_PA</defName>
+        <label>AMT_Automag_III bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>15</damageAmountBase>
+            <speed>69</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef PPentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_P_AMT_Automag_III_PA</defName>
+        <label>9mm AutoMag III</label>
+        <description>AMT-brand automatic magnum pistol, chambered in 9mm Winchester Magnum cartridge, designed as a civilian market self-defense weapon, and generally advertised at such. it doesn't have greatly outstanding characteristics, while being more powerful than your regular semi-automatic handgun, it also has more weight to it. Also, as typical of AMT-brand AutoMag pistols, it is very accurate.</description>
+        <graphicData>
+            <texPath>Things/P/AMT_Automag_III</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractPistol</soundInteract>
+        <statBases>
+            <WorkToMake>56217</WorkToMake>
+            <MarketValue>351</MarketValue>
+            <AccuracyTouch>0.95</AccuracyTouch>
+            <AccuracyShort>0.95</AccuracyShort>
+            <AccuracyMedium>0.68</AccuracyMedium>
+            <AccuracyLong>0.44</AccuracyLong>
+            <RangedWeapon_Cooldown>0.50</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>33</Steel>
+            <Component>2</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_P_AMT_Automag_III_PA</projectileDef>
+                <warmupTicks>58</warmupTicks>
+                <range>19</range>
+                <soundCast>ShotPistol</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    AMT_Automag_V
+     Source:                https://en.wikipedia.org/wiki/AMT_Automag_V
+     Cyclic rate of fire:      
+     Barrel Length:            167 mm
+     Muzzle Velocity:          440 m/s
+     Weapon's Weight:		  1310 g
+	 recoil:				    7.05 m/s
+	 
+    .50 Action Express
+     Source:                https://en.wikipedia.org/wiki/.50_Action_Express
+     Projectile Mass:          21 g  
+     Tested Barrel Length:     152 mm
+     Tested Energy:            2057 J
+     Tested Velocity:          440 m/s
+      
+	 
+    Gun_P_AMT_Automag_V_PA
+     Muzzle Energy:           2260 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef PPentName="BaseGunThing">
+		<defName>Gun_Pistol_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_Pistols</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef PPentName="PA_BaseBullet">
+        <defName>Bullet_P_AMT_Automag_V_PA</defName>
+        <label>AMT_Automag_V bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>29</damageAmountBase>
+            <speed>69</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef PPentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_P_AMT_Automag_V_PA</defName>
+        <label>.50 Automag V</label>
+        <description>AMT-brand automatic magnum pistol, chambered in .50 Action Express cartridge, designed and sold to the rich as an exhibition item more than anything, it was produced in very limited numbers. It uses an enormous cartridge which propells 21 g projectile at 440 m/s, which produces enormous recoil which can traumatize an unexperienced shooter quite easily.It was produced in very limited numbers around the galaxy just because of it's non-practical nature.</description>
+        <graphicData>
+            <texPath>Things/P/AMT_Automag_V</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractPistol</soundInteract>
+        <statBases>
+            <WorkToMake>56217</WorkToMake>
+            <MarketValue>751</MarketValue>
+            <AccuracyTouch>0.84</AccuracyTouch>
+            <AccuracyShort>0.65</AccuracyShort>
+            <AccuracyMedium>0.46</AccuracyMedium>
+            <AccuracyLong>0.30</AccuracyLong>
+            <RangedWeapon_Cooldown>1.37</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>36</Steel>
+            <Component>2</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_P_AMT_Automag_V_PA</projectileDef>
+                <warmupTicks>63</warmupTicks>
+                <range>25</range>
+                <soundCast>ShotPistol</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

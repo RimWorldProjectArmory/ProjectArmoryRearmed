@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    Beretta_87_Target
+     Source:                https://en.wikipedia.org/wiki/Beretta_87_Target
+     Cyclic rate of fire:      
+     Barrel Length:            150 mm
+     Muzzle Velocity:          530 m/s
+     Weapon's Weight:		   835 g
+	 recoil:				    2.72 m/s
+	 
+    .22 LR
+     Source:               https://en.wikipedia.org/wiki/.22_Long_Rifle
+     Projectile Mass:          2 g  
+     Tested Barrel Length:     150 mm
+     Tested Energy:            277 J
+     Tested Velocity:          530 m/s
+      
+	 
+    Gun_P_Beretta_87_Target_PA
+     Muzzle Energy:           277 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef PPentName="BaseGunThing">
+		<defName>Gun_Pistol_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_Pistols</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef PPentName="PA_BaseBullet">
+        <defName>Bullet_P_Beretta_87_Target_PA</defName>
+        <label>Beretta_87_Target bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>7</damageAmountBase>
+            <speed>75</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef PPentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_P_Beretta_87_Target_PA</defName>
+        <label>Beretta 87 Target</label>
+        <description>Civilian market sidearm model oriented and advertised for target practice use. It offers moderate stopping power, high velocity bullet, very low recoil and superior accuracy. The downside is the limited effective range.</description>
+        <graphicData>
+            <texPath>Things/P/Beretta_87_Target</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractPistol</soundInteract>
+        <statBases>
+            <WorkToMake>49586</WorkToMake>
+            <MarketValue>310</MarketValue>
+            <AccuracyTouch>0.95</AccuracyTouch>
+            <AccuracyShort>0.95</AccuracyShort>
+            <AccuracyMedium>0.95</AccuracyMedium>
+            <AccuracyLong>0.76</AccuracyLong>
+            <RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>23</Steel>
+            <Component>2</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_P_Beretta_87_Target_PA</projectileDef>
+                <warmupTicks>40</warmupTicks>
+                <range>17</range>
+                <soundCast>ShotPistol</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

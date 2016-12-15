@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    AMC_Automag
+     Source:                https://en.wikipedia.org/wiki/AutoMag_(pistol)
+     Cyclic rate of fire:      
+     Barrel Length:            165 mm
+     Muzzle Velocity:          430 m/s
+     Weapon's Weight:		  1620 g
+	 recoil:				    4.51 m/s
+	 
+    .45 Win mag
+     Source:                https://en.wikipedia.org/wiki/.45_Magnum
+     Projectile Mass:          17 g  
+     Tested Barrel Length:     115 mm
+     Tested Energy:           2153 J
+     Tested Velocity:          430 m/s
+      
+	 
+    Gun_P_AMC_Automag_PA
+     Muzzle Energy:           2153 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef PPentName="BaseGunThing">
+		<defName>Gun_Pistol_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_Pistols</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef PPentName="PA_BaseBullet">
+        <defName>Bullet_P_AMC_Automag_PA</defName>
+        <label>AMC_Automag bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>28</damageAmountBase>
+            <speed>68</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef PPentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_P_AMC_Automag_PA</defName>
+        <label>.45 AutoMag</label>
+        <description>Very powerful self-loading pistol designed for law enforcement of various midworlds for situations where maximum stopping power in the smallest package is required. It uses powerful revolver ammunition and combines it with semi-automatic mechanism of the most modern pistols. And thanks to great supply of these aross the galaxy they are relatively cheap too.</description>
+        <graphicData>
+            <texPath>Things/P/AMC_Automag</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractPistol</soundInteract>
+        <statBases>
+            <WorkToMake>49298</WorkToMake>
+            <MarketValue>308</MarketValue>
+            <AccuracyTouch>0.96</AccuracyTouch>
+            <AccuracyShort>0.75</AccuracyShort>
+            <AccuracyMedium>0.53</AccuracyMedium>
+            <AccuracyLong>0.34</AccuracyLong>
+            <RangedWeapon_Cooldown>0.88</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>43</Steel>
+            <Component>3</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_P_AMC_Automag_PA</projectileDef>
+                <warmupTicks>78</warmupTicks>
+                <range>30</range>
+                <soundCast>ShotPistol</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

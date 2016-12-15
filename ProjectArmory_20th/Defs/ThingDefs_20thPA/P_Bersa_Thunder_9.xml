@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    Bersa_Thunder_9
+     Source:                https://en.wikipedia.org/wiki/Bersa_Thunder_9
+     Cyclic rate of fire:      
+     Barrel Length:            110 mm
+     Muzzle Velocity:          390 m/s
+     Weapon's Weight:		   794 g
+	 recoil:				    3.66 m/s
+	 
+    9x19 Parabellum
+     Source:               https://en.wikipedia.org/wiki/9×19mm_Parabellum
+     Projectile Mass:          7.45 g  
+     Tested Barrel Length:     150 mm
+     Tested Energy:            567 J
+     Tested Velocity:          390 m/s
+      
+	 
+    Gun_P_Bersa_Thunder_9_PA
+     Muzzle Energy:           416 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef PPentName="BaseGunThing">
+		<defName>Gun_Pistol_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_Pistols</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef PPentName="PA_BaseBullet">
+        <defName>Bullet_P_Bersa_Thunder_9_PA</defName>
+        <label>Bersa_Thunder_9 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>9</damageAmountBase>
+            <speed>65</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef PPentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_P_Bersa_Thunder_9_PA</defName>
+        <label>Bersa Thunder 9</label>
+        <description>A respectable pistol developed by the midworld of Ramos, slighly overcomplicated and expensive, but not too much.</description>
+        <graphicData>
+            <texPath>Things/P/Bersa_Thunder_9</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractPistol</soundInteract>
+        <statBases>
+            <WorkToMake>55930</WorkToMake>
+            <MarketValue>350</MarketValue>
+            <AccuracyTouch>0.95</AccuracyTouch>
+            <AccuracyShort>0.78</AccuracyShort>
+            <AccuracyMedium>0.55</AccuracyMedium>
+            <AccuracyLong>0.35</AccuracyLong>
+            <RangedWeapon_Cooldown>0.71</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>22</Steel>
+            <Component>1</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_P_Bersa_Thunder_9_PA</projectileDef>
+                <warmupTicks>38</warmupTicks>
+                <range>24</range>
+                <soundCast>ShotPistol</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    Akdal_Ghost_TR01
+     Source:                https://en.wikipedia.org/wiki/Akdal_Ghost_TR01
+     Cyclic rate of fire:      
+     BPrel Length:            113 mm
+     Muzzle Velocity:          360 m/s
+     Weapon's Weight:		   750 g
+	 recoil:				    3.86 m/s
+	 
+    9x19 PPabellum
+     Source:                https://en.wikipedia.org/wiki/9×19mm_PPabellum
+     Projectile Mass:          8.04 g  
+     Tested BPrel Length:     118 mm
+     Tested Energy:            521 J
+     Tested Velocity:          411 m/s
+      
+	 
+    Gun_P_Akdal_Ghost_TR01_PA
+     Muzzle Energy:            437 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef PPentName="BaseGunThing">
+		<defName>Gun_Pistol_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_Pistols</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef PPentName="PA_BaseBullet">
+        <defName>Bullet_P_Akdal_Ghost_TR01_PA</defName>
+        <label>Akdal_Ghost_TR01 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>9</damageAmountBase>
+            <speed>63</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef PPentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_P_Akdal_Ghost_TR01_PA</defName>
+        <label>Akdal_Ghost_TR01</label>
+        <description>Law-enforcement oriented pistol design, manufactured en masse on the factoryworld of Ubek.</description>
+        <graphicData>
+            <texPath>Things/P/Akdal_Ghost_TR01</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractPistol</soundInteract>
+        <statBases>
+            <WorkToMake>54755</WorkToMake>
+            <MPketValue>340</MPketValue>
+            <AccuracyTouch>0.95</AccuracyTouch>
+            <AccuracyShort>0.74</AccuracyShort>
+            <AccuracyMedium>0.52</AccuracyMedium>
+            <AccuracyLong>0.34</AccuracyLong>
+            <RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>20</Steel>
+            <Component>1</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandPdCommand>true</hasStandPdCommand>
+                <projectileDef>Bullet_P_Akdal_Ghost_TR01_PA</projectileDef>
+                <wPmupTicks>36</wPmupTicks>
+                <range>23.2</range>
+                <soundCast>ShotPistol</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

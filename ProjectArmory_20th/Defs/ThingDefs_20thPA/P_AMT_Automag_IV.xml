@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    AMT_Automag_IV
+     Source:                https://en.wikipedia.org/wiki/AMT_Automag_IV
+     Cyclic rate of fire:      
+     Barrel Length:            165 mm
+     Muzzle Velocity:          430 m/s
+     Weapon's Weight:		  1300 g
+	 recoil:				    5.62 m/s
+	 
+    .45 Winchester Magnum
+     Source:                https://en.wikipedia.org/wiki/.45_Magnum
+     Projectile Mass:          17 g  
+     Tested Barrel Length:     165 mm
+     Tested Energy:            1500 J
+     Tested Velocity:          440 m/s
+      
+	 
+    Gun_P_AMT_Automag_IV_PA
+     Muzzle Energy:           1500 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef PPentName="BaseGunThing">
+		<defName>Gun_Pistol_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_Pistols</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef PPentName="PA_BaseBullet">
+        <defName>Bullet_P_AMT_Automag_IV_PA</defName>
+        <label>AMT_Automag_IV bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>21</damageAmountBase>
+            <speed>68</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef PPentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_P_AMT_Automag_IV_PA</defName>
+        <label>.45 Automag IV</label>
+        <description>AMT-brand automatic magnum pistol, chambered in .45 Winchester Magnum cartridge, designed and advertised on civilian market for hunting purposes, this firearm has found major notoriety on outter rim pirate worlds for it's high lethality during the infighting. Thankfully, AMT knew better than capitalizing on these statistics, maintaining civilian-friendly outlook. Compared to other AutoMags from AMT, this model experiences a dip in accuracy compared to previous models due to cartridge power increase while maintaining the same barrel length.</description>
+        <graphicData>
+            <texPath>Things/P/AMT_Automag_IV</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractPistol</soundInteract>
+        <statBases>
+            <WorkToMake>56217</WorkToMake>
+            <MarketValue>351</MarketValue>
+            <AccuracyTouch>0.89</AccuracyTouch>
+            <AccuracyShort>0.70</AccuracyShort>
+            <AccuracyMedium>0.49</AccuracyMedium>
+            <AccuracyLong>0.31</AccuracyLong>
+            <RangedWeapon_Cooldown>1.09</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>35</Steel>
+            <Component>2</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_P_AMT_Automag_IV_PA</projectileDef>
+                <warmupTicks>62</warmupTicks>
+                <range>30</range>
+                <soundCast>ShotPistol</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

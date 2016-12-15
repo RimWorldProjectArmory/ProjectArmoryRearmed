@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    Beretta_M1951
+     Source:                https://en.wikipedia.org/wiki/Beretta_M1951
+     Cyclic rate of fire:      
+     Barrel Length:            114.2 mm
+     Muzzle Velocity:          360 m/s
+     Weapon's Weight:		   870 g
+	 recoil:				    3.08 m/s
+	 
+    9x19 Parabellum
+     Source:               https://en.wikipedia.org/wiki/9×19mm_Parabellum
+     Projectile Mass:          7.45 g  
+     Tested Barrel Length:     118 mm
+     Tested Energy:            567 J
+     Tested Velocity:          390 m/s
+      
+	 
+    Gun_P_Beretta_M1951_PA
+     Muzzle Energy:           360 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef PPentName="BaseGunThing">
+		<defName>Gun_Pistol_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_Pistols</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef PPentName="PA_BaseBullet">
+        <defName>Bullet_P_Beretta_M1951_PA</defName>
+        <label>Beretta_M1951 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>10</damageAmountBase>
+            <speed>63</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef PPentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_P_Beretta_M1951_PA</defName>
+        <label>Beretta M1951</label>
+        <description>This pistol was designed primarily as a service pistol to be used on several midworlds to protect the interests in those areas against rapidly evolving wildlife and various other hazards. It is cheap to manufacture, durable, as well as effective for what it is.</description>
+        <graphicData>
+            <texPath>Things/P/Beretta_M1951</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractPistol</soundInteract>
+        <statBases>
+            <WorkToMake>42955</WorkToMake>
+            <MarketValue>260</MarketValue>
+            <AccuracyTouch>0.95</AccuracyTouch>
+            <AccuracyShort>0.81</AccuracyShort>
+            <AccuracyMedium>0.57</AccuracyMedium>
+            <AccuracyLong>0.37</AccuracyLong>
+            <RangedWeapon_Cooldown>0.60</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>24</Steel>
+            <Component>2</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_P_Beretta_M1951_PA</projectileDef>
+                <warmupTicks>42</warmupTicks>
+                <range>24</range>
+                <soundCast>ShotPistol</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    Beretta_950
+     Source:                https://en.wikipedia.org/wiki/Beretta_950
+     Cyclic rate of fire:      
+     Barrel Length:            40 mm
+     Muzzle Velocity:          340 m/s
+     Weapon's Weight:		   280 g
+	 recoil:				    2.43 m/s
+	 
+    .25 ACP 
+     Source:               https://en.wikipedia.org/wiki/.25_ACP
+     Projectile Mass:          2 g  
+     Tested Barrel Length:     45 mm
+     Tested Energy:            127 J
+     Tested Velocity:          340 m/s
+      
+	 
+    Gun_P_Beretta_950_PA
+     Muzzle Energy:           113 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef PPentName="BaseGunThing">
+		<defName>Gun_Pistol_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_Pistols</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef PPentName="PA_BaseBullet">
+        <defName>Bullet_P_Beretta_950_PA</defName>
+        <label>Beretta_950 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>6</damageAmountBase>
+            <speed>61</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef PPentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_P_Beretta_950_PA</defName>
+        <label>Beretta 950</label>
+        <description>This sidearm's main focus and appeal is to be used as a concealable weapon, it's main downside being, well, everything that a normal sidearm doesn't have. It lacks range, stopping power, and, somewhat, accuracy, but it will do just well in a situation where the only alternative is no sidearm at all. Also, it is cheaper than your regular pistol, and very material-effective to build.</description>
+        <graphicData>
+            <texPath>Things/P/Beretta_950</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractPistol</soundInteract>
+        <statBases>
+            <WorkToMake>43820</WorkToMake>
+            <MarketValue>270</MarketValue>
+            <AccuracyTouch>0.95</AccuracyTouch>
+            <AccuracyShort>0.88</AccuracyShort>
+            <AccuracyMedium>0.62</AccuracyMedium>
+            <AccuracyLong>0.40</AccuracyLong>
+            <RangedWeapon_Cooldown>0.47</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>8</Steel>
+            <Component>1</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_P_Beretta_950_PA</projectileDef>
+                <warmupTicks>13</warmupTicks>
+                <range>13</range>
+                <soundCast>ShotPistol</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

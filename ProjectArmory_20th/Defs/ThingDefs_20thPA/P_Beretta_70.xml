@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    Beretta_70
+     Source:                https://en.wikipedia.org/wiki/Beretta_70
+     Cyclic rate of fire:      
+     Barrel Length:            90 mm
+     Muzzle Velocity:          300 m/s
+     Weapon's Weight:		   660 g
+	 recoil:				    2.72 m/s
+	 
+    .380 ACP
+     Source:                https://en.wikipedia.org/wiki/.380_ACP
+     Projectile Mass:          6 g  
+     Tested Barrel Length:     95 mm
+     Tested Energy:            275 J
+     Tested Velocity:          300 m/s
+      
+	 
+    Gun_P_Beretta_70_PA
+     Muzzle Energy:           261 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef PPentName="BaseGunThing">
+		<defName>Gun_Pistol_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_Pistols</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef PPentName="PA_BaseBullet">
+        <defName>Bullet_P_Beretta_70_PA</defName>
+        <label>Beretta_70 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>7</damageAmountBase>
+            <speed>59</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef PPentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_P_Beretta_70_PA</defName>
+        <label>Beretta 70</label>
+        <description>Civilian market lightweight sidearm, designed almost purely for self-defence and concealability. It lacks stopping power, a thing to expect from a small, concealable sidearm. It has very reasonable accuracy, and also, it is cheap.</description>
+        <graphicData>
+            <texPath>Things/P/Beretta_70</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractPistol</soundInteract>
+        <statBases>
+            <WorkToMake>45550</WorkToMake>
+            <MarketValue>285</MarketValue>
+            <AccuracyTouch>0.95</AccuracyTouch>
+            <AccuracyShort>0.79</AccuracyShort>
+            <AccuracyMedium>0.56</AccuracyMedium>
+            <AccuracyLong>0.36</AccuracyLong>
+            <RangedWeapon_Cooldown>0.53</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>18</Steel>
+            <Component>1</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_P_Beretta_70_PA</projectileDef>
+                <warmupTicks>32</warmupTicks>
+                <range>17</range>
+                <soundCast>ShotPistol</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

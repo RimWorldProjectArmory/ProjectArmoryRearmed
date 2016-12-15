@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    AMT_Automag_II
+     Source:                https://en.wikipedia.org/wiki/AMT_AutoMag_II
+     Cyclic rate of fire:      
+     Barrel Length:            165 mm
+     Muzzle Velocity:          430 m/s
+     Weapon's Weight:		  1620 g
+	 recoil:				    4.51 m/s
+	 
+    .22 Win mag rimfire
+     Source:                https://en.wikipedia.org/wiki/.22_Winchester_Magnum_Rimfire
+     Projectile Mass:          3.2 g  
+     Tested Barrel Length:     610 mm
+     Tested Energy:            410 J
+     Tested Velocity:          470 m/s
+      
+	 
+    Gun_P_AMT_Automag_II_PA
+     Muzzle Energy:           420 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef PPentName="BaseGunThing">
+		<defName>Gun_Pistol_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_Pistols</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef PPentName="PA_BaseBullet">
+        <defName>Bullet_P_AMT_Automag_II_PA</defName>
+        <label>AMT_Automag_II bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>6</damageAmountBase>
+            <speed>67</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef PPentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_P_AMT_Automag_II_PA</defName>
+        <label>.22 AutoMag II</label>
+        <description>AMT-brand automatic magnum pistol, chambered in .22 winchester magnum rimfire cartridge, this pistol was first and foremost made with target practice in mind, it is barely adequate for self-defense, with the only redeeming quality being relatively high accuracy in comparison to other pistols, low recoil, and it's ammunition, which won't be costly to manufacture.</description>
+        <graphicData>
+            <texPath>Things/P/AMT_Automag_II</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractPistol</soundInteract>
+        <statBases>
+            <WorkToMake>53910</WorkToMake>
+            <MarketValue>308</MarketValue>
+            <AccuracyTouch>0.95</AccuracyTouch>
+            <AccuracyShort>0.95</AccuracyShort>
+            <AccuracyMedium>0.91</AccuracyMedium>
+            <AccuracyLong>0.59</AccuracyLong>
+            <RangedWeapon_Cooldown>0.29</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>25</Steel>
+            <Component>2</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_P_AMT_Automag_II_PA</projectileDef>
+                <warmupTicks>44</warmupTicks>
+                <range>17</range>
+                <soundCast>ShotPistol</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>

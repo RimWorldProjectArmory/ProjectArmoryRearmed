@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- WeaponData
+    Bersa_Thunder_380
+     Source:                https://en.wikipedia.org/wiki/Bersa_Thunder_380
+     Cyclic rate of fire:      
+     Barrel Length:            90 mm
+     Muzzle Velocity:          300 m/s
+     Weapon's Weight:		   560 g
+	 recoil:				    3.21 m/s
+	 
+    .380 ACP
+     Source:               https://en.wikipedia.org/wiki/.380_ACP
+     Projectile Mass:          6 g  
+     Tested Barrel Length:     95 mm
+     Tested Energy:            275 J
+     Tested Velocity:          300 m/s
+      
+	 
+    Gun_P_Bersa_Thunder_380_PA
+     Muzzle Energy:           261 pa/J
+-->
+
+
+<ThingDefs>
+	<ThingDef PPentName="BaseGunThing">
+		<defName>Gun_Pistol_With_Rimfire_Compatibility</defName>
+		<weaponTags>
+			<li>GunModMCM_Pistols</li>
+		</weaponTags>
+	</ThingDef>
+    <ThingDef PPentName="PA_BaseBullet">
+        <defName>Bullet_P_Bersa_Thunder_380_PA</defName>
+        <label>Bersa_Thunder_380 bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>7</damageAmountBase>
+            <speed>59</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef PPentName="PA_BaseHumanMakeableGun">
+        <defName>Gun_P_Bersa_Thunder_380_PA</defName>
+        <label>Bersa Thunder 380</label>
+        <description>A respectable pistol developed by the midworld of Ramos, it offers a pretty middle-of-the-line performance in all parameters, with the major upside being it's size and weight, and the downsize being it's price.</description>
+        <graphicData>
+            <texPath>Things/P/Bersa_Thunder_380</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>InteractPistol</soundInteract>
+        <statBases>
+            <WorkToMake>56217</WorkToMake>
+            <MarketValue>350</MarketValue>
+            <AccuracyTouch>0.95</AccuracyTouch>
+            <AccuracyShort>0.75</AccuracyShort>
+            <AccuracyMedium>0.52</AccuracyMedium>
+            <AccuracyLong>0.34</AccuracyLong>
+            <RangedWeapon_Cooldown>0.62</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>15</Steel>
+            <Component>1</Component>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <projectileDef>Bullet_P_Bersa_Thunder_380_PA</projectileDef>
+                <warmupTicks>27</warmupTicks>
+                <range>17</range>
+                <soundCast>ShotPistol</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</ThingDefs>
