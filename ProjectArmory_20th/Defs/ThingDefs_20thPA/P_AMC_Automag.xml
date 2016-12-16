@@ -23,13 +23,13 @@
 
 
 <ThingDefs>
-	<ThingDef PPentName="BaseGunThing">
+	<ThingDef ParentName="BaseGunThing">
 		<defName>Gun_Pistol_With_Rimfire_Compatibility</defName>
 		<weaponTags>
 			<li>GunModMCM_Pistols</li>
 		</weaponTags>
 	</ThingDef>
-    <ThingDef PPentName="PA_BaseBullet">
+    <ThingDef ParentName="PA_BaseBullet">
         <defName>Bullet_P_AMC_Automag_PA</defName>
         <label>AMC_Automag bullet</label>
         <graphicData>
@@ -43,7 +43,7 @@
         </projectile>
     </ThingDef>
 
-    <ThingDef PPentName="PA_BaseHumanMakeableGun">
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
         <defName>Gun_P_AMC_Automag_PA</defName>
         <label>.45 AutoMag</label>
         <description>Very powerful self-loading pistol designed for law enforcement of various midworlds for situations where maximum stopping power in the smallest package is required. It uses powerful revolver ammunition and combines it with semi-automatic mechanism of the most modern pistols. And thanks to great supply of these aross the galaxy they are relatively cheap too.</description>
@@ -55,6 +55,7 @@
         <statBases>
             <WorkToMake>49298</WorkToMake>
             <MarketValue>308</MarketValue>
+			<Mass>1.6</Mass>
             <AccuracyTouch>0.96</AccuracyTouch>
             <AccuracyShort>0.75</AccuracyShort>
             <AccuracyMedium>0.53</AccuracyMedium>
@@ -70,7 +71,7 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <projectileDef>Bullet_P_AMC_Automag_PA</projectileDef>
-                <warmupTicks>78</warmupTicks>
+                <WarmupTime>0.78</WarmupTime>
                 <range>30</range>
                 <soundCast>ShotPistol</soundCast>
                 <soundCastTail>GunTail_Light</soundCastTail>

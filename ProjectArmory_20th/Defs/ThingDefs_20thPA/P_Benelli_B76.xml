@@ -23,13 +23,13 @@
 
 
 <ThingDefs>
-	<ThingDef PPentName="BaseGunThing">
+	<ThingDef ParentName="BaseGunThing">
 		<defName>Gun_Pistol_With_Rimfire_Compatibility</defName>
 		<weaponTags>
 			<li>GunModMCM_Pistols</li>
 		</weaponTags>
 	</ThingDef>
-    <ThingDef PPentName="PA_BaseBullet">
+    <ThingDef ParentName="PA_BaseBullet">
         <defName>Bullet_P_Benelli_B76_PA</defName>
         <label>Benelli_B76 bullet</label>
         <graphicData>
@@ -43,7 +43,7 @@
         </projectile>
     </ThingDef>
 
-    <ThingDef PPentName="PA_BaseHumanMakeableGun">
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
         <defName>Gun_P_Benelli_B76_PA</defName>
         <label>Benelli B76</label>
         <description>Benelli B76 is a military service pistol design from the midworld of Meria, which gained popularity during the trials first among this world's population, and later, thanks to the traders, among other worlds as an effective, highly accurate sidearm.</description>
@@ -54,6 +54,7 @@
         <soundInteract>InteractPistol</soundInteract>
         <statBases>
             <WorkToMake>50451</WorkToMake>
+			<Mass>0.97</Mass>
             <MarketValue>315</MarketValue>
             <AccuracyTouch>0.95</AccuracyTouch>
             <AccuracyShort>0.85</AccuracyShort>
@@ -70,7 +71,7 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <projectileDef>Bullet_P_Benelli_B76_PA</projectileDef>
-                <warmupTicks>47</warmupTicks>
+                <WarmupTime>0.47</WarmupTime>
                 <range>24</range>
                 <soundCast>ShotPistol</soundCast>
                 <soundCastTail>GunTail_Light</soundCastTail>

@@ -23,13 +23,13 @@
 
 
 <ThingDefs>
-	<ThingDef PPentName="BaseGunThing">
+	<ThingDef ParentName="BaseGunThing">
 		<defName>Gun_Pistol_With_Rimfire_Compatibility</defName>
 		<weaponTags>
 			<li>GunModMCM_Pistols</li>
 		</weaponTags>
 	</ThingDef>
-    <ThingDef PPentName="PA_BaseBullet">
+    <ThingDef ParentName="PA_BaseBullet">
         <defName>Bullet_P_Arsenal_P-M02_PA</defName>
         <label>Arsenal_P-M02 bullet</label>
         <graphicData>
@@ -43,7 +43,7 @@
         </projectile>
     </ThingDef>
 
-    <ThingDef PPentName="PA_BaseHumanMakeableGun">
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
         <defName>Gun_P_Arsenal_P-M02_PA</defName>
         <label>Arsenal P-M02</label>
         <description>P-M02 is a compact self-defence pistol, produced by the factory world of Unek for various military and security contractors, it has been regarded as highly accurate, albeit slightly more expensive than other firearms, with downsides being lack of stopping power.</description>
@@ -54,6 +54,7 @@
         <soundInteract>InteractPistol</soundInteract>
         <statBases>
             <WorkToMake>57370</WorkToMake>
+			<Mass>0.76</Mass>
             <MarketValue>360</MarketValue>
             <AccuracyTouch>0.96</AccuracyTouch>
             <AccuracyShort>0.75</AccuracyShort>
@@ -70,7 +71,7 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <projectileDef>Bullet_P_Arsenal_P-M02_PA</projectileDef>
-                <warmupTicks>36</warmupTicks>
+                <WarmupTime>0.36</WarmupTime>
                 <range>23</range>
                 <soundCast>ShotPistol</soundCast>
                 <soundCastTail>GunTail_Light</soundCastTail>

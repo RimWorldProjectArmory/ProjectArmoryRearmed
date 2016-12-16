@@ -54,6 +54,7 @@
         <soundInteract>InteractRifle</soundInteract>
         <statBases>
             <WorkToMake>133170</WorkToMake>
+			<Mass>3.9</Mass>
             <MarketValue>720</MarketValue>
             <AccuracyTouch>0.69</AccuracyTouch>
             <AccuracyShort>0.86</AccuracyShort>
@@ -70,10 +71,10 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <projectileDef>Bullet_AR_ColtCanadaC7_PA</projectileDef>
-                <warmupTicks>88</warmupTicks>
+                <WarmupTime>0.88</WarmupTime>
                 <range>31</range>
                 <burstShotCount>4</burstShotCount>
-                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
                 <soundCast>ShotAssaultRifle</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>

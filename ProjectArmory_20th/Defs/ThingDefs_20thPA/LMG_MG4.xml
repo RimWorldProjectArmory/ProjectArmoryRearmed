@@ -54,6 +54,7 @@
         <soundInteract>InteractRifle</soundInteract>
         <statBases>
             <WorkToMake>153947</WorkToMake>
+			<Mass>8.5</Mass>
             <MarketValue>1355</MarketValue>
             <AccuracyTouch>0.56</AccuracyTouch>
             <AccuracyShort>0.72</AccuracyShort>
@@ -70,7 +71,7 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <projectileDef>Bullet_LMG_MG4_PA</projectileDef>
-                <warmupTicks>109</warmupTicks>
+                <WarmupTime>1.09</WarmupTime>
                 <range>18</range>
                 <burstShotCount>10</burstShotCount>
                 <ticksBetweenBurstShots>4</ticksBetweenBurstShots>

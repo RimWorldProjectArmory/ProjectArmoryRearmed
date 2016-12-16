@@ -23,13 +23,13 @@
 
 
 <ThingDefs>
-	<ThingDef PPentName="BaseGunThing">
+	<ThingDef ParentName="BaseGunThing">
 		<defName>Gun_Pistol_With_Rimfire_Compatibility</defName>
 		<weaponTags>
 			<li>GunModMCM_Pistols</li>
 		</weaponTags>
 	</ThingDef>
-    <ThingDef PPentName="PA_BaseBullet">
+    <ThingDef ParentName="PA_BaseBullet">
         <defName>Bullet_P_Beretta_M1951_PA</defName>
         <label>Beretta_M1951 bullet</label>
         <graphicData>
@@ -43,7 +43,7 @@
         </projectile>
     </ThingDef>
 
-    <ThingDef PPentName="PA_BaseHumanMakeableGun">
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
         <defName>Gun_P_Beretta_M1951_PA</defName>
         <label>Beretta M1951</label>
         <description>This pistol was designed primarily as a service pistol to be used on several midworlds to protect the interests in those areas against rapidly evolving wildlife and various other hazards. It is cheap to manufacture, durable, as well as effective for what it is.</description>
@@ -54,6 +54,7 @@
         <soundInteract>InteractPistol</soundInteract>
         <statBases>
             <WorkToMake>42955</WorkToMake>
+			<Mass>0.87</Mass>
             <MarketValue>260</MarketValue>
             <AccuracyTouch>0.95</AccuracyTouch>
             <AccuracyShort>0.81</AccuracyShort>
@@ -70,7 +71,7 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <projectileDef>Bullet_P_Beretta_M1951_PA</projectileDef>
-                <warmupTicks>42</warmupTicks>
+                <WarmupTime>0.42</WarmupTime>
                 <range>24</range>
                 <soundCast>ShotPistol</soundCast>
                 <soundCastTail>GunTail_Light</soundCastTail>

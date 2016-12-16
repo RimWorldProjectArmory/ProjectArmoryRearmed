@@ -54,6 +54,7 @@
         <soundInteract>InteractRifle</soundInteract>
         <statBases>
             <WorkToMake>145600</WorkToMake>
+			<Mass>4.2</Mass>
             <MarketValue>790</MarketValue>
             <AccuracyTouch>0.7</AccuracyTouch>
             <AccuracyShort>0.87</AccuracyShort>
@@ -70,10 +71,10 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <projectileDef>Bullet_AR_Pindad_SS2_PA</projectileDef>
-                <warmupTicks>95</warmupTicks>
+                <WarmupTime>0.95</WarmupTime>
                 <range>32</range>
                 <burstShotCount>3</burstShotCount>
-                <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
                 <soundCast>ShotAssaultRifle</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>

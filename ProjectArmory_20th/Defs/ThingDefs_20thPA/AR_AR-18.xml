@@ -54,6 +54,7 @@
         <soundInteract>InteractRifle</soundInteract>
         <statBases>
             <WorkToMake>119260</WorkToMake>
+			<Mass>3.3</Mass>
             <MarketValue>645</MarketValue>
             <AccuracyTouch>0.67</AccuracyTouch>
             <AccuracyShort>0.84</AccuracyShort>
@@ -70,10 +71,10 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <projectileDef>Bullet_AR_AR-18_PA</projectileDef>
-                <warmupTicks>74</warmupTicks>
+                <WarmupTime>0.74</WarmupTime>
                 <range>34.0</range>
                 <burstShotCount>3</burstShotCount>
-                <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
                 <soundCast>ShotAssaultRifle</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>

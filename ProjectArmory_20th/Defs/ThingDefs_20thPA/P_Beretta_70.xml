@@ -23,13 +23,13 @@
 
 
 <ThingDefs>
-	<ThingDef PPentName="BaseGunThing">
+	<ThingDef ParentName="BaseGunThing">
 		<defName>Gun_Pistol_With_Rimfire_Compatibility</defName>
 		<weaponTags>
 			<li>GunModMCM_Pistols</li>
 		</weaponTags>
 	</ThingDef>
-    <ThingDef PPentName="PA_BaseBullet">
+    <ThingDef ParentName="PA_BaseBullet">
         <defName>Bullet_P_Beretta_70_PA</defName>
         <label>Beretta_70 bullet</label>
         <graphicData>
@@ -43,17 +43,18 @@
         </projectile>
     </ThingDef>
 
-    <ThingDef PPentName="PA_BaseHumanMakeableGun">
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
         <defName>Gun_P_Beretta_70_PA</defName>
         <label>Beretta 70</label>
         <description>Civilian market lightweight sidearm, designed almost purely for self-defence and concealability. It lacks stopping power, a thing to expect from a small, concealable sidearm. It has very reasonable accuracy, and also, it is cheap.</description>
         <graphicData>
-            <texPath>Things/P/Beretta_70</texPath>
+            <texPath>Things/P/Beretta_70S</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>InteractPistol</soundInteract>
         <statBases>
             <WorkToMake>45550</WorkToMake>
+			<Mass>0.66</Mass>
             <MarketValue>285</MarketValue>
             <AccuracyTouch>0.95</AccuracyTouch>
             <AccuracyShort>0.79</AccuracyShort>
@@ -70,7 +71,7 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <projectileDef>Bullet_P_Beretta_70_PA</projectileDef>
-                <warmupTicks>32</warmupTicks>
+                <WarmupTime>0.32</WarmupTime>
                 <range>17</range>
                 <soundCast>ShotPistol</soundCast>
                 <soundCastTail>GunTail_Light</soundCastTail>

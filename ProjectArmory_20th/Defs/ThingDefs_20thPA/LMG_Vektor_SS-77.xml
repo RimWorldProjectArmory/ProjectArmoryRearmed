@@ -54,6 +54,7 @@
         <soundInteract>InteractRifle</soundInteract>
         <statBases>
             <WorkToMake>139740</WorkToMake>
+			<Mass>9.6</Mass>
             <MarketValue>1230</MarketValue>
             <AccuracyTouch>0.48</AccuracyTouch>
             <AccuracyShort>0.61</AccuracyShort>
@@ -70,7 +71,7 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <projectileDef>Bullet_LMG_Vektor_SS-77_PA</projectileDef>
-                <warmupTicks>100</warmupTicks>
+                <WarmupTime>1.00</WarmupTime>
                 <range>26</range>
                 <burstShotCount>8</burstShotCount>
                 <ticksBetweenBurstShots>5</ticksBetweenBurstShots>

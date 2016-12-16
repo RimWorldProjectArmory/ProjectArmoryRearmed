@@ -23,13 +23,13 @@
 
 
 <ThingDefs>
-	<ThingDef PPentName="BaseGunThing">
+	<ThingDef ParentName="BaseGunThing">
 		<defName>Gun_Pistol_With_Rimfire_Compatibility</defName>
 		<weaponTags>
 			<li>GunModMCM_Pistols</li>
 		</weaponTags>
 	</ThingDef>
-    <ThingDef PPentName="PA_BaseBullet">
+    <ThingDef ParentName="PA_BaseBullet">
         <defName>Bullet_P_Beretta_92_PA</defName>
         <label>Beretta_92 bullet</label>
         <graphicData>
@@ -43,7 +43,7 @@
         </projectile>
     </ThingDef>
 
-    <ThingDef PPentName="PA_BaseHumanMakeableGun">
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
         <defName>Gun_P_Beretta_92_PA</defName>
         <label>Beretta 92</label>
         <description>Mainly military and security-oriented sidearm, this weapon design has been well-recieved around the galaxy for it's elegance and efffectiveness, as well as allowing a great range of re-chambering operations for different pistol cartridges, this sidearm has made quite a following over the history, almost reaching the iconic status.</description>
@@ -54,6 +54,7 @@
         <soundInteract>InteractPistol</soundInteract>
         <statBases>
             <WorkToMake>50450</WorkToMake>
+			<Mass>0.95</Mass>
             <MarketValue>315</MarketValue>
             <AccuracyTouch>0.95</AccuracyTouch>
             <AccuracyShort>0.84</AccuracyShort>
@@ -70,7 +71,7 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <projectileDef>Bullet_P_Beretta_92_PA</projectileDef>
-                <warmupTicks>46</warmupTicks>
+                <WarmupTime>0.46</WarmupTime>
                 <range>24</range>
                 <soundCast>ShotPistol</soundCast>
                 <soundCastTail>GunTail_Light</soundCastTail>

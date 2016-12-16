@@ -54,6 +54,7 @@
         <soundInteract>InteractRifle</soundInteract>
         <statBases>
             <WorkToMake>149210</WorkToMake>
+			<Mass>6.9</Mass>
             <MarketValue>1310</MarketValue>
             <AccuracyTouch>0.53</AccuracyTouch>
             <AccuracyShort>0.68</AccuracyShort>
@@ -70,7 +71,7 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <projectileDef>Bullet_LMG_Daewoo_K3_PA</projectileDef>
-                <warmupTicks>55</warmupTicks>
+                <WarmupTime>0.55</WarmupTime>
                 <range>20</range>
                 <burstShotCount>10</burstShotCount>
                 <ticksBetweenBurstShots>3</ticksBetweenBurstShots>

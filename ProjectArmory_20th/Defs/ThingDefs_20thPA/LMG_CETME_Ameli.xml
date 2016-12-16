@@ -54,6 +54,7 @@
         <soundInteract>InteractRifle</soundInteract>
         <statBases>
             <WorkToMake>143685</WorkToMake>
+			<Mass>5.3</Mass>
             <MarketValue>1265</MarketValue>
             <AccuracyTouch>0.51</AccuracyTouch>
             <AccuracyShort>0.65</AccuracyShort>
@@ -70,7 +71,7 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <projectileDef>Bullet_LMG_CETME_Ameli_PA</projectileDef>
-                <warmupTicks>55</warmupTicks>
+                <WarmupTime>0.55</WarmupTime>
                 <range>19.0</range>
                 <burstShotCount>10</burstShotCount>
                 <ticksBetweenBurstShots>3</ticksBetweenBurstShots>

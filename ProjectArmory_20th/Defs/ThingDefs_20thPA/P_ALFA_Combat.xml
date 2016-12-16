@@ -23,13 +23,13 @@
 
 
 <ThingDefs>
-	<ThingDef PPentName="BaseGunThing">
+	<ThingDef ParentName="BaseGunThing">
 		<defName>Gun_Pistol_With_Rimfire_Compatibility</defName>
 		<weaponTags>
 			<li>GunModMCM_Pistols</li>
 		</weaponTags>
 	</ThingDef>
-    <ThingDef PPentName="PA_BaseBullet">
+    <ThingDef ParentName="PA_BaseBullet">
         <defName>Bullet_P_ALFA_Combat_PA</defName>
         <label>ALFA_Combat bullet</label>
         <graphicData>
@@ -43,7 +43,7 @@
         </projectile>
     </ThingDef>
 
-    <ThingDef PPentName="PA_BaseHumanMakeableGun">
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
         <defName>Gun_P_ALFA_Combat_PA</defName>
         <label>ALFA Combat</label>
         <description>All-around commercial firearm good for all purposes, including military application, law-enforcement, self-defense and sports. Design first surfaced on a midworld of Dvorak. Good all-around pistol to have.</description>
@@ -54,6 +54,7 @@
         <soundInteract>InteractPistol</soundInteract>
         <statBases>
             <WorkToMake>55352</WorkToMake>
+			<Mass>0.85</Mass>
             <MarketValue>346</MarketValue>
             <AccuracyTouch>0.92</AccuracyTouch>
             <AccuracyShort>0.72</AccuracyShort>
@@ -70,7 +71,7 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <projectileDef>Bullet_P_ALFA_Combat_PA</projectileDef>
-                <warmupTicks>40</warmupTicks>
+                <WarmupTime>0.40</WarmupTime>
                 <range>27</range>
                 <soundCast>ShotPistol</soundCast>
                 <soundCastTail>GunTail_Light</soundCastTail>

@@ -23,13 +23,13 @@
 
 
 <ThingDefs>
-	<ThingDef PPentName="BaseGunThing">
+	<ThingDef ParentName="BaseGunThing">
 		<defName>Gun_Pistol_With_Rimfire_Compatibility</defName>
 		<weaponTags>
 			<li>GunModMCM_Pistols</li>
 		</weaponTags>
 	</ThingDef>
-    <ThingDef PPentName="PA_BaseBullet">
+    <ThingDef ParentName="PA_BaseBullet">
         <defName>Bullet_P_AMT_Automag_IV_PA</defName>
         <label>AMT_Automag_IV bullet</label>
         <graphicData>
@@ -43,7 +43,7 @@
         </projectile>
     </ThingDef>
 
-    <ThingDef PPentName="PA_BaseHumanMakeableGun">
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
         <defName>Gun_P_AMT_Automag_IV_PA</defName>
         <label>.45 Automag IV</label>
         <description>AMT-brand automatic magnum pistol, chambered in .45 Winchester Magnum cartridge, designed and advertised on civilian market for hunting purposes, this firearm has found major notoriety on outter rim pirate worlds for it's high lethality during the infighting. Thankfully, AMT knew better than capitalizing on these statistics, maintaining civilian-friendly outlook. Compared to other AutoMags from AMT, this model experiences a dip in accuracy compared to previous models due to cartridge power increase while maintaining the same barrel length.</description>
@@ -54,6 +54,7 @@
         <soundInteract>InteractPistol</soundInteract>
         <statBases>
             <WorkToMake>56217</WorkToMake>
+			<Mass>1.3</Mass>
             <MarketValue>351</MarketValue>
             <AccuracyTouch>0.89</AccuracyTouch>
             <AccuracyShort>0.70</AccuracyShort>
@@ -70,7 +71,7 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <projectileDef>Bullet_P_AMT_Automag_IV_PA</projectileDef>
-                <warmupTicks>62</warmupTicks>
+                <WarmupTime>0.62</WarmupTime>
                 <range>30</range>
                 <soundCast>ShotPistol</soundCast>
                 <soundCastTail>GunTail_Light</soundCastTail>

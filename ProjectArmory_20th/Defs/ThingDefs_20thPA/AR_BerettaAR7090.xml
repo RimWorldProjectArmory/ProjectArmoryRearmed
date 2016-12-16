@@ -54,6 +54,7 @@
         <soundInteract>InteractRifle</soundInteract>
         <statBases>
             <WorkToMake>119260</WorkToMake>
+			<Mass>4.2</Mass>
             <MarketValue>751</MarketValue>
             <AccuracyTouch>0.7</AccuracyTouch>
             <AccuracyShort>0.87</AccuracyShort>
@@ -70,10 +71,10 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <projectileDef>Bullet_AR_BerettaAR7090_PA</projectileDef>
-                <warmupTicks>90</warmupTicks>
+                <WarmupTime>0.90</WarmupTime>
                 <range>33.0</range>
                 <burstShotCount>3</burstShotCount>
-                <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
                 <soundCast>ShotAssaultRifle</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>

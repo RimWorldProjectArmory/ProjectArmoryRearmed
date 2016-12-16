@@ -23,13 +23,13 @@
 
 
 <ThingDefs>
-	<ThingDef PPentName="BaseGunThing">
+	<ThingDef ParentName="BaseGunThing">
 		<defName>Gun_Pistol_With_Rimfire_Compatibility</defName>
 		<weaponTags>
 			<li>GunModMCM_Pistols</li>
 		</weaponTags>
 	</ThingDef>
-    <ThingDef PPentName="PA_BaseBullet">
+    <ThingDef ParentName="PA_BaseBullet">
         <defName>Bullet_P_Bersa_Thunder_9_PA</defName>
         <label>Bersa_Thunder_9 bullet</label>
         <graphicData>
@@ -43,7 +43,7 @@
         </projectile>
     </ThingDef>
 
-    <ThingDef PPentName="PA_BaseHumanMakeableGun">
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
         <defName>Gun_P_Bersa_Thunder_9_PA</defName>
         <label>Bersa Thunder 9</label>
         <description>A respectable pistol developed by the midworld of Ramos, slighly overcomplicated and expensive, but not too much.</description>
@@ -54,6 +54,7 @@
         <soundInteract>InteractPistol</soundInteract>
         <statBases>
             <WorkToMake>55930</WorkToMake>
+			<Mass>0.794</Mass>
             <MarketValue>350</MarketValue>
             <AccuracyTouch>0.95</AccuracyTouch>
             <AccuracyShort>0.78</AccuracyShort>
@@ -70,7 +71,7 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <projectileDef>Bullet_P_Bersa_Thunder_9_PA</projectileDef>
-                <warmupTicks>38</warmupTicks>
+                <WarmupTime>0.38</WarmupTime>
                 <range>24</range>
                 <soundCast>ShotPistol</soundCast>
                 <soundCastTail>GunTail_Light</soundCastTail>

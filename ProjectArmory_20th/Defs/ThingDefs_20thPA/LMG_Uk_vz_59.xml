@@ -30,8 +30,8 @@
 		</weaponTags>
 	</ThingDef>
     <ThingDef ParentName="PA_BaseBullet">
-        <defName>Bullet_LMG_Uk_vz._59_PA</defName>
-        <label>Uk_vz._59 bullet</label>
+        <defName>Bullet_LMG_Uk_vz_59_PA</defName>
+        <label>Uk_vz_59 bullet</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Small</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -44,7 +44,7 @@
     </ThingDef>
 
     <ThingDef ParentName="PA_BaseHumanMakeableGun">
-        <defName>Gun_LMG_Uk_vz._59_PA</defName>
+        <defName>Gun_LMG_Uk_vz_59_PA</defName>
         <label>Uk vz. 59</label>
         <description>Uk vz. 59 is a light machine gun produced by distant midworld of Jassra, being the main competitor for the RPK light machine gun, this machine gun was manufactured for both center-fire and rim-fire cartridge configurations, which lent it it's main portion of success, as well as having one of the most respectable stopping powers among all known LMG designs.</description>
         <graphicData>
@@ -54,6 +54,7 @@
         <soundInteract>InteractRifle</soundInteract>
         <statBases>
             <WorkToMake>125525</WorkToMake>
+			<Mass>9.28</Mass>
             <MarketValue>1100</MarketValue>
             <AccuracyTouch>0.48</AccuracyTouch>
             <AccuracyShort>0.62</AccuracyShort>
@@ -69,8 +70,8 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <projectileDef>Bullet_LMG_Uk_vz._59_PA</projectileDef>
-                <warmupTicks>79</warmupTicks>
+                <projectileDef>Bullet_LMG_Uk_vz_59_PA</projectileDef>
+                <WarmupTime>0.79</WarmupTime>
                 <range>26</range>
                 <burstShotCount>7</burstShotCount>
                 <ticksBetweenBurstShots>5</ticksBetweenBurstShots>

@@ -54,6 +54,7 @@
         <soundInteract>InteractRifle</soundInteract>
         <statBases>
             <WorkToMake>134630</WorkToMake>
+			<Mass>3.46</Mass>
             <MarketValue>730</MarketValue>
             <AccuracyTouch>0.68</AccuracyTouch>
             <AccuracyShort>0.84</AccuracyShort>
@@ -70,10 +71,10 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <projectileDef>Bullet_AR_Daewoo_K2_PA</projectileDef>
-                <warmupTicks>73</warmupTicks>
+                <WarmupTime>0.73</WarmupTime>
                 <range>32</range>
                 <burstShotCount>3</burstShotCount>
-                <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
                 <soundCast>ShotAssaultRifle</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>

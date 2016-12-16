@@ -23,13 +23,13 @@
 
 
 <ThingDefs>
-	<ThingDef PPentName="BaseGunThing">
+	<ThingDef ParentName="BaseGunThing">
 		<defName>Gun_Pistol_With_Rimfire_Compatibility</defName>
 		<weaponTags>
 			<li>GunModMCM_Pistols</li>
 		</weaponTags>
 	</ThingDef>
-    <ThingDef PPentName="PA_BaseBullet">
+    <ThingDef ParentName="PA_BaseBullet">
         <defName>Bullet_P_Beretta_950_PA</defName>
         <label>Beretta_950 bullet</label>
         <graphicData>
@@ -43,7 +43,7 @@
         </projectile>
     </ThingDef>
 
-    <ThingDef PPentName="PA_BaseHumanMakeableGun">
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
         <defName>Gun_P_Beretta_950_PA</defName>
         <label>Beretta 950</label>
         <description>This sidearm's main focus and appeal is to be used as a concealable weapon, it's main downside being, well, everything that a normal sidearm doesn't have. It lacks range, stopping power, and, somewhat, accuracy, but it will do just well in a situation where the only alternative is no sidearm at all. Also, it is cheaper than your regular pistol, and very material-effective to build.</description>
@@ -54,6 +54,7 @@
         <soundInteract>InteractPistol</soundInteract>
         <statBases>
             <WorkToMake>43820</WorkToMake>
+			<Mass>0.28</Mass>
             <MarketValue>270</MarketValue>
             <AccuracyTouch>0.95</AccuracyTouch>
             <AccuracyShort>0.88</AccuracyShort>
@@ -70,7 +71,7 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <projectileDef>Bullet_P_Beretta_950_PA</projectileDef>
-                <warmupTicks>13</warmupTicks>
+                <WarmupTime>0.13</WarmupTime>
                 <range>13</range>
                 <soundCast>ShotPistol</soundCast>
                 <soundCastTail>GunTail_Light</soundCastTail>

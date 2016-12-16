@@ -1,28 +1,28 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<!--<?xml version="1.0" encoding="utf-8" ?>
 
 <!-- WeaponData
-    QJY-88
-     Source:                https://en.wikipedia.org/wiki/QJY-88
-     Cyclic rate of fire:     675 rds/min
-     Barrel Length:            600 mm
-     Muzzle Velocity:          895 m/s
-     Weapon's Weight:		 7600 g
-	 recoil:				    0.59 m/s
+    PU-21
+     Source:                https://en.wikipedia.org/wiki/IP-2
+     Cyclic rate of fire:     750 rds/min
+     Barrel Length:            590 mm
+     Muzzle Velocity:          960 m/s
+     Weapon's Weight:		 5700 g
+	 recoil:				    0.62 m/s
 	 
     
-	https://en.wikipedia.org/wiki/5.8×42mm
-     Projectile Mass:          5 g  
-     Tested Barrel Length:     557 mm
-     Tested Energy:          1 892 J
-     Tested Velocity:          870 m/s
+	https://en.wikipedia.org/wiki/5.45×39mm
+     Projectile Mass:          3.69 g  
+     Tested Barrel Length:     415 mm
+     Tested Energy:          1 461 J
+     Tested Velocity:          890 m/s
       
 	 
-    Gun_LMG_QJY-88_PA
-     Muzzle Energy:          2 097 pa/J
+    Gun_LMG_PU-21_PA
+     Muzzle Energy:          2 240 pa/J
 -->
 
 
-<ThingDefs>
+<!--<ThingDefs>
 	<ThingDef ParentName="BaseGunThing">
 		<defName>Gun_Rifle_With_Rimfire_Compatibility</defName>
 		<weaponTags>
@@ -30,8 +30,8 @@
 		</weaponTags>
 	</ThingDef>
     <ThingDef ParentName="PA_BaseBullet">
-        <defName>Bullet_LMG_QJY-88_PA</defName>
-        <label>QJY-88 bullet</label>
+        <defName>Bullet_LMG_PU-21_PA</defName>
+        <label>PU-21 bullet</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Small</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -39,41 +39,40 @@
         <projectile>
             <damageDef>Bullet</damageDef>
             <damageAmountBase>6</damageAmountBase>
-            <speed>56</speed>
+            <speed>58</speed>
         </projectile>
     </ThingDef>
 
     <ThingDef ParentName="PA_BaseHumanMakeableGun">
-        <defName>Gun_LMG_QJY-88_PA</defName>
-        <label>QJY-88</label>
-        <description>QJY-88 is a modern-designed firearm light machine gun, brought up to glitterworld standards of production and material quality, designed to be mass-produced on rimworld colonies by glitterworld interest forces.</description>
+        <defName>Gun_LMG_PU-21_PA</defName>
+        <label>PU-21</label>
+        <description>PU-21 was developed by Merit Ltd. as a replacement for somewhat outdated RPK machine gun platform. Unfortunately gun was more complex and offered the same package at greater expense, therefore the main buyers are of dubious background.</description>
         <graphicData>
-            <texPath>Things/LMG/QJY-88</texPath>
+            <texPath>Things/LMG/PU-21</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>InteractRifle</soundInteract>
         <statBases>
-            <WorkToMake>149210</WorkToMake>
-			<Mass>7.6</Mass>
-            <MarketValue>1320</MarketValue>
+            <WorkToMake>142105</WorkToMake>
+            <MarketValue>1250</MarketValue>
             <AccuracyTouch>0.52</AccuracyTouch>
             <AccuracyShort>0.67</AccuracyShort>
             <AccuracyMedium>0.43</AccuracyMedium>
             <AccuracyLong>0.23</AccuracyLong>
-            <RangedWeapon_Cooldown>1.29</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>1.32</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <Steel>99</Steel>
-            <Component>3</Component>
+            <Steel>74</Steel>
+            <Component>2</Component>
         </costList>
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <projectileDef>Bullet_LMG_QJY-88_PA</projectileDef>
-                <WarmupTime>0.79</WarmupTime>
-                <range>21</range>
-                <burstShotCount>7</burstShotCount>
+                <projectileDef>Bullet_LMG_PU-21_PA</projectileDef>
+                <WarmupTime>59</WarmupTime>
+                <range>19</range>
+                <burstShotCount>8</burstShotCount>
                 <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
                 <soundCast>ShotAssaultRifle</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>

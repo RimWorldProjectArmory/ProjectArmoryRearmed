@@ -23,13 +23,13 @@
 
 
 <ThingDefs>
-	<ThingDef PPentName="BaseGunThing">
+	<ThingDef ParentName="BaseGunThing">
 		<defName>Gun_Pistol_With_Rimfire_Compatibility</defName>
 		<weaponTags>
 			<li>GunModMCM_Pistols</li>
 		</weaponTags>
 	</ThingDef>
-    <ThingDef PPentName="PA_BaseBullet">
+    <ThingDef ParentName="PA_BaseBullet">
         <defName>Bullet_P_AMT_Automag_III_PA</defName>
         <label>AMT_Automag_III bullet</label>
         <graphicData>
@@ -43,7 +43,7 @@
         </projectile>
     </ThingDef>
 
-    <ThingDef PPentName="PA_BaseHumanMakeableGun">
+    <ThingDef ParentName="PA_BaseHumanMakeableGun">
         <defName>Gun_P_AMT_Automag_III_PA</defName>
         <label>9mm AutoMag III</label>
         <description>AMT-brand automatic magnum pistol, chambered in 9mm Winchester Magnum cartridge, designed as a civilian market self-defense weapon, and generally advertised at such. it doesn't have greatly outstanding characteristics, while being more powerful than your regular semi-automatic handgun, it also has more weight to it. Also, as typical of AMT-brand AutoMag pistols, it is very accurate.</description>
@@ -54,6 +54,7 @@
         <soundInteract>InteractPistol</soundInteract>
         <statBases>
             <WorkToMake>56217</WorkToMake>
+			<Mass>1.2</Mass>
             <MarketValue>351</MarketValue>
             <AccuracyTouch>0.95</AccuracyTouch>
             <AccuracyShort>0.95</AccuracyShort>
@@ -70,7 +71,7 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <projectileDef>Bullet_P_AMT_Automag_III_PA</projectileDef>
-                <warmupTicks>58</warmupTicks>
+                <WarmupTime>0.58</WarmupTime>
                 <range>19</range>
                 <soundCast>ShotPistol</soundCast>
                 <soundCastTail>GunTail_Light</soundCastTail>

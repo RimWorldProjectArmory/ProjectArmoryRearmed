@@ -54,6 +54,7 @@
         <soundInteract>InteractRifle</soundInteract>
         <statBases>
             <WorkToMake>122368</WorkToMake>
+			<Mass>8.5</Mass>
             <MarketValue>1080</MarketValue>
             <AccuracyTouch>0.49</AccuracyTouch>
             <AccuracyShort>0.63</AccuracyShort>
@@ -70,7 +71,7 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <projectileDef>Bullet_LMG_Valmet_Kvkk_62_PA</projectileDef>
-                <warmupTicks>88</warmupTicks>
+                <WarmupTime>0.88</WarmupTime>
                 <range>21</range>
                 <burstShotCount>12</burstShotCount>
                 <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
